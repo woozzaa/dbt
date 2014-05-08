@@ -32,7 +32,7 @@ var googleScript = {
 
 		fusionOptions = {
 			select: '',
-			from: '', 
+			from: '', 	
 		}
 
 		myCenter = new google.maps.LatLng(64.592418,18.688387);
