@@ -1,0 +1,15 @@
+.content {
+  margin: 0 auto;
+  width: 1200px;
+  overflow: hidden; }
+
+#maps {
+  height: 750px;
+  width: 1000px;
+  margin: 0 auto;
+  background-color: #E6E6E6;
+  float: left; }
+
+#buttons {
+  float: right;
+  width: 100px; }
