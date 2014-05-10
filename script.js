@@ -7,7 +7,9 @@ var mapOptions 	= null;
 var myCenter 	= null;
 var map 		= null;
 var bounds 		= null;
-var finaljson 	= null
+// var finaljson 	= null;
+var items		= null;
+
 
 var googleScript = {
 
@@ -17,11 +19,8 @@ var googleScript = {
 	},
 
 
-	init: function(){
-		this.initialize();
-		this.startit();
+	init: function(){	
 		this.bindUIActions();
-		this.getjson();
 	},
 
 	bindUIActions: function(){
@@ -36,31 +35,34 @@ var googleScript = {
 	},
 
 
-	initialize: function(){
+	createmaps: function(){
 
+		myCenter = new google.maps.LatLng(64.592418,18.688387);
 
 		mapOptions = {
 			center: myCenter,
-			zoom: 14,
+			zoom: 13,
 			mapTypeId: google.maps.MapTypeId.ROADMAP
 		};	
 
-		myCenter = new google.maps.LatLng(64.592418,18.688387);
+		
 		//Positions map
 
 		//Places map in the right div
 		map = new google.maps.Map(document.getElementById("maps"), mapOptions);
-
-		var layer = new google.maps.FusionTablesLayer({
-			query: {
-				select: 'ABSENCES',
-				from: '1OqKOavsRoQSHBxt0v40jf9iBJ0WTpESP5pQj3Ukb',
-				// where: 'ABSENCES > 2'
-			}
-			// heatmap: {
-			// 	enabled: heatmap.checked,
-			// }
+		
+		console.log(items);
+		mvcitems = new google.maps.MVCArray(items);
+		console.log(mvcitems);
+		
+		var hmlayer = new google.maps.visualization.HeatmapLayer({
+			data: mvcitems,
+			opacity: 1,
+			radius: 20
 		});
+		
+		hmlayer.setMap(map);
+		// console.log(hmlayer.getData());
 
 		//Sätter markeringar och "zoomar" in så att kartan innefattar markeringarna. 
 		//Skriver över "zoomen" man satt innan
@@ -72,32 +74,40 @@ var googleScript = {
 
 	getjson: function(){
 		
-		var items = [];
+		items = [];
 		
 		$.getJSON('/dbt/json/workex_small.json', function( data ){
 			
-			var counter = 0;
 			$.each( data, function( key, val ){
 					// console.log(val);
+					if(parseFloat(val['LAT']) != NaN && parseFloat(val['LNG']) != NaN){
+						var lati = Number(val['LAT']);
+						var lngi = Number(val['LNG']);
+					}
+					else{
+						console.log('shit');
+						return false
+					}
 					var tot = {};
-					tot.location 	= "new google.maps.LatLng(val['LAT'], val['LNG'])";
-					tot.weight		= val['NUMBER'];
+					var loc = {};
+					tot.location 	= new google.maps.LatLng(lati, lngi);
+					
+					// loc.lat 	= lati;
+					// loc.lng 	= lngi;
+					// tot.location = loc;
+					tot.weight 		= Number(val['NUMBER']);
 					console.log(tot);
-					// items.push(tot + ',');
+					items.push(tot);
 			});
 
-			// console.log(items);
+			// console.log(items);	
+			googleScript.createmaps();
 
 		});
 		
 		// finaljson = $.parseJSON(finaljson);
 		
-	},
-
-
-	startit: function(){
-		
-	},
+	}
 };
 
 
@@ -105,8 +115,7 @@ var googleScript = {
 (function(){
 	googleScript.init();
 
-	google.maps.event.addDomListener(window, 'load', googleScript.initialize);
-	googleScript.startit();
+	google.maps.event.addDomListener(window, 'load', googleScript.getjson);
 
 	setTimeout(function(){
 		document.getElementById('information').innerHTML = 'Sidan har laddats';
