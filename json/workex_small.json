@@ -1,0 +1,5679 @@
+[
+  {
+    "DATE":"2014-03-31",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-31",
+    "SCHOOL":"Södermalm fritidshem",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-30",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-30",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-30",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-29",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-29",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-29",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-28",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-28",
+    "SCHOOL":"Furuvik förskola",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-28",
+    "SCHOOL":"Jonsta förskola",
+    "LAT":64.586087,
+    "LNG":18.670459,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-28",
+    "SCHOOL":"Morotens förskola",
+    "LAT":64.5996781,
+    "LNG":18.7096914,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-28",
+    "SCHOOL":"Filurens förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-28",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-03-28",
+    "SCHOOL":"Knaften förskola",
+    "LAT":64.4477167,
+    "LNG":18.6356589,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-28",
+    "SCHOOL":"Furuvik fritidshem",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-28",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":8
+  },
+  {
+    "DATE":"2014-03-28",
+    "SCHOOL":"Norräng fritidshem",
+    "LAT":64.6011263,
+    "LNG":18.7092215,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-27",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-03-27",
+    "SCHOOL":"Furuvik förskola",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-27",
+    "SCHOOL":"Jonsta förskola",
+    "LAT":64.586087,
+    "LNG":18.670459,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-27",
+    "SCHOOL":"Morotens förskola",
+    "LAT":64.5996781,
+    "LNG":18.7096914,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-27",
+    "SCHOOL":"Filurens förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-03-27",
+    "SCHOOL":"Södermalm förskola Daggkåpan",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-27",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":9
+  },
+  {
+    "DATE":"2014-03-27",
+    "SCHOOL":"Hedlunda förskola",
+    "LAT":64.5385012,
+    "LNG":18.7166307,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-27",
+    "SCHOOL":"Knaften förskola",
+    "LAT":64.4477167,
+    "LNG":18.6356589,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-27",
+    "SCHOOL":"Rusksele förskola",
+    "LAT":64.8150245,
+    "LNG":18.8954754,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-03-27",
+    "SCHOOL":"Umgransele förskola",
+    "LAT":64.6886934,
+    "LNG":18.4080427,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-03-27",
+    "SCHOOL":"Forsdala Fritidshem",
+    "LAT":64.5796517,
+    "LNG":18.6730359,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-27",
+    "SCHOOL":"Furuvik fritidshem",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-03-27",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":16
+  },
+  {
+    "DATE":"2014-03-27",
+    "SCHOOL":"Södermalm fritidshem",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-26",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":7
+  },
+  {
+    "DATE":"2014-03-26",
+    "SCHOOL":"Furuvik förskola",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-26",
+    "SCHOOL":"Johan Skyttes förskola",
+    "LAT":64.6006551,
+    "LNG":18.6709538,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-26",
+    "SCHOOL":"Jonsta förskola",
+    "LAT":64.586087,
+    "LNG":18.670459,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-26",
+    "SCHOOL":"Lövstugan förskola",
+    "LAT":64.5973375,
+    "LNG":18.7112576,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-26",
+    "SCHOOL":"Morotens förskola",
+    "LAT":64.5996781,
+    "LNG":18.7096914,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-26",
+    "SCHOOL":"Filurens förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-03-26",
+    "SCHOOL":"Norrskenet förskola",
+    "LAT":64.6005173,
+    "LNG":18.7061959,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-26",
+    "SCHOOL":"Södermalm förskola Daggkåpan",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-26",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":9
+  },
+  {
+    "DATE":"2014-03-26",
+    "SCHOOL":"Hedlunda förskola",
+    "LAT":64.5385012,
+    "LNG":18.7166307,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-26",
+    "SCHOOL":"Knaften förskola",
+    "LAT":64.4477167,
+    "LNG":18.6356589,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-03-26",
+    "SCHOOL":"Kristineberg förskola",
+    "LAT":65.0601416,
+    "LNG":18.583958,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-26",
+    "SCHOOL":"Rusksele förskola",
+    "LAT":64.8150245,
+    "LNG":18.8954754,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-26",
+    "SCHOOL":"Umgransele förskola",
+    "LAT":64.6886934,
+    "LNG":18.4080427,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-26",
+    "SCHOOL":"Forsdala Fritidshem",
+    "LAT":64.5796517,
+    "LNG":18.6730359,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-03-26",
+    "SCHOOL":"Furuvik fritidshem",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-26",
+    "SCHOOL":"Hedlunda fritidshem",
+    "LAT":64.5763904,
+    "LNG":18.6845421,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-26",
+    "SCHOOL":"Knaften fritidshem",
+    "LAT":64.4499996,
+    "LNG":18.6333333,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-26",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":16
+  },
+  {
+    "DATE":"2014-03-26",
+    "SCHOOL":"Norräng fritidshem",
+    "LAT":64.6011263,
+    "LNG":18.7092215,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-26",
+    "SCHOOL":"Rusksele fritidshem",
+    "LAT":64.814345,
+    "LNG":18.8947373,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-26",
+    "SCHOOL":"Södermalm fritidshem",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-25",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":8
+  },
+  {
+    "DATE":"2014-03-25",
+    "SCHOOL":"Furuvik förskola",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":7
+  },
+  {
+    "DATE":"2014-03-25",
+    "SCHOOL":"Johan Skyttes förskola",
+    "LAT":64.6006551,
+    "LNG":18.6709538,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-03-25",
+    "SCHOOL":"Jonsta förskola",
+    "LAT":64.586087,
+    "LNG":18.670459,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-03-25",
+    "SCHOOL":"Lövstugan förskola",
+    "LAT":64.5973375,
+    "LNG":18.7112576,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-25",
+    "SCHOOL":"Morotens förskola",
+    "LAT":64.5996781,
+    "LNG":18.7096914,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-03-25",
+    "SCHOOL":"Filurens förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":7
+  },
+  {
+    "DATE":"2014-03-25",
+    "SCHOOL":"Norrskenet förskola",
+    "LAT":64.6005173,
+    "LNG":18.7061959,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-25",
+    "SCHOOL":"Södermalm förskola Daggkåpan",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-25",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":9
+  },
+  {
+    "DATE":"2014-03-25",
+    "SCHOOL":"Knaften förskola",
+    "LAT":64.4477167,
+    "LNG":18.6356589,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-25",
+    "SCHOOL":"Kristineberg förskola",
+    "LAT":65.0601416,
+    "LNG":18.583958,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-25",
+    "SCHOOL":"Rusksele förskola",
+    "LAT":64.8150245,
+    "LNG":18.8954754,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-03-25",
+    "SCHOOL":"Umgransele förskola",
+    "LAT":64.6886934,
+    "LNG":18.4080427,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-03-25",
+    "SCHOOL":"Forsdala Fritidshem",
+    "LAT":64.5796517,
+    "LNG":18.6730359,
+    "NUMBER":8
+  },
+  {
+    "DATE":"2014-03-25",
+    "SCHOOL":"Furuvik fritidshem",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":11
+  },
+  {
+    "DATE":"2014-03-25",
+    "SCHOOL":"Johan Skyttes fritidshem",
+    "LAT":64.6006551,
+    "LNG":18.6709538,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-25",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":17
+  },
+  {
+    "DATE":"2014-03-25",
+    "SCHOOL":"Norräng fritidshem",
+    "LAT":64.6011263,
+    "LNG":18.7092215,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-03-25",
+    "SCHOOL":"Rusksele fritidshem",
+    "LAT":64.814345,
+    "LNG":18.8947373,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-25",
+    "SCHOOL":"Södermalm fritidshem",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-24",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":16
+  },
+  {
+    "DATE":"2014-03-24",
+    "SCHOOL":"Furuvik förskola",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-03-24",
+    "SCHOOL":"Johan Skyttes förskola",
+    "LAT":64.6006551,
+    "LNG":18.6709538,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-24",
+    "SCHOOL":"Jonsta förskola",
+    "LAT":64.586087,
+    "LNG":18.670459,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-24",
+    "SCHOOL":"Lövstugan förskola",
+    "LAT":64.5973375,
+    "LNG":18.7112576,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-24",
+    "SCHOOL":"Morotens förskola",
+    "LAT":64.5996781,
+    "LNG":18.7096914,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-24",
+    "SCHOOL":"Filurens förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-03-24",
+    "SCHOOL":"Norrskenet förskola",
+    "LAT":64.6005173,
+    "LNG":18.7061959,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-24",
+    "SCHOOL":"Södermalm förskola Daggkåpan",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-24",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":10
+  },
+  {
+    "DATE":"2014-03-24",
+    "SCHOOL":"Knaften förskola",
+    "LAT":64.4477167,
+    "LNG":18.6356589,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-03-24",
+    "SCHOOL":"Rusksele förskola",
+    "LAT":64.8150245,
+    "LNG":18.8954754,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-24",
+    "SCHOOL":"Umgransele förskola",
+    "LAT":64.6886934,
+    "LNG":18.4080427,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-03-24",
+    "SCHOOL":"Forsdala Fritidshem",
+    "LAT":64.5796517,
+    "LNG":18.6730359,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-03-24",
+    "SCHOOL":"Furuvik fritidshem",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":11
+  },
+  {
+    "DATE":"2014-03-24",
+    "SCHOOL":"Johan Skyttes fritidshem",
+    "LAT":64.6006551,
+    "LNG":18.6709538,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-24",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":13
+  },
+  {
+    "DATE":"2014-03-24",
+    "SCHOOL":"Norräng fritidshem",
+    "LAT":64.6011263,
+    "LNG":18.7092215,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-24",
+    "SCHOOL":"Rusksele fritidshem",
+    "LAT":64.814345,
+    "LNG":18.8947373,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-21",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":9
+  },
+  {
+    "DATE":"2014-03-21",
+    "SCHOOL":"Furuvik förskola",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-03-21",
+    "SCHOOL":"Johan Skyttes förskola",
+    "LAT":64.6006551,
+    "LNG":18.6709538,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-03-21",
+    "SCHOOL":"Jonsta förskola",
+    "LAT":64.586087,
+    "LNG":18.670459,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-21",
+    "SCHOOL":"Morotens förskola",
+    "LAT":64.5996781,
+    "LNG":18.7096914,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-03-21",
+    "SCHOOL":"Filurens förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-03-21",
+    "SCHOOL":"Södermalm förskola Daggkåpan",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-21",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":8
+  },
+  {
+    "DATE":"2014-03-21",
+    "SCHOOL":"Hedlunda förskola",
+    "LAT":64.5385012,
+    "LNG":18.7166307,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-21",
+    "SCHOOL":"Rusksele förskola",
+    "LAT":64.8150245,
+    "LNG":18.8954754,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-21",
+    "SCHOOL":"Umgransele förskola",
+    "LAT":64.6886934,
+    "LNG":18.4080427,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-21",
+    "SCHOOL":"Forsdala Fritidshem",
+    "LAT":64.5796517,
+    "LNG":18.6730359,
+    "NUMBER":11
+  },
+  {
+    "DATE":"2014-03-21",
+    "SCHOOL":"Furuvik fritidshem",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":10
+  },
+  {
+    "DATE":"2014-03-21",
+    "SCHOOL":"Hedlunda fritidshem",
+    "LAT":64.5763904,
+    "LNG":18.6845421,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-03-21",
+    "SCHOOL":"Knaften fritidshem",
+    "LAT":64.4499996,
+    "LNG":18.6333333,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-21",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":18
+  },
+  {
+    "DATE":"2014-03-21",
+    "SCHOOL":"Norräng fritidshem",
+    "LAT":64.6011263,
+    "LNG":18.7092215,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-21",
+    "SCHOOL":"Rusksele fritidshem",
+    "LAT":64.814345,
+    "LNG":18.8947373,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-21",
+    "SCHOOL":"Södermalm fritidshem",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-03-20",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":12
+  },
+  {
+    "DATE":"2014-03-20",
+    "SCHOOL":"Furuvik förskola",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-03-20",
+    "SCHOOL":"Johan Skyttes förskola",
+    "LAT":64.6006551,
+    "LNG":18.6709538,
+    "NUMBER":11
+  },
+  {
+    "DATE":"2014-03-20",
+    "SCHOOL":"Jonsta förskola",
+    "LAT":64.586087,
+    "LNG":18.670459,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-20",
+    "SCHOOL":"Morotens förskola",
+    "LAT":64.5996781,
+    "LNG":18.7096914,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-03-20",
+    "SCHOOL":"Filurens förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":8
+  },
+  {
+    "DATE":"2014-03-20",
+    "SCHOOL":"Norrskenet förskola",
+    "LAT":64.6005173,
+    "LNG":18.7061959,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-20",
+    "SCHOOL":"Södermalm förskola Daggkåpan",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-03-20",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":9
+  },
+  {
+    "DATE":"2014-03-20",
+    "SCHOOL":"Hedlunda förskola",
+    "LAT":64.5385012,
+    "LNG":18.7166307,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-20",
+    "SCHOOL":"Knaften förskola",
+    "LAT":64.4477167,
+    "LNG":18.6356589,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-20",
+    "SCHOOL":"Kristineberg förskola",
+    "LAT":65.0601416,
+    "LNG":18.583958,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-20",
+    "SCHOOL":"Rusksele förskola",
+    "LAT":64.8150245,
+    "LNG":18.8954754,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-03-20",
+    "SCHOOL":"Umgransele förskola",
+    "LAT":64.6886934,
+    "LNG":18.4080427,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-20",
+    "SCHOOL":"Forsdala Fritidshem",
+    "LAT":64.5796517,
+    "LNG":18.6730359,
+    "NUMBER":11
+  },
+  {
+    "DATE":"2014-03-20",
+    "SCHOOL":"Furuvik fritidshem",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-03-20",
+    "SCHOOL":"Hedlunda fritidshem",
+    "LAT":64.5763904,
+    "LNG":18.6845421,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-03-20",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":27
+  },
+  {
+    "DATE":"2014-03-20",
+    "SCHOOL":"Norräng fritidshem",
+    "LAT":64.6011263,
+    "LNG":18.7092215,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-20",
+    "SCHOOL":"Södermalm fritidshem",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-19",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":10
+  },
+  {
+    "DATE":"2014-03-19",
+    "SCHOOL":"Furuvik förskola",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-03-19",
+    "SCHOOL":"Johan Skyttes förskola",
+    "LAT":64.6006551,
+    "LNG":18.6709538,
+    "NUMBER":10
+  },
+  {
+    "DATE":"2014-03-19",
+    "SCHOOL":"Jonsta förskola",
+    "LAT":64.586087,
+    "LNG":18.670459,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-19",
+    "SCHOOL":"Morotens förskola",
+    "LAT":64.5996781,
+    "LNG":18.7096914,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-03-19",
+    "SCHOOL":"Filurens förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":10
+  },
+  {
+    "DATE":"2014-03-19",
+    "SCHOOL":"Norrskenet förskola",
+    "LAT":64.6005173,
+    "LNG":18.7061959,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-19",
+    "SCHOOL":"Södermalm förskola Daggkåpan",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-03-19",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":8
+  },
+  {
+    "DATE":"2014-03-19",
+    "SCHOOL":"Hedlunda förskola",
+    "LAT":64.5385012,
+    "LNG":18.7166307,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-19",
+    "SCHOOL":"Rusksele förskola",
+    "LAT":64.8150245,
+    "LNG":18.8954754,
+    "NUMBER":7
+  },
+  {
+    "DATE":"2014-03-19",
+    "SCHOOL":"Umgransele förskola",
+    "LAT":64.6886934,
+    "LNG":18.4080427,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-03-19",
+    "SCHOOL":"Örträsk förskola",
+    "LAT":64.1342652,
+    "LNG":18.9842314,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-19",
+    "SCHOOL":"Forsdala Fritidshem",
+    "LAT":64.5796517,
+    "LNG":18.6730359,
+    "NUMBER":7
+  },
+  {
+    "DATE":"2014-03-19",
+    "SCHOOL":"Furuvik fritidshem",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":7
+  },
+  {
+    "DATE":"2014-03-19",
+    "SCHOOL":"Hedlunda fritidshem",
+    "LAT":64.5763904,
+    "LNG":18.6845421,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-19",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":30
+  },
+  {
+    "DATE":"2014-03-19",
+    "SCHOOL":"Norräng fritidshem",
+    "LAT":64.6011263,
+    "LNG":18.7092215,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-19",
+    "SCHOOL":"Södermalm fritidshem",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-03-18",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":10
+  },
+  {
+    "DATE":"2014-03-18",
+    "SCHOOL":"Furuvik förskola",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-03-18",
+    "SCHOOL":"Johan Skyttes förskola",
+    "LAT":64.6006551,
+    "LNG":18.6709538,
+    "NUMBER":7
+  },
+  {
+    "DATE":"2014-03-18",
+    "SCHOOL":"Jonsta förskola",
+    "LAT":64.586087,
+    "LNG":18.670459,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-18",
+    "SCHOOL":"Morotens förskola",
+    "LAT":64.5996781,
+    "LNG":18.7096914,
+    "NUMBER":7
+  },
+  {
+    "DATE":"2014-03-18",
+    "SCHOOL":"Filurens förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-03-18",
+    "SCHOOL":"Norrskenet förskola",
+    "LAT":64.6005173,
+    "LNG":18.7061959,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-18",
+    "SCHOOL":"Södermalm förskola Daggkåpan",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-18",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":9
+  },
+  {
+    "DATE":"2014-03-18",
+    "SCHOOL":"Hedlunda förskola",
+    "LAT":64.5385012,
+    "LNG":18.7166307,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-03-18",
+    "SCHOOL":"Rusksele förskola",
+    "LAT":64.8150245,
+    "LNG":18.8954754,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-03-18",
+    "SCHOOL":"Umgransele förskola",
+    "LAT":64.6886934,
+    "LNG":18.4080427,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-18",
+    "SCHOOL":"Forsdala Fritidshem",
+    "LAT":64.5796517,
+    "LNG":18.6730359,
+    "NUMBER":9
+  },
+  {
+    "DATE":"2014-03-18",
+    "SCHOOL":"Furuvik fritidshem",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":8
+  },
+  {
+    "DATE":"2014-03-18",
+    "SCHOOL":"Hedlunda fritidshem",
+    "LAT":64.5763904,
+    "LNG":18.6845421,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-18",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":20
+  },
+  {
+    "DATE":"2014-03-18",
+    "SCHOOL":"Norräng fritidshem",
+    "LAT":64.6011263,
+    "LNG":18.7092215,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-03-18",
+    "SCHOOL":"Rusksele fritidshem",
+    "LAT":64.814345,
+    "LNG":18.8947373,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-18",
+    "SCHOOL":"Södermalm fritidshem",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-17",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":9
+  },
+  {
+    "DATE":"2014-03-17",
+    "SCHOOL":"Furuvik förskola",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-03-17",
+    "SCHOOL":"Jonsta förskola",
+    "LAT":64.586087,
+    "LNG":18.670459,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-03-17",
+    "SCHOOL":"Morotens förskola",
+    "LAT":64.5996781,
+    "LNG":18.7096914,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-03-17",
+    "SCHOOL":"Filurens förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-03-17",
+    "SCHOOL":"Norrskenet förskola",
+    "LAT":64.6005173,
+    "LNG":18.7061959,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-03-17",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-03-17",
+    "SCHOOL":"Hedlunda förskola",
+    "LAT":64.5385012,
+    "LNG":18.7166307,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-17",
+    "SCHOOL":"Knaften förskola",
+    "LAT":64.4477167,
+    "LNG":18.6356589,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-03-17",
+    "SCHOOL":"Rusksele förskola",
+    "LAT":64.8150245,
+    "LNG":18.8954754,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-17",
+    "SCHOOL":"Forsdala Fritidshem",
+    "LAT":64.5796517,
+    "LNG":18.6730359,
+    "NUMBER":28
+  },
+  {
+    "DATE":"2014-03-17",
+    "SCHOOL":"Furuvik fritidshem",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-03-17",
+    "SCHOOL":"Hedlunda fritidshem",
+    "LAT":64.5763904,
+    "LNG":18.6845421,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-17",
+    "SCHOOL":"Knaften fritidshem",
+    "LAT":64.4499996,
+    "LNG":18.6333333,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-17",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":17
+  },
+  {
+    "DATE":"2014-03-17",
+    "SCHOOL":"Norräng fritidshem",
+    "LAT":64.6011263,
+    "LNG":18.7092215,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-03-17",
+    "SCHOOL":"Rusksele fritidshem",
+    "LAT":64.814345,
+    "LNG":18.8947373,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-17",
+    "SCHOOL":"Södermalm fritidshem",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-14",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":9
+  },
+  {
+    "DATE":"2014-03-14",
+    "SCHOOL":"Furuvik förskola",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-14",
+    "SCHOOL":"Johan Skyttes förskola",
+    "LAT":64.6006551,
+    "LNG":18.6709538,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-14",
+    "SCHOOL":"Jonsta förskola",
+    "LAT":64.586087,
+    "LNG":18.670459,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-14",
+    "SCHOOL":"Morotens förskola",
+    "LAT":64.5996781,
+    "LNG":18.7096914,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-03-14",
+    "SCHOOL":"Filurens förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-03-14",
+    "SCHOOL":"Norrskenet förskola",
+    "LAT":64.6005173,
+    "LNG":18.7061959,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-14",
+    "SCHOOL":"Södermalm förskola Daggkåpan",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-14",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-03-14",
+    "SCHOOL":"Hedlunda förskola",
+    "LAT":64.5385012,
+    "LNG":18.7166307,
+    "NUMBER":7
+  },
+  {
+    "DATE":"2014-03-14",
+    "SCHOOL":"Knaften förskola",
+    "LAT":64.4477167,
+    "LNG":18.6356589,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-14",
+    "SCHOOL":"Rusksele förskola",
+    "LAT":64.8150245,
+    "LNG":18.8954754,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-14",
+    "SCHOOL":"Umgransele förskola",
+    "LAT":64.6886934,
+    "LNG":18.4080427,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-14",
+    "SCHOOL":"Örträsk förskola",
+    "LAT":64.1342652,
+    "LNG":18.9842314,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-14",
+    "SCHOOL":"Forsdala Fritidshem",
+    "LAT":64.5796517,
+    "LNG":18.6730359,
+    "NUMBER":10
+  },
+  {
+    "DATE":"2014-03-14",
+    "SCHOOL":"Furuvik fritidshem",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":10
+  },
+  {
+    "DATE":"2014-03-14",
+    "SCHOOL":"Hedlunda fritidshem",
+    "LAT":64.5763904,
+    "LNG":18.6845421,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-14",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":17
+  },
+  {
+    "DATE":"2014-03-14",
+    "SCHOOL":"Norräng fritidshem",
+    "LAT":64.6011263,
+    "LNG":18.7092215,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-14",
+    "SCHOOL":"Södermalm fritidshem",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-03-13",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-03-13",
+    "SCHOOL":"Furuvik förskola",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-03-13",
+    "SCHOOL":"Johan Skyttes förskola",
+    "LAT":64.6006551,
+    "LNG":18.6709538,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-03-13",
+    "SCHOOL":"Jonsta förskola",
+    "LAT":64.586087,
+    "LNG":18.670459,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-13",
+    "SCHOOL":"Morotens förskola",
+    "LAT":64.5996781,
+    "LNG":18.7096914,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-03-13",
+    "SCHOOL":"Filurens förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-13",
+    "SCHOOL":"Norrskenet förskola",
+    "LAT":64.6005173,
+    "LNG":18.7061959,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-03-13",
+    "SCHOOL":"Södermalm förskola Daggkåpan",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-13",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-03-13",
+    "SCHOOL":"Hedlunda förskola",
+    "LAT":64.5385012,
+    "LNG":18.7166307,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-03-13",
+    "SCHOOL":"Knaften förskola",
+    "LAT":64.4477167,
+    "LNG":18.6356589,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-13",
+    "SCHOOL":"Rusksele förskola",
+    "LAT":64.8150245,
+    "LNG":18.8954754,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-03-13",
+    "SCHOOL":"Umgransele förskola",
+    "LAT":64.6886934,
+    "LNG":18.4080427,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-13",
+    "SCHOOL":"Örträsk förskola",
+    "LAT":64.1342652,
+    "LNG":18.9842314,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-13",
+    "SCHOOL":"Forsdala Fritidshem",
+    "LAT":64.5796517,
+    "LNG":18.6730359,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-03-13",
+    "SCHOOL":"Furuvik fritidshem",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":8
+  },
+  {
+    "DATE":"2014-03-13",
+    "SCHOOL":"Hedlunda fritidshem",
+    "LAT":64.5763904,
+    "LNG":18.6845421,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-13",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":19
+  },
+  {
+    "DATE":"2014-03-13",
+    "SCHOOL":"Norräng fritidshem",
+    "LAT":64.6011263,
+    "LNG":18.7092215,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-13",
+    "SCHOOL":"Södermalm fritidshem",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-03-12",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-03-12",
+    "SCHOOL":"Furuvik förskola",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":8
+  },
+  {
+    "DATE":"2014-03-12",
+    "SCHOOL":"Johan Skyttes förskola",
+    "LAT":64.6006551,
+    "LNG":18.6709538,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-03-12",
+    "SCHOOL":"Jonsta förskola",
+    "LAT":64.586087,
+    "LNG":18.670459,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-12",
+    "SCHOOL":"Lövstugan förskola",
+    "LAT":64.5973375,
+    "LNG":18.7112576,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-12",
+    "SCHOOL":"Morotens förskola",
+    "LAT":64.5996781,
+    "LNG":18.7096914,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-03-12",
+    "SCHOOL":"Filurens förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-12",
+    "SCHOOL":"Norrskenet förskola",
+    "LAT":64.6005173,
+    "LNG":18.7061959,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-12",
+    "SCHOOL":"Södermalm förskola Daggkåpan",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-12",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-03-12",
+    "SCHOOL":"Hedlunda förskola",
+    "LAT":64.5385012,
+    "LNG":18.7166307,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-03-12",
+    "SCHOOL":"Knaften förskola",
+    "LAT":64.4477167,
+    "LNG":18.6356589,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-12",
+    "SCHOOL":"Kristineberg förskola",
+    "LAT":65.0601416,
+    "LNG":18.583958,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-12",
+    "SCHOOL":"Rusksele förskola",
+    "LAT":64.8150245,
+    "LNG":18.8954754,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-12",
+    "SCHOOL":"Umgransele förskola",
+    "LAT":64.6886934,
+    "LNG":18.4080427,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-12",
+    "SCHOOL":"Örträsk förskola",
+    "LAT":64.1342652,
+    "LNG":18.9842314,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-12",
+    "SCHOOL":"Forsdala Fritidshem",
+    "LAT":64.5796517,
+    "LNG":18.6730359,
+    "NUMBER":8
+  },
+  {
+    "DATE":"2014-03-12",
+    "SCHOOL":"Furuvik fritidshem",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":9
+  },
+  {
+    "DATE":"2014-03-12",
+    "SCHOOL":"Hedlunda fritidshem",
+    "LAT":64.5763904,
+    "LNG":18.6845421,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-03-12",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":16
+  },
+  {
+    "DATE":"2014-03-12",
+    "SCHOOL":"Norräng fritidshem",
+    "LAT":64.6011263,
+    "LNG":18.7092215,
+    "NUMBER":10
+  },
+  {
+    "DATE":"2014-03-12",
+    "SCHOOL":"Södermalm fritidshem",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-11",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":8
+  },
+  {
+    "DATE":"2014-03-11",
+    "SCHOOL":"Furuvik förskola",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":8
+  },
+  {
+    "DATE":"2014-03-11",
+    "SCHOOL":"Johan Skyttes förskola",
+    "LAT":64.6006551,
+    "LNG":18.6709538,
+    "NUMBER":12
+  },
+  {
+    "DATE":"2014-03-11",
+    "SCHOOL":"Jonsta förskola",
+    "LAT":64.586087,
+    "LNG":18.670459,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-03-11",
+    "SCHOOL":"Lövstugan förskola",
+    "LAT":64.5973375,
+    "LNG":18.7112576,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-11",
+    "SCHOOL":"Morotens förskola",
+    "LAT":64.5996781,
+    "LNG":18.7096914,
+    "NUMBER":7
+  },
+  {
+    "DATE":"2014-03-11",
+    "SCHOOL":"Filurens förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-11",
+    "SCHOOL":"Norrskenet förskola",
+    "LAT":64.6005173,
+    "LNG":18.7061959,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-11",
+    "SCHOOL":"Södermalm förskola Daggkåpan",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-11",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":8
+  },
+  {
+    "DATE":"2014-03-11",
+    "SCHOOL":"Hedlunda förskola",
+    "LAT":64.5385012,
+    "LNG":18.7166307,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-03-11",
+    "SCHOOL":"Knaften förskola",
+    "LAT":64.4477167,
+    "LNG":18.6356589,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-03-11",
+    "SCHOOL":"Kristineberg förskola",
+    "LAT":65.0601416,
+    "LNG":18.583958,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-11",
+    "SCHOOL":"Rusksele förskola",
+    "LAT":64.8150245,
+    "LNG":18.8954754,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-11",
+    "SCHOOL":"Umgransele förskola",
+    "LAT":64.6886934,
+    "LNG":18.4080427,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-11",
+    "SCHOOL":"Forsdala Fritidshem",
+    "LAT":64.5796517,
+    "LNG":18.6730359,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-03-11",
+    "SCHOOL":"Furuvik fritidshem",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":13
+  },
+  {
+    "DATE":"2014-03-11",
+    "SCHOOL":"Hedlunda fritidshem",
+    "LAT":64.5763904,
+    "LNG":18.6845421,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-11",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":9
+  },
+  {
+    "DATE":"2014-03-11",
+    "SCHOOL":"Norräng fritidshem",
+    "LAT":64.6011263,
+    "LNG":18.7092215,
+    "NUMBER":7
+  },
+  {
+    "DATE":"2014-03-11",
+    "SCHOOL":"Södermalm fritidshem",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-10",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":11
+  },
+  {
+    "DATE":"2014-03-10",
+    "SCHOOL":"Furuvik förskola",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-03-10",
+    "SCHOOL":"Johan Skyttes förskola",
+    "LAT":64.6006551,
+    "LNG":18.6709538,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-10",
+    "SCHOOL":"Jonsta förskola",
+    "LAT":64.586087,
+    "LNG":18.670459,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-10",
+    "SCHOOL":"Morotens förskola",
+    "LAT":64.5996781,
+    "LNG":18.7096914,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-10",
+    "SCHOOL":"Filurens förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-10",
+    "SCHOOL":"Norrskenet förskola",
+    "LAT":64.6005173,
+    "LNG":18.7061959,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-10",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":11
+  },
+  {
+    "DATE":"2014-03-10",
+    "SCHOOL":"Hedlunda förskola",
+    "LAT":64.5385012,
+    "LNG":18.7166307,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-03-10",
+    "SCHOOL":"Knaften förskola",
+    "LAT":64.4477167,
+    "LNG":18.6356589,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-03-10",
+    "SCHOOL":"Rusksele förskola",
+    "LAT":64.8150245,
+    "LNG":18.8954754,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-03-10",
+    "SCHOOL":"Umgransele förskola",
+    "LAT":64.6886934,
+    "LNG":18.4080427,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-10",
+    "SCHOOL":"Forsdala Fritidshem",
+    "LAT":64.5796517,
+    "LNG":18.6730359,
+    "NUMBER":18
+  },
+  {
+    "DATE":"2014-03-10",
+    "SCHOOL":"Furuvik fritidshem",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":10
+  },
+  {
+    "DATE":"2014-03-10",
+    "SCHOOL":"Hedlunda fritidshem",
+    "LAT":64.5763904,
+    "LNG":18.6845421,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-10",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":15
+  },
+  {
+    "DATE":"2014-03-10",
+    "SCHOOL":"Norräng fritidshem",
+    "LAT":64.6011263,
+    "LNG":18.7092215,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-10",
+    "SCHOOL":"Södermalm fritidshem",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-09",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-09",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-09",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-08",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-08",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-08",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-07",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":10
+  },
+  {
+    "DATE":"2014-03-07",
+    "SCHOOL":"Furuvik förskola",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-07",
+    "SCHOOL":"Johan Skyttes förskola",
+    "LAT":64.6006551,
+    "LNG":18.6709538,
+    "NUMBER":7
+  },
+  {
+    "DATE":"2014-03-07",
+    "SCHOOL":"Jonsta förskola",
+    "LAT":64.586087,
+    "LNG":18.670459,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-07",
+    "SCHOOL":"Lövstugan förskola",
+    "LAT":64.5973375,
+    "LNG":18.7112576,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-07",
+    "SCHOOL":"Morotens förskola",
+    "LAT":64.5996781,
+    "LNG":18.7096914,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-03-07",
+    "SCHOOL":"Filurens förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-03-07",
+    "SCHOOL":"Norrskenet förskola",
+    "LAT":64.6005173,
+    "LNG":18.7061959,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-07",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":7
+  },
+  {
+    "DATE":"2014-03-07",
+    "SCHOOL":"Hedlunda förskola",
+    "LAT":64.5385012,
+    "LNG":18.7166307,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-03-07",
+    "SCHOOL":"Knaften förskola",
+    "LAT":64.4477167,
+    "LNG":18.6356589,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-07",
+    "SCHOOL":"Rusksele förskola",
+    "LAT":64.8150245,
+    "LNG":18.8954754,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-03-07",
+    "SCHOOL":"Furuvik fritidshem",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-03-07",
+    "SCHOOL":"Hedlunda fritidshem",
+    "LAT":64.5763904,
+    "LNG":18.6845421,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-07",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":8
+  },
+  {
+    "DATE":"2014-03-07",
+    "SCHOOL":"Norräng fritidshem",
+    "LAT":64.6011263,
+    "LNG":18.7092215,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-07",
+    "SCHOOL":"Södermalm fritidshem",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-06",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-03-06",
+    "SCHOOL":"Furuvik förskola",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-06",
+    "SCHOOL":"Johan Skyttes förskola",
+    "LAT":64.6006551,
+    "LNG":18.6709538,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-03-06",
+    "SCHOOL":"Jonsta förskola",
+    "LAT":64.586087,
+    "LNG":18.670459,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-06",
+    "SCHOOL":"Lövstugan förskola",
+    "LAT":64.5973375,
+    "LNG":18.7112576,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-06",
+    "SCHOOL":"Morotens förskola",
+    "LAT":64.5996781,
+    "LNG":18.7096914,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-06",
+    "SCHOOL":"Filurens förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-06",
+    "SCHOOL":"Norrskenet förskola",
+    "LAT":64.6005173,
+    "LNG":18.7061959,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-06",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-06",
+    "SCHOOL":"Hedlunda förskola",
+    "LAT":64.5385012,
+    "LNG":18.7166307,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-03-06",
+    "SCHOOL":"Knaften förskola",
+    "LAT":64.4477167,
+    "LNG":18.6356589,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-06",
+    "SCHOOL":"Kristineberg förskola",
+    "LAT":65.0601416,
+    "LNG":18.583958,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-06",
+    "SCHOOL":"Rusksele förskola",
+    "LAT":64.8150245,
+    "LNG":18.8954754,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-03-06",
+    "SCHOOL":"Umgransele förskola",
+    "LAT":64.6886934,
+    "LNG":18.4080427,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-06",
+    "SCHOOL":"Örträsk förskola",
+    "LAT":64.1342652,
+    "LNG":18.9842314,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-06",
+    "SCHOOL":"Forsdala Fritidshem",
+    "LAT":64.5796517,
+    "LNG":18.6730359,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-06",
+    "SCHOOL":"Furuvik fritidshem",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-06",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":15
+  },
+  {
+    "DATE":"2014-03-06",
+    "SCHOOL":"Södermalm fritidshem",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-05",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-03-05",
+    "SCHOOL":"Furuvik förskola",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-05",
+    "SCHOOL":"Johan Skyttes förskola",
+    "LAT":64.6006551,
+    "LNG":18.6709538,
+    "NUMBER":9
+  },
+  {
+    "DATE":"2014-03-05",
+    "SCHOOL":"Lövstugan förskola",
+    "LAT":64.5973375,
+    "LNG":18.7112576,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-03-05",
+    "SCHOOL":"Filurens förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-05",
+    "SCHOOL":"Norrskenet förskola",
+    "LAT":64.6005173,
+    "LNG":18.7061959,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-05",
+    "SCHOOL":"Södermalm förskola Daggkåpan",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-05",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-03-05",
+    "SCHOOL":"Hedlunda förskola",
+    "LAT":64.5385012,
+    "LNG":18.7166307,
+    "NUMBER":7
+  },
+  {
+    "DATE":"2014-03-05",
+    "SCHOOL":"Knaften förskola",
+    "LAT":64.4477167,
+    "LNG":18.6356589,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-05",
+    "SCHOOL":"Kristineberg förskola",
+    "LAT":65.0601416,
+    "LNG":18.583958,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-05",
+    "SCHOOL":"Rusksele förskola",
+    "LAT":64.8150245,
+    "LNG":18.8954754,
+    "NUMBER":7
+  },
+  {
+    "DATE":"2014-03-05",
+    "SCHOOL":"Umgransele förskola",
+    "LAT":64.6886934,
+    "LNG":18.4080427,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-05",
+    "SCHOOL":"Örträsk förskola",
+    "LAT":64.1342652,
+    "LNG":18.9842314,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-05",
+    "SCHOOL":"Forsdala Fritidshem",
+    "LAT":64.5796517,
+    "LNG":18.6730359,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-03-05",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":11
+  },
+  {
+    "DATE":"2014-03-05",
+    "SCHOOL":"Södermalm fritidshem",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-04",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":7
+  },
+  {
+    "DATE":"2014-03-04",
+    "SCHOOL":"Furuvik förskola",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-03-04",
+    "SCHOOL":"Johan Skyttes förskola",
+    "LAT":64.6006551,
+    "LNG":18.6709538,
+    "NUMBER":7
+  },
+  {
+    "DATE":"2014-03-04",
+    "SCHOOL":"Jonsta förskola",
+    "LAT":64.586087,
+    "LNG":18.670459,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-03-04",
+    "SCHOOL":"Lövstugan förskola",
+    "LAT":64.5973375,
+    "LNG":18.7112576,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-03-04",
+    "SCHOOL":"Morotens förskola",
+    "LAT":64.5996781,
+    "LNG":18.7096914,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-04",
+    "SCHOOL":"Filurens förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-04",
+    "SCHOOL":"Norrskenet förskola",
+    "LAT":64.6005173,
+    "LNG":18.7061959,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-04",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-03-04",
+    "SCHOOL":"Hedlunda förskola",
+    "LAT":64.5385012,
+    "LNG":18.7166307,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-03-04",
+    "SCHOOL":"Knaften förskola",
+    "LAT":64.4477167,
+    "LNG":18.6356589,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-04",
+    "SCHOOL":"Kristineberg förskola",
+    "LAT":65.0601416,
+    "LNG":18.583958,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-04",
+    "SCHOOL":"Rusksele förskola",
+    "LAT":64.8150245,
+    "LNG":18.8954754,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-03-04",
+    "SCHOOL":"Örträsk förskola",
+    "LAT":64.1342652,
+    "LNG":18.9842314,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-04",
+    "SCHOOL":"Forsdala Fritidshem",
+    "LAT":64.5796517,
+    "LNG":18.6730359,
+    "NUMBER":16
+  },
+  {
+    "DATE":"2014-03-04",
+    "SCHOOL":"Furuvik fritidshem",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-04",
+    "SCHOOL":"Hedlunda fritidshem",
+    "LAT":64.5763904,
+    "LNG":18.6845421,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-03-04",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":9
+  },
+  {
+    "DATE":"2014-03-04",
+    "SCHOOL":"Norräng fritidshem",
+    "LAT":64.6011263,
+    "LNG":18.7092215,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-04",
+    "SCHOOL":"Umgransele fritidshem",
+    "LAT":64.6886934,
+    "LNG":18.4080427,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-03",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":7
+  },
+  {
+    "DATE":"2014-03-03",
+    "SCHOOL":"Furuvik förskola",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-03",
+    "SCHOOL":"Johan Skyttes förskola",
+    "LAT":64.6006551,
+    "LNG":18.6709538,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-03-03",
+    "SCHOOL":"Jonsta förskola",
+    "LAT":64.586087,
+    "LNG":18.670459,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-03-03",
+    "SCHOOL":"Lövstugan förskola",
+    "LAT":64.5973375,
+    "LNG":18.7112576,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-03-03",
+    "SCHOOL":"Morotens förskola",
+    "LAT":64.5996781,
+    "LNG":18.7096914,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-03",
+    "SCHOOL":"Filurens förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-03-03",
+    "SCHOOL":"Norrskenet förskola",
+    "LAT":64.6005173,
+    "LNG":18.7061959,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-03",
+    "SCHOOL":"Södermalm förskola Daggkåpan",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-03",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-03-03",
+    "SCHOOL":"Hedlunda förskola",
+    "LAT":64.5385012,
+    "LNG":18.7166307,
+    "NUMBER":7
+  },
+  {
+    "DATE":"2014-03-03",
+    "SCHOOL":"Kristineberg förskola",
+    "LAT":65.0601416,
+    "LNG":18.583958,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-03",
+    "SCHOOL":"Rusksele förskola",
+    "LAT":64.8150245,
+    "LNG":18.8954754,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-03-03",
+    "SCHOOL":"Forsdala Fritidshem",
+    "LAT":64.5796517,
+    "LNG":18.6730359,
+    "NUMBER":14
+  },
+  {
+    "DATE":"2014-03-03",
+    "SCHOOL":"Furuvik fritidshem",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-03",
+    "SCHOOL":"Hedlunda fritidshem",
+    "LAT":64.5763904,
+    "LNG":18.6845421,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-03-03",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":12
+  },
+  {
+    "DATE":"2014-03-03",
+    "SCHOOL":"Norräng fritidshem",
+    "LAT":64.6011263,
+    "LNG":18.7092215,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-03-03",
+    "SCHOOL":"Rusksele fritidshem",
+    "LAT":64.814345,
+    "LNG":18.8947373,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-03-01",
+    "SCHOOL":"Hedlunda förskola",
+    "LAT":64.5385012,
+    "LNG":18.7166307,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-28",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":9
+  },
+  {
+    "DATE":"2014-02-28",
+    "SCHOOL":"Furuvik förskola",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-02-28",
+    "SCHOOL":"Johan Skyttes förskola",
+    "LAT":64.6006551,
+    "LNG":18.6709538,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-28",
+    "SCHOOL":"Jonsta förskola",
+    "LAT":64.586087,
+    "LNG":18.670459,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-28",
+    "SCHOOL":"Lövstugan förskola",
+    "LAT":64.5973375,
+    "LNG":18.7112576,
+    "NUMBER":9
+  },
+  {
+    "DATE":"2014-02-28",
+    "SCHOOL":"Filurens förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-02-28",
+    "SCHOOL":"Norrskenet förskola",
+    "LAT":64.6005173,
+    "LNG":18.7061959,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-28",
+    "SCHOOL":"Södermalm förskola Daggkåpan",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-28",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":8
+  },
+  {
+    "DATE":"2014-02-28",
+    "SCHOOL":"Hedlunda förskola",
+    "LAT":64.5385012,
+    "LNG":18.7166307,
+    "NUMBER":7
+  },
+  {
+    "DATE":"2014-02-28",
+    "SCHOOL":"Rusksele förskola",
+    "LAT":64.8150245,
+    "LNG":18.8954754,
+    "NUMBER":9
+  },
+  {
+    "DATE":"2014-02-28",
+    "SCHOOL":"Umgransele förskola",
+    "LAT":64.6886934,
+    "LNG":18.4080427,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-28",
+    "SCHOOL":"Forsdala Fritidshem",
+    "LAT":64.5796517,
+    "LNG":18.6730359,
+    "NUMBER":9
+  },
+  {
+    "DATE":"2014-02-28",
+    "SCHOOL":"Furuvik fritidshem",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":7
+  },
+  {
+    "DATE":"2014-02-28",
+    "SCHOOL":"Hedlunda fritidshem",
+    "LAT":64.5763904,
+    "LNG":18.6845421,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-28",
+    "SCHOOL":"Knaften fritidshem",
+    "LAT":64.4499996,
+    "LNG":18.6333333,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-28",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":15
+  },
+  {
+    "DATE":"2014-02-28",
+    "SCHOOL":"Norräng fritidshem",
+    "LAT":64.6011263,
+    "LNG":18.7092215,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-28",
+    "SCHOOL":"Södermalm fritidshem",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-27",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":7
+  },
+  {
+    "DATE":"2014-02-27",
+    "SCHOOL":"Furuvik förskola",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-27",
+    "SCHOOL":"Johan Skyttes förskola",
+    "LAT":64.6006551,
+    "LNG":18.6709538,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-02-27",
+    "SCHOOL":"Jonsta förskola",
+    "LAT":64.586087,
+    "LNG":18.670459,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-27",
+    "SCHOOL":"Lövstugan förskola",
+    "LAT":64.5973375,
+    "LNG":18.7112576,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-02-27",
+    "SCHOOL":"Morotens förskola",
+    "LAT":64.5996781,
+    "LNG":18.7096914,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-27",
+    "SCHOOL":"Filurens förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":7
+  },
+  {
+    "DATE":"2014-02-27",
+    "SCHOOL":"Norrskenet förskola",
+    "LAT":64.6005173,
+    "LNG":18.7061959,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-02-27",
+    "SCHOOL":"Södermalm förskola Daggkåpan",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-27",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":11
+  },
+  {
+    "DATE":"2014-02-27",
+    "SCHOOL":"Hedlunda förskola",
+    "LAT":64.5385012,
+    "LNG":18.7166307,
+    "NUMBER":12
+  },
+  {
+    "DATE":"2014-02-27",
+    "SCHOOL":"Knaften förskola",
+    "LAT":64.4477167,
+    "LNG":18.6356589,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-27",
+    "SCHOOL":"Rusksele förskola",
+    "LAT":64.8150245,
+    "LNG":18.8954754,
+    "NUMBER":11
+  },
+  {
+    "DATE":"2014-02-27",
+    "SCHOOL":"Umgransele förskola",
+    "LAT":64.6886934,
+    "LNG":18.4080427,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-27",
+    "SCHOOL":"Forsdala Fritidshem",
+    "LAT":64.5796517,
+    "LNG":18.6730359,
+    "NUMBER":10
+  },
+  {
+    "DATE":"2014-02-27",
+    "SCHOOL":"Furuvik fritidshem",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-27",
+    "SCHOOL":"Hedlunda fritidshem",
+    "LAT":64.5763904,
+    "LNG":18.6845421,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-27",
+    "SCHOOL":"Knaften fritidshem",
+    "LAT":64.4499996,
+    "LNG":18.6333333,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-27",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":18
+  },
+  {
+    "DATE":"2014-02-27",
+    "SCHOOL":"Norräng fritidshem",
+    "LAT":64.6011263,
+    "LNG":18.7092215,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-26",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-02-26",
+    "SCHOOL":"Furuvik förskola",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-02-26",
+    "SCHOOL":"Johan Skyttes förskola",
+    "LAT":64.6006551,
+    "LNG":18.6709538,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-26",
+    "SCHOOL":"Jonsta förskola",
+    "LAT":64.586087,
+    "LNG":18.670459,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-26",
+    "SCHOOL":"Lövstugan förskola",
+    "LAT":64.5973375,
+    "LNG":18.7112576,
+    "NUMBER":7
+  },
+  {
+    "DATE":"2014-02-26",
+    "SCHOOL":"Filurens förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-02-26",
+    "SCHOOL":"Norrskenet förskola",
+    "LAT":64.6005173,
+    "LNG":18.7061959,
+    "NUMBER":7
+  },
+  {
+    "DATE":"2014-02-26",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-02-26",
+    "SCHOOL":"Hedlunda förskola",
+    "LAT":64.5385012,
+    "LNG":18.7166307,
+    "NUMBER":11
+  },
+  {
+    "DATE":"2014-02-26",
+    "SCHOOL":"Knaften förskola",
+    "LAT":64.4477167,
+    "LNG":18.6356589,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-26",
+    "SCHOOL":"Rusksele förskola",
+    "LAT":64.8150245,
+    "LNG":18.8954754,
+    "NUMBER":9
+  },
+  {
+    "DATE":"2014-02-26",
+    "SCHOOL":"Umgransele förskola",
+    "LAT":64.6886934,
+    "LNG":18.4080427,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-26",
+    "SCHOOL":"Forsdala Fritidshem",
+    "LAT":64.5796517,
+    "LNG":18.6730359,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-26",
+    "SCHOOL":"Furuvik fritidshem",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":9
+  },
+  {
+    "DATE":"2014-02-26",
+    "SCHOOL":"Hedlunda fritidshem",
+    "LAT":64.5763904,
+    "LNG":18.6845421,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-26",
+    "SCHOOL":"Knaften fritidshem",
+    "LAT":64.4499996,
+    "LNG":18.6333333,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-26",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":17
+  },
+  {
+    "DATE":"2014-02-26",
+    "SCHOOL":"Norräng fritidshem",
+    "LAT":64.6011263,
+    "LNG":18.7092215,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-25",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-25",
+    "SCHOOL":"Furuvik förskola",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-25",
+    "SCHOOL":"Johan Skyttes förskola",
+    "LAT":64.6006551,
+    "LNG":18.6709538,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-25",
+    "SCHOOL":"Jonsta förskola",
+    "LAT":64.586087,
+    "LNG":18.670459,
+    "NUMBER":8
+  },
+  {
+    "DATE":"2014-02-25",
+    "SCHOOL":"Lövstugan förskola",
+    "LAT":64.5973375,
+    "LNG":18.7112576,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-02-25",
+    "SCHOOL":"Filurens förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-25",
+    "SCHOOL":"Norrskenet förskola",
+    "LAT":64.6005173,
+    "LNG":18.7061959,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-25",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-02-25",
+    "SCHOOL":"Hedlunda förskola",
+    "LAT":64.5385012,
+    "LNG":18.7166307,
+    "NUMBER":9
+  },
+  {
+    "DATE":"2014-02-25",
+    "SCHOOL":"Rusksele förskola",
+    "LAT":64.8150245,
+    "LNG":18.8954754,
+    "NUMBER":11
+  },
+  {
+    "DATE":"2014-02-25",
+    "SCHOOL":"Umgransele förskola",
+    "LAT":64.6886934,
+    "LNG":18.4080427,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-25",
+    "SCHOOL":"Forsdala Fritidshem",
+    "LAT":64.5796517,
+    "LNG":18.6730359,
+    "NUMBER":7
+  },
+  {
+    "DATE":"2014-02-25",
+    "SCHOOL":"Furuvik fritidshem",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-25",
+    "SCHOOL":"Hedlunda fritidshem",
+    "LAT":64.5763904,
+    "LNG":18.6845421,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-02-25",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":22
+  },
+  {
+    "DATE":"2014-02-25",
+    "SCHOOL":"Norräng fritidshem",
+    "LAT":64.6011263,
+    "LNG":18.7092215,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-25",
+    "SCHOOL":"Södermalm fritidshem",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-24",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-24",
+    "SCHOOL":"Furuvik förskola",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-02-24",
+    "SCHOOL":"Johan Skyttes förskola",
+    "LAT":64.6006551,
+    "LNG":18.6709538,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-02-24",
+    "SCHOOL":"Jonsta förskola",
+    "LAT":64.586087,
+    "LNG":18.670459,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-02-24",
+    "SCHOOL":"Lövstugan förskola",
+    "LAT":64.5973375,
+    "LNG":18.7112576,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-24",
+    "SCHOOL":"Morotens förskola",
+    "LAT":64.5996781,
+    "LNG":18.7096914,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-24",
+    "SCHOOL":"Filurens förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-24",
+    "SCHOOL":"Norrskenet förskola",
+    "LAT":64.6005173,
+    "LNG":18.7061959,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-24",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-02-24",
+    "SCHOOL":"Hedlunda förskola",
+    "LAT":64.5385012,
+    "LNG":18.7166307,
+    "NUMBER":9
+  },
+  {
+    "DATE":"2014-02-24",
+    "SCHOOL":"Rusksele förskola",
+    "LAT":64.8150245,
+    "LNG":18.8954754,
+    "NUMBER":8
+  },
+  {
+    "DATE":"2014-02-24",
+    "SCHOOL":"Umgransele förskola",
+    "LAT":64.6886934,
+    "LNG":18.4080427,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-24",
+    "SCHOOL":"Forsdala Fritidshem",
+    "LAT":64.5796517,
+    "LNG":18.6730359,
+    "NUMBER":10
+  },
+  {
+    "DATE":"2014-02-24",
+    "SCHOOL":"Furuvik fritidshem",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-02-24",
+    "SCHOOL":"Hedlunda fritidshem",
+    "LAT":64.5763904,
+    "LNG":18.6845421,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-02-24",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":11
+  },
+  {
+    "DATE":"2014-02-24",
+    "SCHOOL":"Norräng fritidshem",
+    "LAT":64.6011263,
+    "LNG":18.7092215,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-24",
+    "SCHOOL":"Rusksele fritidshem",
+    "LAT":64.814345,
+    "LNG":18.8947373,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-21",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-21",
+    "SCHOOL":"Furuvik förskola",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-21",
+    "SCHOOL":"Johan Skyttes förskola",
+    "LAT":64.6006551,
+    "LNG":18.6709538,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-21",
+    "SCHOOL":"Jonsta förskola",
+    "LAT":64.586087,
+    "LNG":18.670459,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-02-21",
+    "SCHOOL":"Lövstugan förskola",
+    "LAT":64.5973375,
+    "LNG":18.7112576,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-21",
+    "SCHOOL":"Morotens förskola",
+    "LAT":64.5996781,
+    "LNG":18.7096914,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-21",
+    "SCHOOL":"Filurens förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-21",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-21",
+    "SCHOOL":"Hedlunda förskola",
+    "LAT":64.5385012,
+    "LNG":18.7166307,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-21",
+    "SCHOOL":"Rusksele förskola",
+    "LAT":64.8150245,
+    "LNG":18.8954754,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-21",
+    "SCHOOL":"Umgransele förskola",
+    "LAT":64.6886934,
+    "LNG":18.4080427,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-21",
+    "SCHOOL":"Örträsk förskola",
+    "LAT":64.1342652,
+    "LNG":18.9842314,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-21",
+    "SCHOOL":"Forsdala Fritidshem",
+    "LAT":64.5796517,
+    "LNG":18.6730359,
+    "NUMBER":12
+  },
+  {
+    "DATE":"2014-02-21",
+    "SCHOOL":"Furuvik fritidshem",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-21",
+    "SCHOOL":"Hedlunda fritidshem",
+    "LAT":64.5763904,
+    "LNG":18.6845421,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-21",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":12
+  },
+  {
+    "DATE":"2014-02-21",
+    "SCHOOL":"Norräng fritidshem",
+    "LAT":64.6011263,
+    "LNG":18.7092215,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-21",
+    "SCHOOL":"Södermalm fritidshem",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-21",
+    "SCHOOL":"Umgransele fritidshem",
+    "LAT":64.6886934,
+    "LNG":18.4080427,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-21",
+    "SCHOOL":"Örträsk fritidshem",
+    "LAT":64.1342652,
+    "LNG":18.9842314,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-20",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-20",
+    "SCHOOL":"Furuvik förskola",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-20",
+    "SCHOOL":"Johan Skyttes förskola",
+    "LAT":64.6006551,
+    "LNG":18.6709538,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-02-20",
+    "SCHOOL":"Jonsta förskola",
+    "LAT":64.586087,
+    "LNG":18.670459,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-20",
+    "SCHOOL":"Lövstugan förskola",
+    "LAT":64.5973375,
+    "LNG":18.7112576,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-20",
+    "SCHOOL":"Filurens förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-20",
+    "SCHOOL":"Norrskenet förskola",
+    "LAT":64.6005173,
+    "LNG":18.7061959,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-20",
+    "SCHOOL":"Södermalm förskola Daggkåpan",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-20",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-20",
+    "SCHOOL":"Hedlunda förskola",
+    "LAT":64.5385012,
+    "LNG":18.7166307,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-02-20",
+    "SCHOOL":"Knaften förskola",
+    "LAT":64.4477167,
+    "LNG":18.6356589,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-20",
+    "SCHOOL":"Rusksele förskola",
+    "LAT":64.8150245,
+    "LNG":18.8954754,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-20",
+    "SCHOOL":"Umgransele förskola",
+    "LAT":64.6886934,
+    "LNG":18.4080427,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-20",
+    "SCHOOL":"Forsdala Fritidshem",
+    "LAT":64.5796517,
+    "LNG":18.6730359,
+    "NUMBER":7
+  },
+  {
+    "DATE":"2014-02-20",
+    "SCHOOL":"Hedlunda fritidshem",
+    "LAT":64.5763904,
+    "LNG":18.6845421,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-02-20",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":12
+  },
+  {
+    "DATE":"2014-02-20",
+    "SCHOOL":"Norräng fritidshem",
+    "LAT":64.6011263,
+    "LNG":18.7092215,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-20",
+    "SCHOOL":"Rusksele fritidshem",
+    "LAT":64.814345,
+    "LNG":18.8947373,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-20",
+    "SCHOOL":"Södermalm fritidshem",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-19",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-19",
+    "SCHOOL":"Furuvik förskola",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-02-19",
+    "SCHOOL":"Johan Skyttes förskola",
+    "LAT":64.6006551,
+    "LNG":18.6709538,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-02-19",
+    "SCHOOL":"Jonsta förskola",
+    "LAT":64.586087,
+    "LNG":18.670459,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-19",
+    "SCHOOL":"Lövstugan förskola",
+    "LAT":64.5973375,
+    "LNG":18.7112576,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-19",
+    "SCHOOL":"Morotens förskola",
+    "LAT":64.5996781,
+    "LNG":18.7096914,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-19",
+    "SCHOOL":"Filurens förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-19",
+    "SCHOOL":"Norrskenet förskola",
+    "LAT":64.6005173,
+    "LNG":18.7061959,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-19",
+    "SCHOOL":"Södermalm förskola Daggkåpan",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-19",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-19",
+    "SCHOOL":"Hedlunda förskola",
+    "LAT":64.5385012,
+    "LNG":18.7166307,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-19",
+    "SCHOOL":"Knaften förskola",
+    "LAT":64.4477167,
+    "LNG":18.6356589,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-19",
+    "SCHOOL":"Kristineberg förskola",
+    "LAT":65.0601416,
+    "LNG":18.583958,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-19",
+    "SCHOOL":"Rusksele förskola",
+    "LAT":64.8150245,
+    "LNG":18.8954754,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-02-19",
+    "SCHOOL":"Umgransele förskola",
+    "LAT":64.6886934,
+    "LNG":18.4080427,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-19",
+    "SCHOOL":"Forsdala Fritidshem",
+    "LAT":64.5796517,
+    "LNG":18.6730359,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-19",
+    "SCHOOL":"Furuvik fritidshem",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":7
+  },
+  {
+    "DATE":"2014-02-19",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":13
+  },
+  {
+    "DATE":"2014-02-19",
+    "SCHOOL":"Norräng fritidshem",
+    "LAT":64.6011263,
+    "LNG":18.7092215,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-19",
+    "SCHOOL":"Rusksele fritidshem",
+    "LAT":64.814345,
+    "LNG":18.8947373,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-19",
+    "SCHOOL":"Södermalm fritidshem",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-18",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-18",
+    "SCHOOL":"Furuvik förskola",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-02-18",
+    "SCHOOL":"Johan Skyttes förskola",
+    "LAT":64.6006551,
+    "LNG":18.6709538,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-18",
+    "SCHOOL":"Jonsta förskola",
+    "LAT":64.586087,
+    "LNG":18.670459,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-02-18",
+    "SCHOOL":"Lövstugan förskola",
+    "LAT":64.5973375,
+    "LNG":18.7112576,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-18",
+    "SCHOOL":"Morotens förskola",
+    "LAT":64.5996781,
+    "LNG":18.7096914,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-18",
+    "SCHOOL":"Filurens förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-18",
+    "SCHOOL":"Norrskenet förskola",
+    "LAT":64.6005173,
+    "LNG":18.7061959,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-18",
+    "SCHOOL":"Södermalm förskola Daggkåpan",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-18",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-18",
+    "SCHOOL":"Hedlunda förskola",
+    "LAT":64.5385012,
+    "LNG":18.7166307,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-18",
+    "SCHOOL":"Knaften förskola",
+    "LAT":64.4477167,
+    "LNG":18.6356589,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-18",
+    "SCHOOL":"Rusksele förskola",
+    "LAT":64.8150245,
+    "LNG":18.8954754,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-18",
+    "SCHOOL":"Umgransele förskola",
+    "LAT":64.6886934,
+    "LNG":18.4080427,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-02-18",
+    "SCHOOL":"Forsdala Fritidshem",
+    "LAT":64.5796517,
+    "LNG":18.6730359,
+    "NUMBER":10
+  },
+  {
+    "DATE":"2014-02-18",
+    "SCHOOL":"Furuvik fritidshem",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-02-18",
+    "SCHOOL":"Hedlunda fritidshem",
+    "LAT":64.5763904,
+    "LNG":18.6845421,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-18",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":13
+  },
+  {
+    "DATE":"2014-02-18",
+    "SCHOOL":"Norräng fritidshem",
+    "LAT":64.6011263,
+    "LNG":18.7092215,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-02-18",
+    "SCHOOL":"Södermalm fritidshem",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-18",
+    "SCHOOL":"Örträsk fritidshem",
+    "LAT":64.1342652,
+    "LNG":18.9842314,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-17",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-17",
+    "SCHOOL":"Jonsta förskola",
+    "LAT":64.586087,
+    "LNG":18.670459,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-17",
+    "SCHOOL":"Lövstugan förskola",
+    "LAT":64.5973375,
+    "LNG":18.7112576,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-17",
+    "SCHOOL":"Morotens förskola",
+    "LAT":64.5996781,
+    "LNG":18.7096914,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-17",
+    "SCHOOL":"Filurens förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-17",
+    "SCHOOL":"Södermalm förskola Daggkåpan",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-17",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-17",
+    "SCHOOL":"Hedlunda förskola",
+    "LAT":64.5385012,
+    "LNG":18.7166307,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-17",
+    "SCHOOL":"Knaften förskola",
+    "LAT":64.4477167,
+    "LNG":18.6356589,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-17",
+    "SCHOOL":"Kristineberg förskola",
+    "LAT":65.0601416,
+    "LNG":18.583958,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-17",
+    "SCHOOL":"Umgransele förskola",
+    "LAT":64.6886934,
+    "LNG":18.4080427,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-17",
+    "SCHOOL":"Forsdala Fritidshem",
+    "LAT":64.5796517,
+    "LNG":18.6730359,
+    "NUMBER":7
+  },
+  {
+    "DATE":"2014-02-17",
+    "SCHOOL":"Furuvik fritidshem",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-17",
+    "SCHOOL":"Hedlunda fritidshem",
+    "LAT":64.5763904,
+    "LNG":18.6845421,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-17",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":15
+  },
+  {
+    "DATE":"2014-02-17",
+    "SCHOOL":"Norräng fritidshem",
+    "LAT":64.6011263,
+    "LNG":18.7092215,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-17",
+    "SCHOOL":"Södermalm fritidshem",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-17",
+    "SCHOOL":"Örträsk fritidshem",
+    "LAT":64.1342652,
+    "LNG":18.9842314,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-16",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-16",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-16",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-15",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-15",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-15",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-14",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":11
+  },
+  {
+    "DATE":"2014-02-14",
+    "SCHOOL":"Furuvik förskola",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-14",
+    "SCHOOL":"Johan Skyttes förskola",
+    "LAT":64.6006551,
+    "LNG":18.6709538,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-14",
+    "SCHOOL":"Jonsta förskola",
+    "LAT":64.586087,
+    "LNG":18.670459,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-14",
+    "SCHOOL":"Lövstugan förskola",
+    "LAT":64.5973375,
+    "LNG":18.7112576,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-14",
+    "SCHOOL":"Morotens förskola",
+    "LAT":64.5996781,
+    "LNG":18.7096914,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-14",
+    "SCHOOL":"Filurens förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-14",
+    "SCHOOL":"Norrskenet förskola",
+    "LAT":64.6005173,
+    "LNG":18.7061959,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-14",
+    "SCHOOL":"Södermalm förskola Daggkåpan",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-14",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":8
+  },
+  {
+    "DATE":"2014-02-14",
+    "SCHOOL":"Hedlunda förskola",
+    "LAT":64.5385012,
+    "LNG":18.7166307,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-14",
+    "SCHOOL":"Knaften förskola",
+    "LAT":64.4477167,
+    "LNG":18.6356589,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-14",
+    "SCHOOL":"Kristineberg förskola",
+    "LAT":65.0601416,
+    "LNG":18.583958,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-14",
+    "SCHOOL":"Rusksele förskola",
+    "LAT":64.8150245,
+    "LNG":18.8954754,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-14",
+    "SCHOOL":"Örträsk förskola",
+    "LAT":64.1342652,
+    "LNG":18.9842314,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-14",
+    "SCHOOL":"Forsdala Fritidshem",
+    "LAT":64.5796517,
+    "LNG":18.6730359,
+    "NUMBER":13
+  },
+  {
+    "DATE":"2014-02-14",
+    "SCHOOL":"Furuvik fritidshem",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-02-14",
+    "SCHOOL":"Hedlunda fritidshem",
+    "LAT":64.5763904,
+    "LNG":18.6845421,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-14",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":10
+  },
+  {
+    "DATE":"2014-02-14",
+    "SCHOOL":"Norräng fritidshem",
+    "LAT":64.6011263,
+    "LNG":18.7092215,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-14",
+    "SCHOOL":"Södermalm fritidshem",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-13",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-02-13",
+    "SCHOOL":"Furuvik förskola",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-13",
+    "SCHOOL":"Johan Skyttes förskola",
+    "LAT":64.6006551,
+    "LNG":18.6709538,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-13",
+    "SCHOOL":"Jonsta förskola",
+    "LAT":64.586087,
+    "LNG":18.670459,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-13",
+    "SCHOOL":"Lövstugan förskola",
+    "LAT":64.5973375,
+    "LNG":18.7112576,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-13",
+    "SCHOOL":"Morotens förskola",
+    "LAT":64.5996781,
+    "LNG":18.7096914,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-13",
+    "SCHOOL":"Filurens förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-13",
+    "SCHOOL":"Norrskenet förskola",
+    "LAT":64.6005173,
+    "LNG":18.7061959,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-13",
+    "SCHOOL":"Södermalm förskola Daggkåpan",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-13",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-13",
+    "SCHOOL":"Hedlunda förskola",
+    "LAT":64.5385012,
+    "LNG":18.7166307,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-02-13",
+    "SCHOOL":"Knaften förskola",
+    "LAT":64.4477167,
+    "LNG":18.6356589,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-13",
+    "SCHOOL":"Kristineberg förskola",
+    "LAT":65.0601416,
+    "LNG":18.583958,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-13",
+    "SCHOOL":"Rusksele förskola",
+    "LAT":64.8150245,
+    "LNG":18.8954754,
+    "NUMBER":7
+  },
+  {
+    "DATE":"2014-02-13",
+    "SCHOOL":"Umgransele förskola",
+    "LAT":64.6886934,
+    "LNG":18.4080427,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-13",
+    "SCHOOL":"Örträsk förskola",
+    "LAT":64.1342652,
+    "LNG":18.9842314,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-13",
+    "SCHOOL":"Forsdala Fritidshem",
+    "LAT":64.5796517,
+    "LNG":18.6730359,
+    "NUMBER":9
+  },
+  {
+    "DATE":"2014-02-13",
+    "SCHOOL":"Furuvik fritidshem",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":12
+  },
+  {
+    "DATE":"2014-02-13",
+    "SCHOOL":"Hedlunda fritidshem",
+    "LAT":64.5763904,
+    "LNG":18.6845421,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-13",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":14
+  },
+  {
+    "DATE":"2014-02-13",
+    "SCHOOL":"Norräng fritidshem",
+    "LAT":64.6011263,
+    "LNG":18.7092215,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-13",
+    "SCHOOL":"Södermalm fritidshem",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-12",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-02-12",
+    "SCHOOL":"Furuvik förskola",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-02-12",
+    "SCHOOL":"Johan Skyttes förskola",
+    "LAT":64.6006551,
+    "LNG":18.6709538,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-12",
+    "SCHOOL":"Jonsta förskola",
+    "LAT":64.586087,
+    "LNG":18.670459,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-02-12",
+    "SCHOOL":"Lövstugan förskola",
+    "LAT":64.5973375,
+    "LNG":18.7112576,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-12",
+    "SCHOOL":"Morotens förskola",
+    "LAT":64.5996781,
+    "LNG":18.7096914,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-12",
+    "SCHOOL":"Filurens förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-12",
+    "SCHOOL":"Norrskenet förskola",
+    "LAT":64.6005173,
+    "LNG":18.7061959,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-12",
+    "SCHOOL":"Södermalm förskola Daggkåpan",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-02-12",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":7
+  },
+  {
+    "DATE":"2014-02-12",
+    "SCHOOL":"Hedlunda förskola",
+    "LAT":64.5385012,
+    "LNG":18.7166307,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-02-12",
+    "SCHOOL":"Kristineberg förskola",
+    "LAT":65.0601416,
+    "LNG":18.583958,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-12",
+    "SCHOOL":"Rusksele förskola",
+    "LAT":64.8150245,
+    "LNG":18.8954754,
+    "NUMBER":7
+  },
+  {
+    "DATE":"2014-02-12",
+    "SCHOOL":"Umgransele förskola",
+    "LAT":64.6886934,
+    "LNG":18.4080427,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-12",
+    "SCHOOL":"Örträsk förskola",
+    "LAT":64.1342652,
+    "LNG":18.9842314,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-12",
+    "SCHOOL":"Forsdala Fritidshem",
+    "LAT":64.5796517,
+    "LNG":18.6730359,
+    "NUMBER":19
+  },
+  {
+    "DATE":"2014-02-12",
+    "SCHOOL":"Furuvik fritidshem",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-12",
+    "SCHOOL":"Hedlunda fritidshem",
+    "LAT":64.5763904,
+    "LNG":18.6845421,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-12",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":12
+  },
+  {
+    "DATE":"2014-02-12",
+    "SCHOOL":"Norräng fritidshem",
+    "LAT":64.6011263,
+    "LNG":18.7092215,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-02-12",
+    "SCHOOL":"Södermalm fritidshem",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-11",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":9
+  },
+  {
+    "DATE":"2014-02-11",
+    "SCHOOL":"Furuvik förskola",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-02-11",
+    "SCHOOL":"Johan Skyttes förskola",
+    "LAT":64.6006551,
+    "LNG":18.6709538,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-11",
+    "SCHOOL":"Jonsta förskola",
+    "LAT":64.586087,
+    "LNG":18.670459,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-11",
+    "SCHOOL":"Lövstugan förskola",
+    "LAT":64.5973375,
+    "LNG":18.7112576,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-11",
+    "SCHOOL":"Morotens förskola",
+    "LAT":64.5996781,
+    "LNG":18.7096914,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-11",
+    "SCHOOL":"Filurens förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-11",
+    "SCHOOL":"Norrskenet förskola",
+    "LAT":64.6005173,
+    "LNG":18.7061959,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-11",
+    "SCHOOL":"Södermalm förskola Daggkåpan",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-02-11",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":10
+  },
+  {
+    "DATE":"2014-02-11",
+    "SCHOOL":"Hedlunda förskola",
+    "LAT":64.5385012,
+    "LNG":18.7166307,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-11",
+    "SCHOOL":"Kristineberg förskola",
+    "LAT":65.0601416,
+    "LNG":18.583958,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-11",
+    "SCHOOL":"Rusksele förskola",
+    "LAT":64.8150245,
+    "LNG":18.8954754,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-11",
+    "SCHOOL":"Umgransele förskola",
+    "LAT":64.6886934,
+    "LNG":18.4080427,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-11",
+    "SCHOOL":"Örträsk förskola",
+    "LAT":64.1342652,
+    "LNG":18.9842314,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-11",
+    "SCHOOL":"Forsdala Fritidshem",
+    "LAT":64.5796517,
+    "LNG":18.6730359,
+    "NUMBER":23
+  },
+  {
+    "DATE":"2014-02-11",
+    "SCHOOL":"Furuvik fritidshem",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-11",
+    "SCHOOL":"Hedlunda fritidshem",
+    "LAT":64.5763904,
+    "LNG":18.6845421,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-11",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":15
+  },
+  {
+    "DATE":"2014-02-11",
+    "SCHOOL":"Norräng fritidshem",
+    "LAT":64.6011263,
+    "LNG":18.7092215,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-11",
+    "SCHOOL":"Södermalm fritidshem",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-10",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-02-10",
+    "SCHOOL":"Furuvik förskola",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-10",
+    "SCHOOL":"Johan Skyttes förskola",
+    "LAT":64.6006551,
+    "LNG":18.6709538,
+    "NUMBER":7
+  },
+  {
+    "DATE":"2014-02-10",
+    "SCHOOL":"Jonsta förskola",
+    "LAT":64.586087,
+    "LNG":18.670459,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-02-10",
+    "SCHOOL":"Lövstugan förskola",
+    "LAT":64.5973375,
+    "LNG":18.7112576,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-10",
+    "SCHOOL":"Filurens förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-02-10",
+    "SCHOOL":"Norrskenet förskola",
+    "LAT":64.6005173,
+    "LNG":18.7061959,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-10",
+    "SCHOOL":"Södermalm förskola Daggkåpan",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-10",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":9
+  },
+  {
+    "DATE":"2014-02-10",
+    "SCHOOL":"Hedlunda förskola",
+    "LAT":64.5385012,
+    "LNG":18.7166307,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-10",
+    "SCHOOL":"Knaften förskola",
+    "LAT":64.4477167,
+    "LNG":18.6356589,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-10",
+    "SCHOOL":"Kristineberg förskola",
+    "LAT":65.0601416,
+    "LNG":18.583958,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-10",
+    "SCHOOL":"Rusksele förskola",
+    "LAT":64.8150245,
+    "LNG":18.8954754,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-02-10",
+    "SCHOOL":"Örträsk förskola",
+    "LAT":64.1342652,
+    "LNG":18.9842314,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-10",
+    "SCHOOL":"Forsdala Fritidshem",
+    "LAT":64.5796517,
+    "LNG":18.6730359,
+    "NUMBER":23
+  },
+  {
+    "DATE":"2014-02-10",
+    "SCHOOL":"Furuvik fritidshem",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":7
+  },
+  {
+    "DATE":"2014-02-10",
+    "SCHOOL":"Hedlunda fritidshem",
+    "LAT":64.5763904,
+    "LNG":18.6845421,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-10",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":13
+  },
+  {
+    "DATE":"2014-02-10",
+    "SCHOOL":"Rusksele fritidshem",
+    "LAT":64.814345,
+    "LNG":18.8947373,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-10",
+    "SCHOOL":"Södermalm fritidshem",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-09",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-09",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-08",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-08",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-07",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-02-07",
+    "SCHOOL":"Furuvik förskola",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-07",
+    "SCHOOL":"Johan Skyttes förskola",
+    "LAT":64.6006551,
+    "LNG":18.6709538,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-07",
+    "SCHOOL":"Jonsta förskola",
+    "LAT":64.586087,
+    "LNG":18.670459,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-02-07",
+    "SCHOOL":"Morotens förskola",
+    "LAT":64.5996781,
+    "LNG":18.7096914,
+    "NUMBER":7
+  },
+  {
+    "DATE":"2014-02-07",
+    "SCHOOL":"Filurens förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-02-07",
+    "SCHOOL":"Norrskenet förskola",
+    "LAT":64.6005173,
+    "LNG":18.7061959,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-07",
+    "SCHOOL":"Södermalm förskola Daggkåpan",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-07",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-02-07",
+    "SCHOOL":"Hedlunda förskola",
+    "LAT":64.5385012,
+    "LNG":18.7166307,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-07",
+    "SCHOOL":"Knaften förskola",
+    "LAT":64.4477167,
+    "LNG":18.6356589,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-07",
+    "SCHOOL":"Rusksele förskola",
+    "LAT":64.8150245,
+    "LNG":18.8954754,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-07",
+    "SCHOOL":"Örträsk förskola",
+    "LAT":64.1342652,
+    "LNG":18.9842314,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-07",
+    "SCHOOL":"Forsdala Fritidshem",
+    "LAT":64.5796517,
+    "LNG":18.6730359,
+    "NUMBER":29
+  },
+  {
+    "DATE":"2014-02-07",
+    "SCHOOL":"Furuvik fritidshem",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":7
+  },
+  {
+    "DATE":"2014-02-07",
+    "SCHOOL":"Hedlunda fritidshem",
+    "LAT":64.5763904,
+    "LNG":18.6845421,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-07",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":19
+  },
+  {
+    "DATE":"2014-02-07",
+    "SCHOOL":"Norräng fritidshem",
+    "LAT":64.6011263,
+    "LNG":18.7092215,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-07",
+    "SCHOOL":"Rusksele fritidshem",
+    "LAT":64.814345,
+    "LNG":18.8947373,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-07",
+    "SCHOOL":"Södermalm fritidshem",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":7
+  },
+  {
+    "DATE":"2014-02-06",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":8
+  },
+  {
+    "DATE":"2014-02-06",
+    "SCHOOL":"Furuvik förskola",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-06",
+    "SCHOOL":"Johan Skyttes förskola",
+    "LAT":64.6006551,
+    "LNG":18.6709538,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-06",
+    "SCHOOL":"Jonsta förskola",
+    "LAT":64.586087,
+    "LNG":18.670459,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-06",
+    "SCHOOL":"Lövstugan förskola",
+    "LAT":64.5973375,
+    "LNG":18.7112576,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-06",
+    "SCHOOL":"Morotens förskola",
+    "LAT":64.5996781,
+    "LNG":18.7096914,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-02-06",
+    "SCHOOL":"Filurens förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-06",
+    "SCHOOL":"Norrskenet förskola",
+    "LAT":64.6005173,
+    "LNG":18.7061959,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-06",
+    "SCHOOL":"Södermalm förskola Daggkåpan",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-06",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":8
+  },
+  {
+    "DATE":"2014-02-06",
+    "SCHOOL":"Hedlunda förskola",
+    "LAT":64.5385012,
+    "LNG":18.7166307,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-02-06",
+    "SCHOOL":"Knaften förskola",
+    "LAT":64.4477167,
+    "LNG":18.6356589,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-06",
+    "SCHOOL":"Kristineberg förskola",
+    "LAT":65.0601416,
+    "LNG":18.583958,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-06",
+    "SCHOOL":"Rusksele förskola",
+    "LAT":64.8150245,
+    "LNG":18.8954754,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-06",
+    "SCHOOL":"Forsdala Fritidshem",
+    "LAT":64.5796517,
+    "LNG":18.6730359,
+    "NUMBER":13
+  },
+  {
+    "DATE":"2014-02-06",
+    "SCHOOL":"Furuvik fritidshem",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-06",
+    "SCHOOL":"Hedlunda fritidshem",
+    "LAT":64.5763904,
+    "LNG":18.6845421,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-06",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":20
+  },
+  {
+    "DATE":"2014-02-06",
+    "SCHOOL":"Norräng fritidshem",
+    "LAT":64.6011263,
+    "LNG":18.7092215,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-02-06",
+    "SCHOOL":"Södermalm fritidshem",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-05",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":9
+  },
+  {
+    "DATE":"2014-02-05",
+    "SCHOOL":"Furuvik förskola",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-02-05",
+    "SCHOOL":"Johan Skyttes förskola",
+    "LAT":64.6006551,
+    "LNG":18.6709538,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-05",
+    "SCHOOL":"Jonsta förskola",
+    "LAT":64.586087,
+    "LNG":18.670459,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-05",
+    "SCHOOL":"Lövstugan förskola",
+    "LAT":64.5973375,
+    "LNG":18.7112576,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-05",
+    "SCHOOL":"Morotens förskola",
+    "LAT":64.5996781,
+    "LNG":18.7096914,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-05",
+    "SCHOOL":"Filurens förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-05",
+    "SCHOOL":"Norrskenet förskola",
+    "LAT":64.6005173,
+    "LNG":18.7061959,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-05",
+    "SCHOOL":"Södermalm förskola Daggkåpan",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-05",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":9
+  },
+  {
+    "DATE":"2014-02-05",
+    "SCHOOL":"Hedlunda förskola",
+    "LAT":64.5385012,
+    "LNG":18.7166307,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-05",
+    "SCHOOL":"Knaften förskola",
+    "LAT":64.4477167,
+    "LNG":18.6356589,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-05",
+    "SCHOOL":"Kristineberg förskola",
+    "LAT":65.0601416,
+    "LNG":18.583958,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-05",
+    "SCHOOL":"Rusksele förskola",
+    "LAT":64.8150245,
+    "LNG":18.8954754,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-02-05",
+    "SCHOOL":"Umgransele förskola",
+    "LAT":64.6886934,
+    "LNG":18.4080427,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-05",
+    "SCHOOL":"Örträsk förskola",
+    "LAT":64.1342652,
+    "LNG":18.9842314,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-05",
+    "SCHOOL":"Forsdala Fritidshem",
+    "LAT":64.5796517,
+    "LNG":18.6730359,
+    "NUMBER":12
+  },
+  {
+    "DATE":"2014-02-05",
+    "SCHOOL":"Furuvik fritidshem",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":7
+  },
+  {
+    "DATE":"2014-02-05",
+    "SCHOOL":"Hedlunda fritidshem",
+    "LAT":64.5763904,
+    "LNG":18.6845421,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-05",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":18
+  },
+  {
+    "DATE":"2014-02-05",
+    "SCHOOL":"Norräng fritidshem",
+    "LAT":64.6011263,
+    "LNG":18.7092215,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-05",
+    "SCHOOL":"Rusksele fritidshem",
+    "LAT":64.814345,
+    "LNG":18.8947373,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-05",
+    "SCHOOL":"Södermalm fritidshem",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-02-05",
+    "SCHOOL":"Örträsk fritidshem",
+    "LAT":64.1342652,
+    "LNG":18.9842314,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-04",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":9
+  },
+  {
+    "DATE":"2014-02-04",
+    "SCHOOL":"Furuvik förskola",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-04",
+    "SCHOOL":"Johan Skyttes förskola",
+    "LAT":64.6006551,
+    "LNG":18.6709538,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-04",
+    "SCHOOL":"Jonsta förskola",
+    "LAT":64.586087,
+    "LNG":18.670459,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-02-04",
+    "SCHOOL":"Lövstugan förskola",
+    "LAT":64.5973375,
+    "LNG":18.7112576,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-02-04",
+    "SCHOOL":"Morotens förskola",
+    "LAT":64.5996781,
+    "LNG":18.7096914,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-04",
+    "SCHOOL":"Filurens förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":7
+  },
+  {
+    "DATE":"2014-02-04",
+    "SCHOOL":"Norrskenet förskola",
+    "LAT":64.6005173,
+    "LNG":18.7061959,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-04",
+    "SCHOOL":"Södermalm förskola Daggkåpan",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-04",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":10
+  },
+  {
+    "DATE":"2014-02-04",
+    "SCHOOL":"Hedlunda förskola",
+    "LAT":64.5385012,
+    "LNG":18.7166307,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-02-04",
+    "SCHOOL":"Knaften förskola",
+    "LAT":64.4477167,
+    "LNG":18.6356589,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-04",
+    "SCHOOL":"Kristineberg förskola",
+    "LAT":65.0601416,
+    "LNG":18.583958,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-04",
+    "SCHOOL":"Rusksele förskola",
+    "LAT":64.8150245,
+    "LNG":18.8954754,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-04",
+    "SCHOOL":"Forsdala Fritidshem",
+    "LAT":64.5796517,
+    "LNG":18.6730359,
+    "NUMBER":13
+  },
+  {
+    "DATE":"2014-02-04",
+    "SCHOOL":"Furuvik fritidshem",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-02-04",
+    "SCHOOL":"Hedlunda fritidshem",
+    "LAT":64.5763904,
+    "LNG":18.6845421,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-04",
+    "SCHOOL":"Knaften fritidshem",
+    "LAT":64.4499996,
+    "LNG":18.6333333,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-04",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":16
+  },
+  {
+    "DATE":"2014-02-04",
+    "SCHOOL":"Norräng fritidshem",
+    "LAT":64.6011263,
+    "LNG":18.7092215,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-04",
+    "SCHOOL":"Rusksele fritidshem",
+    "LAT":64.814345,
+    "LNG":18.8947373,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-04",
+    "SCHOOL":"Södermalm fritidshem",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-03",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":7
+  },
+  {
+    "DATE":"2014-02-03",
+    "SCHOOL":"Furuvik förskola",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-03",
+    "SCHOOL":"Johan Skyttes förskola",
+    "LAT":64.6006551,
+    "LNG":18.6709538,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-03",
+    "SCHOOL":"Jonsta förskola",
+    "LAT":64.586087,
+    "LNG":18.670459,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-03",
+    "SCHOOL":"Lövstugan förskola",
+    "LAT":64.5973375,
+    "LNG":18.7112576,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-03",
+    "SCHOOL":"Morotens förskola",
+    "LAT":64.5996781,
+    "LNG":18.7096914,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-03",
+    "SCHOOL":"Filurens förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-03",
+    "SCHOOL":"Norrskenet förskola",
+    "LAT":64.6005173,
+    "LNG":18.7061959,
+    "NUMBER":5
+  },
+  {
+    "DATE":"2014-02-03",
+    "SCHOOL":"Södermalm förskola Daggkåpan",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-03",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":11
+  },
+  {
+    "DATE":"2014-02-03",
+    "SCHOOL":"Hedlunda förskola",
+    "LAT":64.5385012,
+    "LNG":18.7166307,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-02-03",
+    "SCHOOL":"Knaften förskola",
+    "LAT":64.4477167,
+    "LNG":18.6356589,
+    "NUMBER":3
+  },
+  {
+    "DATE":"2014-02-03",
+    "SCHOOL":"Rusksele förskola",
+    "LAT":64.8150245,
+    "LNG":18.8954754,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-03",
+    "SCHOOL":"Umgransele förskola",
+    "LAT":64.6886934,
+    "LNG":18.4080427,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-03",
+    "SCHOOL":"Forsdala Fritidshem",
+    "LAT":64.5796517,
+    "LNG":18.6730359,
+    "NUMBER":23
+  },
+  {
+    "DATE":"2014-02-03",
+    "SCHOOL":"Furuvik fritidshem",
+    "LAT":64.5784066,
+    "LNG":18.7108507,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-03",
+    "SCHOOL":"Hedlunda fritidshem",
+    "LAT":64.5763904,
+    "LNG":18.6845421,
+    "NUMBER":4
+  },
+  {
+    "DATE":"2014-02-03",
+    "SCHOOL":"Knaften fritidshem",
+    "LAT":64.4499996,
+    "LNG":18.6333333,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-03",
+    "SCHOOL":"Kristineberg fritidshem",
+    "LAT":65.0601416,
+    "LNG":18.5839585,
+    "NUMBER":10
+  },
+  {
+    "DATE":"2014-02-03",
+    "SCHOOL":"Norräng fritidshem",
+    "LAT":64.6011263,
+    "LNG":18.7092215,
+    "NUMBER":6
+  },
+  {
+    "DATE":"2014-02-03",
+    "SCHOOL":"Rusksele fritidshem",
+    "LAT":64.814345,
+    "LNG":18.8947373,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-03",
+    "SCHOOL":"Södermalm fritidshem",
+    "LAT":64.5916515,
+    "LNG":18.6602992,
+    "NUMBER":2
+  },
+  {
+    "DATE":"2014-02-02",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-02",
+    "SCHOOL":"Filurens förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-02",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-01",
+    "SCHOOL":"Mojängens Förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-01",
+    "SCHOOL":"Filurens förskola",
+    "LAT":64.5846476,
+    "LNG":18.6705204,
+    "NUMBER":1
+  },
+  {
+    "DATE":"2014-02-01",
+    "SCHOOL":"Villaryd förskola",
+    "LAT":64.5892164,
+    "LNG":18.6807266,
+    "NUMBER":1
+  }
+]

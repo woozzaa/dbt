@@ -2,3 +2,71 @@ Max fem fusion table-lager. Alla med varsina styling-lager
 
 Encrypted ID: 1234
 
+REST API = använder HTML-typerna GET, PUT, POST och DELETE. 
+
+dev:console:project:Geocoding:Project-id:supple-cosine-575
+
+
+u'64.5846476,18.6705204,17',
+		u'64.5796517,18.6730359,17',
+		u'64.5784066,18.7108507,17',
+		u'64.5784066,18.7108507,17',
+		u'64.5916515,18.6602992,17',
+		u'64.5763904,18.6845421,17',
+		u'64.5385012,18.7166307,17',
+		u'64.6006551,18.6709538,17',
+		u'64.6006551,18.6709538,17',
+		u'64.586087,18.670459,17',
+		u'64.4499996,18.6333333,15',
+		u'64.4477167,18.6356589,17',
+		u'65.0601416,18.5839585,9',
+		u'64.5973375,18.7112576,17',
+		u'64.5846476,18.6705204,17',
+		u'64.5996781,18.7096914,17',
+		u'64.6005173,18.7061959,17',
+		u'64.814345,18.8947373,11',
+		u'64.8150245,18.8954754,17',
+		u'64.5916515,18.6602992,17',
+		u'64.6886934,18.4080427,17',
+		u'64.6886934,18.4080427,17',
+		u'64.5892164,18.6807266,17',
+		u'64.5777979,18.6763956,17',
+		u'64.1342652,18.9842314,17',
+		u'64.1342652,18.9842314,17',
+		u'64.6011263,18.7092215,17',
+		u'65.0601416,18.5839585,17',
+
+
+
+
+		locationarray = [u"Glastjärnsvägen 2 A Lycksele",
+		u"Helena Öhmans Väg 3 Lycksele",
+		u"Skolvägen 7 Lycksele",
+		u"Skolvägen 7 Lycksele",
+		u"Grundtjärnsvägen 67 Lycksele",
+		u"Hedlunda 62 Lycksele",
+		u"Kornvägen 6 Lycksele",
+		u"Storgatan 58 Lycksele",
+		u"Storgatan 58 Lycksele",
+		u"Bryggaregatan 2 Lycksele",
+		u"Knaften Lycksele",
+		u"Knaften 209 Lycksele",
+		u"Skolvägen 10 Kristineberg",
+		u"Lövstigen 6 Lycksele",
+		u"Glastjärnsvägen 2 A Lycksele",
+		u"Grönsaksstigen 14 Lycksele",
+		u"Länsmansvägen 2 Lycksele",
+		u"Vindelälvsvägen 39 Lycksele",
+		u"Vindelälvsvägen 34 Lycksele",
+		u"Grundtjärnsvägen 67 Lycksele",
+		u"Umgransele 96 Lycksele",
+		u"Umgransele 96 Lycksele",
+		u"Glasbegrgsvägen 18 Lycksele",
+		u"Granitvägen 6 Lycksele",
+		u"Storgatan 75 Örträsk",
+		u"Storgatan 75 Örträsk",
+		u"Domarvägen 11 Lycksele",
+		u"Okänd",
+		u"Skolvägen 10 Kristineberg",
+		u"Okänd",
+		u"Okänd"]
