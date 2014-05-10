@@ -1,13 +1,12 @@
 // Lycksele: 64.592418,18.688387
 // Polyline = linjer mellan punkter
 
-// File id = 129pYBFNzBwqEjiGoBoDRwbiJKgJ76jJ4RtxQx2C0y2M
 
-var mapOptions 	= null;
-var myCenter 	= null;
-var map 		= null;
-var bounds 		= null;
-var finaljson 	= null
+
+var mapOptions = null;
+var myCenter = null;
+var map = null;
+var bounds = null;
 
 var googleScript = {
 
@@ -20,47 +19,28 @@ var googleScript = {
 	init: function(){
 		this.initialize();
 		this.startit();
-		this.bindUIActions();
-		this.getjson();
-	},
-
-	bindUIActions: function(){
-		$('#moveRight').on('click', function(){
-			map.panBy(40,40);
-			//alert("hello");
-		});
-
-		$('#moveLeft').on('click', function(){
-			map.panBy(-40, -40);
-		});
+		this.moveRight();
 	},
 
 
 	initialize: function(){
-
-
 		mapOptions = {
-			center: myCenter,
-			zoom: 14,
-			mapTypeId: google.maps.MapTypeId.ROADMAP
-		};	
+		 	center: myCenter,
+		  	zoom: 14,
+		  	mapTypeId: google.maps.MapTypeId.ROADMAP
+		};
+
+		fusionOptions = {
+			select: '',
+			from: '', 	
+		}
 
 		myCenter = new google.maps.LatLng(64.592418,18.688387);
 		//Positions map
 
 		//Places map in the right div
-		map = new google.maps.Map(document.getElementById("maps"), mapOptions);
-
-		var layer = new google.maps.FusionTablesLayer({
-			query: {
-				select: 'ABSENCES',
-				from: '1OqKOavsRoQSHBxt0v40jf9iBJ0WTpESP5pQj3Ukb',
-				// where: 'ABSENCES > 2'
-			}
-			// heatmap: {
-			// 	enabled: heatmap.checked,
-			// }
-		});
+		map = new google.maps.Map(document.getElementById("maps"),
+		    mapOptions);
 
 		//Sätter markeringar och "zoomar" in så att kartan innefattar markeringarna. 
 		//Skriver över "zoomen" man satt innan
@@ -70,47 +50,30 @@ var googleScript = {
 
 	},
 
-	getjson: function(){
-		
-		var items = [];
-		
-		$.getJSON('/dbt/json/workex_small.json', function( data ){
-			
-			var counter = 0;
-			$.each( data, function( key, val ){
-					// console.log(val);
-					var tot = {};
-					tot.location 	= new google.maps.LatLng(val['LAT'], val['LNG']);
-					tot.weight		= val['NUMBER'];
-					console.log(tot);
-					// items.push(tot + ',');
-			});
-
-			// console.log(items);
-
-		});
-		
-		// finaljson = $.parseJSON(finaljson);
-		
-	},
-
 
 	startit: function(){
 		
 	},
+
+	
+
+	moveRight: function(){
+		console.log("in func");
+		$('#moveButton').on('click', function(){
+			map.panBy(40,40);
+			//alert("hello");
+		});
+	}
+
 };
 
 
 
 (function(){
 	googleScript.init();
-
 	google.maps.event.addDomListener(window, 'load', googleScript.initialize);
-	googleScript.startit();
+	setTimeOut(function(){
 
-	setTimeout(function(){
-		document.getElementById('information').innerHTML = 'Sidan har laddats';
-	}, 2000);
-	
-	
+	}, 1000);
+	googleScript.startit();
 })();
