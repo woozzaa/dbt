@@ -3,13 +3,27 @@
 
 // File id = 129pYBFNzBwqEjiGoBoDRwbiJKgJ76jJ4RtxQx2C0y2M
 
+
+/**
+ * 
+ * VARIABLES
+ * 
+ */
 var mapOptions 	= null;
 var myCenter 	= null;
 var map 		= null;
 var bounds 		= null;
-// var finaljson 	= null;
 var items		= null;
+var heatmaplayer= null;
+var filepath	= '/dbt/json/finaldb3-sorted.json';
 
+/**
+ * 
+ * SETTINGS
+ * 
+ */
+var heatmapOpacity 	= 1;
+var heatmapRadius 	= 20;
 
 var googleScript = {
 
@@ -25,59 +39,121 @@ var googleScript = {
 
 	bindUIActions: function(){
 		$('#moveRight').on('click', function(){
-			map.panBy(40,40);
+			map.panBy(-40,0);
 			//alert("hello");
 		});
 
 		$('#moveLeft').on('click', function(){
-			map.panBy(-40, -40);
+			map.panBy(40, 0);
 		});
+
+		$('#toggleHeatmap').on('click', function(){
+			heatmaplayer.setMap(heatmaplayer.getMap() ? null : map);	
+		});
+
+		$('#submitDates').on('click', function(){
+			var fromDate = $('#fromDate').val();
+			var toDate = $('#toDate').val();
+			if(fromDate != null && toDate != null){
+				googleScript.createLayerByDate(fromDate, toDate);	
+			}
+			else{
+				alert('Invalid input');
+			}
+		});
+
+		$('#dateSlider').mouseup(function(){
+			// document.getElementById('#sliderValue').innerHTML = document.getElementById('#dateSlider').value;
+			
+		});
+ 		 
+
 	},
 
 
-	createmaps: function(){
+	createmap: function(){
 
-		myCenter = new google.maps.LatLng(64.592418,18.688387);
+		lycksele = new google.maps.LatLng(64.592418,18.688387);
 
 		mapOptions = {
-			center: myCenter,
+			center: lycksele,
 			zoom: 13,
 			mapTypeId: google.maps.MapTypeId.ROADMAP
 		};	
 
-		
-		//Positions map
-
 		//Places map in the right div
 		map = new google.maps.Map(document.getElementById("maps"), mapOptions);
-		
-		console.log(items);
+
+	},
+
+	createHeatmap: function(){
+		// console.log(items); // WORKS
 		mvcitems = new google.maps.MVCArray(items);
-		console.log(mvcitems);
+		// console.log(mvcitems); // WORKS
 		
-		var hmlayer = new google.maps.visualization.HeatmapLayer({
+		/**
+		 *
+		 *	HEATMAP
+		 * 
+		 */
+		heatmaplayer = new google.maps.visualization.HeatmapLayer({
 			data: mvcitems,
-			opacity: 1,
-			radius: 20
+			opacity: heatmapOpacity,
+			radius: heatmapRadius
 		});
 		
-		hmlayer.setMap(map);
-		// console.log(hmlayer.getData());
+		heatmaplayer.setMap(map);
 
-		//Sätter markeringar och "zoomar" in så att kartan innefattar markeringarna. 
-		//Skriver över "zoomen" man satt innan
-		// sw = new google.maps.LatLng(64.571419, 18.612857);
-		// ne = new google.maps.LatLng(64.621789, 18.732676);
-		//var bounds = new google.maps.LatLngBounds(sw, ne);
+		// for(var key in items){
+		// 	console.log(items[key]);
+		// }
 
+	},
+
+	/*************************************
+	 * createLayerByDate
+	 * ISSUES: fromDate <= tempDate hämtar dagen efter fromDate, inte samma. Dra -1 på fromDate???
+	 *************************************/
+	createLayerByDate: function(fromDate, toDate){
+		var itemsByDates = [];
+		for(var key in items){
+			// console.log(items[key]['date']);
+			tempDate = new Date(items[key]['date']);
+			fromDate = new Date(fromDate);
+			toDate	 = new Date(toDate);
+			if( (fromDate <= tempDate) && (tempDate <= toDate) ){
+				// console.log(items[key]);
+				itemsByDates.push(items[key]);
+			}
+		}
+		mvcItemsByDates = new google.maps.MVCArray(itemsByDates);
+		heatmaplayer.setData(mvcItemsByDates);
+
+		// heatmaplayer.setOptions({
+		// 	query: {
+		// 		data: itemsByDates,
+		// 		opacity: heatmapOpacity,
+		// 		radius: heatmapRadius
+		// 	}
+		// });
+
+	},
+
+	calculateDays: function(firstDate, lastDate){
+		var oneDay = 24*60*60*1000;	// hours*minutes*seconds*milliseconds
+		var firstDate = new Date(firstDate);
+		var secondDate = new Date(lastDate);
+
+		var diffDays = Math.abs((firstDate.getTime() - secondDate.getTime())/(oneDay));
+		console.log(diffDays);
 	},
 
 	getjson: function(){
 		
 		items = [];
 		
-		$.getJSON('/dbt/json/workex_small.json', function( data ){
-			
+		$.getJSON(filepath, function( data ){
+			var counter = 0;
 			$.each( data, function( key, val ){
 					// console.log(val);
 					if(parseFloat(val['LAT']) != NaN && parseFloat(val['LNG']) != NaN){
@@ -90,18 +166,23 @@ var googleScript = {
 					}
 					var tot = {};
 					var loc = {};
+					var date = new Date(val['DATE']);
+					var day = date.getDate();
+					var month = date.getMonth() + 1;
+					var year = date.getFullYear();
+
 					tot.location 	= new google.maps.LatLng(lati, lngi);
-					
-					// loc.lat 	= lati;
-					// loc.lng 	= lngi;
-					// tot.location = loc;
 					tot.weight 		= Number(val['NUMBER']);
-					console.log(tot);
+					tot.school		= toString(val['SCHOOL']);
+					tot.date		= year + "-" + month + "-" + day;
+					counter++;
 					items.push(tot);
 			});
 
 			// console.log(items);	
-			googleScript.createmaps();
+			// console.log(counter);
+			googleScript.createmap();
+			googleScript.createHeatmap();
 
 		});
 		

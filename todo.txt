@@ -1,0 +1,5 @@
+1.Slider för datum
+
+2. Visa sjuka barn i relation (procent) till sin egen skola
+	2.1 Skapa json med summering av barn per skola
+

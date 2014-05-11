@@ -1,7 +1,7 @@
 .content
 {
 	margin: 0 auto;
-	width: 1200px;
+	width: 1400px;
 	overflow: hidden;
 }
 
@@ -11,11 +11,25 @@
 	width: 1000px;
 	margin: 0 auto;
 	background-color: #E6E6E6;
-	float: left;
+	float: right;
 }
-
+#options
+{
+	width: 320px;
+	// background-color: green;
+}
 #buttons
 {
-	float: right;
-	width: 100px;
+	float: left;
+	display:inline;
+	// width: 120px;
+	// height: 120px;
+	background-color: blue;
+}
+
+#input
+{
+	float: left;
+	// width: 120px;
+	// height: 120px;
 }

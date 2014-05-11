@@ -9,32 +9,47 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
 		<script type="text/javascript"
-      			src="https://maps.googleapis.com/maps/api/js?libraries=visualization&sensor=false">
+      			src="https://maps.googleapis.com/maps/api/js?libraries=visualization,fusiontables&sensor=false&">
     	</script>
 <!-- src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaXbH4R1IS9ij8odac_2gSZo-7hJa4MFw&sensor=false"> -->
 	</head>
 	
 	<body>
 		<div class="content">
-		
-			<div id="maps">
-				
-			</div> <!-- .maps -->
 
 			<!-- <div>
 				<input type="checkbox" id="heatmap" />
 				<label>Enable Heatmap</label>
 			</div> -->
-
-			<div id="buttons">
-				<button id="moveButton"> Move right </button>
-			</div>
-
-			<div id="buttons">
-				<button id="moveButton"> Move left </button>
-			</div>
-
+			<div id="maps">
+				
+			</div> <!-- .maps -->
 			<div id="information"></div>
+
+			<div id="options">
+				<div id="buttons">
+					<button id="moveLeft"> Move right </button>
+					<button id="moveRight"> Move left </button>
+					<button id="toggleHeatmap"> Toggle Heatmap </button>
+				</div>
+
+				<div id="input">
+					From Date: 	<input type="text" name="YYYY-MM-DD" placeholder="YYYY-MM-DD" id="fromDate" value="2014-01-30"><br>
+					To Date: 	<input type="text" name="YYYY-MM-DD" placeholder="YYYY-MM-DD" id="toDate" value="2014-02-28"><br>
+					<button id="submitDates">Submit</button>
+					<br>
+					<br>
+					2012-08-23
+					<input id="dateSlider" type="range" name="DateSlider" min="20120823" max="20140331" value="2013-05-05">
+					2014-03-31
+					<p id="sliderValue">Value here</p>
+				</div>
+			</div>
+
+
+
+
+			
 
 		</div> <!-- .content -->
 
