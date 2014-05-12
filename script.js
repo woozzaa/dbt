@@ -15,6 +15,8 @@ var map 		= null;
 var bounds 		= null;
 var items		= null;
 var heatmaplayer= null;
+var firstDate = null;
+var lastDate  = null;
 var filepath	= '/dbt/json/finaldb3-sorted.json';
 
 /**
@@ -63,11 +65,33 @@ var googleScript = {
 		});
 
 		$('#dateSlider').mouseup(function(){
+			var weekday = new Array(7);
+			weekday[0] = "Sön";
+			weekday[1] = "Mån";
+			weekday[2] = "Tis";
+			weekday[3] = "Ons";
+			weekday[4] = "Tors";
+			weekday[5] = "Fre";
+			weekday[6] = "Lör";
 			// document.getElementById('#sliderValue').innerHTML = document.getElementById('#dateSlider').value;
-			
-		});
- 		 
-
+			// console.log('slider = ' + $('#dateSlider').val());
+			// console.log('firstdate = ' + firstDate.getDate());
+			nrOfDays 	= Number($('#dateSlider').val());
+			newDate 	= new Date(firstDate);
+			// console.log('newDate bf =' + newDate);
+			newDate.setDate(firstDate.getDate() + Number($('#dateSlider').val()));
+			// console.log('newDate = ' + newDate);
+			var day 	= newDate.getDate();
+			var month 	= newDate.getMonth() + 1;
+			var year 	= newDate.getFullYear();
+			var dayType = weekday[newDate.getDay()];
+			newDateDate = year + "-" + month + "-" + day;
+			// newDateDayType = 
+			// console.log(newDate);
+			document.getElementById('sliderValue').innerHTML = 'Datum:	' + newDateDate + '<br>Dag:	' + dayType;
+			// console.log(dayType);
+			googleScript.createLayerByDate(newDateDate, newDateDate);
+		}); 
 	},
 
 
@@ -139,13 +163,19 @@ var googleScript = {
 
 	},
 
-	calculateDays: function(firstDate, lastDate){
-		var oneDay = 24*60*60*1000;	// hours*minutes*seconds*milliseconds
-		var firstDate = new Date(firstDate);
-		var secondDate = new Date(lastDate);
+	animateMap: function(){
+		/**
+		 * Skapa egen funktion som tar in antal dagar den ska flytta fram som inparameter. Kan kallas på för varje varv i loopen härifrån samt från
+		 * dateSlidern, som då skickas in ett större värde.
+		 */
+	}
 
-		var diffDays = Math.abs((firstDate.getTime() - secondDate.getTime())/(oneDay));
-		console.log(diffDays);
+	calculateDays: function(){
+		var oneDay = 24*60*60*1000;	// hours*minutes*seconds*milliseconds
+		var diffDays = Math.abs((firstDate.getTime() - lastDate.getTime())/(oneDay));
+		// console.log(diffDays);
+		$('#dateSlider').attr('min', 0);
+		$('#dateSlider').attr('max', diffDays);
 	},
 
 	getjson: function(){
@@ -167,6 +197,12 @@ var googleScript = {
 					var tot = {};
 					var loc = {};
 					var date = new Date(val['DATE']);
+					if(date < firstDate || firstDate == null){
+						firstDate = date;
+					}
+					if(date > lastDate||lastDate == null){
+						lastDate = date;
+					}
 					var day = date.getDate();
 					var month = date.getMonth() + 1;
 					var year = date.getFullYear();
@@ -180,9 +216,9 @@ var googleScript = {
 			});
 
 			// console.log(items);	
-			// console.log(counter);
 			googleScript.createmap();
 			googleScript.createHeatmap();
+			googleScript.calculateDays();
 
 		});
 		
@@ -200,7 +236,7 @@ var googleScript = {
 
 	setTimeout(function(){
 		document.getElementById('information').innerHTML = 'Sidan har laddats';
-	}, 2000);
+	}, 500);
 	
 	
 })();
