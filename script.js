@@ -15,8 +15,9 @@ var map 		= null;
 var bounds 		= null;
 var items		= null;
 var heatmaplayer= null;
-var firstDate = null;
-var lastDate  = null;
+var firstDate 	= null;
+var lastDate  	= null;
+var diffDays	= null;
 var filepath	= '/dbt/json/finaldb3-sorted.json';
 
 /**
@@ -27,6 +28,16 @@ var filepath	= '/dbt/json/finaldb3-sorted.json';
 var heatmapOpacity 	= 1;
 var heatmapRadius 	= 20;
 
+/**
+ * [googleScript description]
+ * init
+ * bindUIActions
+ * createMap
+ * createHeatmap
+ * createLayerByDate
+ * calculateDays
+ * getjson
+ */
 var googleScript = {
 
 
@@ -65,35 +76,34 @@ var googleScript = {
 		});
 
 		$('#dateSlider').mouseup(function(){
-			var weekday = new Array(7);
-			weekday[0] = "Sön";
-			weekday[1] = "Mån";
-			weekday[2] = "Tis";
-			weekday[3] = "Ons";
-			weekday[4] = "Tors";
-			weekday[5] = "Fre";
-			weekday[6] = "Lör";
-			// document.getElementById('#sliderValue').innerHTML = document.getElementById('#dateSlider').value;
-			// console.log('slider = ' + $('#dateSlider').val());
-			// console.log('firstdate = ' + firstDate.getDate());
-			nrOfDays 	= Number($('#dateSlider').val());
-			newDate 	= new Date(firstDate);
-			// console.log('newDate bf =' + newDate);
-			newDate.setDate(firstDate.getDate() + Number($('#dateSlider').val()));
-			// console.log('newDate = ' + newDate);
-			var day 	= newDate.getDate();
-			var month 	= newDate.getMonth() + 1;
-			var year 	= newDate.getFullYear();
-			var dayType = weekday[newDate.getDay()];
-			newDateDate = year + "-" + month + "-" + day;
-			// newDateDayType = 
-			// console.log(newDate);
-			document.getElementById('sliderValue').innerHTML = 'Datum:	' + newDateDate + '<br>Dag:	' + dayType;
-			// console.log(dayType);
-			googleScript.createLayerByDate(newDateDate, newDateDate);
+			animationScript.createOneDayLayer(googleScript.getSliderDate());
 		}); 
+
+		$('#animateHeatmap').on('click', function(){
+			tempDate = googleScript.getSliderDate();
+			animationScript.animateMap(tempDate);
+		});
 	},
 
+	getSliderDate: function(){
+		nrOfDays 	= Number($('#dateSlider').val());
+		tempDate = googleScript.gettheDate(nrOfDays);
+		return tempDate;
+	},
+
+	gettheDate: function(nrOfDays, theDate){
+		if(typeof theDate == 'undefined'){
+			console.log('in undefined');
+			tempDate = new Date(firstDate);
+			tempDate.setDate(tempDate.getDate() + nrOfDays);
+			return tempDate;
+		}else{
+			console.log('defined');
+			tempDate = new Date(theDate);
+			tempDate.setDate(tempDate.getDate() + nrOfDays);
+			return tempDate;	
+		}
+	},
 
 	createmap: function(){
 
@@ -114,12 +124,6 @@ var googleScript = {
 		// console.log(items); // WORKS
 		mvcitems = new google.maps.MVCArray(items);
 		// console.log(mvcitems); // WORKS
-		
-		/**
-		 *
-		 *	HEATMAP
-		 * 
-		 */
 		heatmaplayer = new google.maps.visualization.HeatmapLayer({
 			data: mvcitems,
 			opacity: heatmapOpacity,
@@ -128,10 +132,6 @@ var googleScript = {
 		
 		heatmaplayer.setMap(map);
 
-		// for(var key in items){
-		// 	console.log(items[key]);
-		// }
-
 	},
 
 	/*************************************
@@ -139,40 +139,36 @@ var googleScript = {
 	 * ISSUES: fromDate <= tempDate hämtar dagen efter fromDate, inte samma. Dra -1 på fromDate???
 	 *************************************/
 	createLayerByDate: function(fromDate, toDate){
+		
 		var itemsByDates = [];
+		fromDate = new Date(fromDate);
+		toDate	 = new Date(toDate);
+		fromDate = fromDate.getFullYear() + '' + fromDate.getMonth()+'' + fromDate.getDate();
+		toDate = toDate.getFullYear() + ''+toDate.getMonth()+'' + toDate.getDate();
+		
+		// console.log(fromDate + ' ' + toDate);
+		
 		for(var key in items){
 			// console.log(items[key]['date']);
 			tempDate = new Date(items[key]['date']);
-			fromDate = new Date(fromDate);
-			toDate	 = new Date(toDate);
-			if( (fromDate <= tempDate) && (tempDate <= toDate) ){
-				// console.log(items[key]);
+			tempDate = tempDate.getFullYear() + '' + tempDate.getMonth()+ '' + tempDate.getDate();
+			// if( (fromDate.getTime() <= tempDate.getTime()) && (tempDate.getTime() <= toDate.getTime()) ){
+			if( (fromDate <= tempDate) && (tempDate <= toDate)){
+				// console.log('temp'+tempDate);
+				// console.log(fromDate);
+				// console.log(tempDate);
 				itemsByDates.push(items[key]);
 			}
 		}
+
 		mvcItemsByDates = new google.maps.MVCArray(itemsByDates);
 		heatmaplayer.setData(mvcItemsByDates);
 
-		// heatmaplayer.setOptions({
-		// 	query: {
-		// 		data: itemsByDates,
-		// 		opacity: heatmapOpacity,
-		// 		radius: heatmapRadius
-		// 	}
-		// });
-
 	},
-
-	animateMap: function(){
-		/**
-		 * Skapa egen funktion som tar in antal dagar den ska flytta fram som inparameter. Kan kallas på för varje varv i loopen härifrån samt från
-		 * dateSlidern, som då skickas in ett större värde.
-		 */
-	}
 
 	calculateDays: function(){
 		var oneDay = 24*60*60*1000;	// hours*minutes*seconds*milliseconds
-		var diffDays = Math.abs((firstDate.getTime() - lastDate.getTime())/(oneDay));
+		diffDays = Math.abs((firstDate.getTime() - lastDate.getTime())/(oneDay));
 		// console.log(diffDays);
 		$('#dateSlider').attr('min', 0);
 		$('#dateSlider').attr('max', diffDays);
@@ -198,10 +194,10 @@ var googleScript = {
 					var loc = {};
 					var date = new Date(val['DATE']);
 					if(date < firstDate || firstDate == null){
-						firstDate = date;
+						firstDate = new Date(date);
 					}
 					if(date > lastDate||lastDate == null){
-						lastDate = date;
+						lastDate = new Date(date);
 					}
 					var day = date.getDate();
 					var month = date.getMonth() + 1;
@@ -225,6 +221,83 @@ var googleScript = {
 		// finaljson = $.parseJSON(finaljson);
 		
 	}
+};
+
+var i = 0; // for iterations
+var weekday = new Array(7);
+	weekday[0] = "Sön";
+	weekday[1] = "Mån";
+	weekday[2] = "Tis";
+	weekday[3] = "Ons";
+	weekday[4] = "Tors";
+	weekday[5] = "Fre";
+	weekday[6] = "Lör";
+/**
+ * [animationScript description]
+ * createOneDayLayer
+ * animateMap
+ */
+var animationScript = {
+
+	createOneDayLayer: function(choosenDate){
+		
+		choosenDate = new Date(choosenDate);
+		var dayType = weekday[choosenDate.getDay()];
+
+		var day 	= choosenDate.getDate();
+		if(day < 10){
+			day = '0' + day;
+		}
+		var month 	= choosenDate.getMonth() + 1;
+		if(month < 10){
+			month = '0' + month;
+		}
+		var year 	= choosenDate.getFullYear();
+		
+		choosenDate = year + "-" + month + "-" + day;
+		// newDateDayType = 
+		// console.log(newDate);
+		document.getElementById('sliderValue').innerHTML = 'Datum:	' + choosenDate + '<br>Dag:	' + dayType;
+		// console.log(newDateDate);
+		googleScript.createLayerByDate(choosenDate, choosenDate);	
+		
+	},
+
+	createMultipleDaysLayer: function(){
+		
+		if(tempDate == null){
+			console.log('if');
+			newDate 	= new Date(firstDate);	
+		}else{
+			console.log('else');
+			newDate = new Date(tempDate);
+		}
+		newDate.setDate(newDate.getDate() + nrOfDays);
+	},
+
+	animateMap: function(tempDate){
+		/**
+		 * Skapa egen funktion som tar in antal dagar den ska flytta fram som inparameter. Kan kallas på för varje varv i loopen härifrån samt från
+		 * dateSlidern, som då skickas in ett större värde.
+		 */
+		// console.log('HERE');
+		setTimeout(function(){
+			animationScript.createOneDayLayer(tempDate);
+			i++;
+
+			if(i < diffDays){
+				// console.log('in if');
+				tempDat = googleScript.gettheDate(1, tempDate)
+				animationScript.animateMap(tempDat);
+				console.log(i + ' ' + tempDat);
+			}
+			else{
+				i = 0;
+				console.log('exited loop');
+				return false;
+			}
+		}, 1000)
+	},
 };
 
 
