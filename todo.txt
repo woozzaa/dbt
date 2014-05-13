@@ -1,6 +1,6 @@
-1.Slider för datum
-1.1 Slidervärden fixade. Koppla till datum och få ut datum baserat på förstadatum.
-
 2. Visa sjuka barn i relation (procent) till sin egen skola
 	2.1 Skapa json med summering av barn per skola
 
+3. Animeringen. Make it smoooooooth.
+
+4. Visa antal eller procent. 

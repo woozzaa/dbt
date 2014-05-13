@@ -1,7 +1,9 @@
 // Lycksele: 64.592418,18.688387
 // Polyline = linjer mellan punkter
 
+
 // File id = 129pYBFNzBwqEjiGoBoDRwbiJKgJ76jJ4RtxQx2C0y2M
+// http://patorjk.com/software/taag/#p=display&f=Colossal&t=FOOTER
 
 
 /**
@@ -38,6 +40,21 @@ var heatmapRadius 	= 20;
  * calculateDays
  * getjson
  */
+
+
+ /**
+						 .d8888b.                             888          .d8888b.                   d8b          888    
+						d88P  Y88b                            888         d88P  Y88b                  Y8P          888    
+						888    888                            888         Y88b.                                    888    
+						888         .d88b.   .d88b.   .d88b.  888  .d88b.  "Y888b.    .d8888b 888d888 888 88888b.  888888 
+						888  88888 d88""88b d88""88b d88P"88b 888 d8P  Y8b    "Y88b. d88P"    888P"   888 888 "88b 888    
+						888    888 888  888 888  888 888  888 888 88888888      "888 888      888     888 888  888 888    
+						Y88b  d88P Y88..88P Y88..88P Y88b 888 888 Y8b.    Y88b  d88P Y88b.    888     888 888 d88P Y88b.  
+						 "Y8888P88  "Y88P"   "Y88P"   "Y88888 888  "Y8888  "Y8888P"   "Y8888P 888     888 88888P"   "Y888 
+						                                  888                                             888             
+						                             Y8b d88P                                             888             
+						                              "Y88P"                                              888             
+						  */
 var googleScript = {
 
 
@@ -81,7 +98,11 @@ var googleScript = {
 
 		$('#animateHeatmap').on('click', function(){
 			tempDate = googleScript.getSliderDate();
-			animationScript.animateMap(tempDate);
+			animationScript.startAnimation(tempDate, Number($('#dateSlider').val()));
+		});
+
+		$('#stopAnimation').on('click', function(){
+			animationScript.stopAnimation();
 		});
 	},
 
@@ -89,6 +110,13 @@ var googleScript = {
 		nrOfDays 	= Number($('#dateSlider').val());
 		tempDate = googleScript.gettheDate(nrOfDays);
 		return tempDate;
+	},
+
+	setSliderDate: function(setDate){
+		var oneDay = 24*60*60*1000;	// hours*minutes*seconds*milliseconds
+		var sliderval = Math.abs((firstDate.getTime() - setDate.getTime())/(oneDay));
+		// console.log(diffDays);
+		$('#dateSlider').val(sliderval);
 	},
 
 	gettheDate: function(nrOfDays, theDate){
@@ -151,7 +179,7 @@ var googleScript = {
 		for(var key in items){
 			// console.log(items[key]['date']);
 			tempDate = new Date(items[key]['date']);
-			tempDate = tempDate.getFullYear() + '' + tempDate.getMonth()+ '' + tempDate.getDate();
+			tempDate = tempDate.getFullYear() + '' + tempDate.getMonth() + '' + tempDate.getDate();
 			// if( (fromDate.getTime() <= tempDate.getTime()) && (tempDate.getTime() <= toDate.getTime()) ){
 			if( (fromDate <= tempDate) && (tempDate <= toDate)){
 				// console.log('temp'+tempDate);
@@ -232,6 +260,24 @@ var weekday = new Array(7);
 	weekday[4] = "Tors";
 	weekday[5] = "Fre";
 	weekday[6] = "Lör";
+var myTimer = null;
+
+
+/*
+			       d8888          d8b                        888    d8b                    .d8888b.                   d8b          888    
+			      d88888          Y8P                        888    Y8P                   d88P  Y88b                  Y8P          888    
+			     d88P888                                     888                          Y88b.                                    888    
+			    d88P 888 88888b.  888 88888b.d88b.   8888b.  888888 888  .d88b.  88888b.   "Y888b.    .d8888b 888d888 888 88888b.  888888 
+			   d88P  888 888 "88b 888 888 "888 "88b     "88b 888    888 d88""88b 888 "88b     "Y88b. d88P"    888P"   888 888 "88b 888    
+			  d88P   888 888  888 888 888  888  888 .d888888 888    888 888  888 888  888       "888 888      888     888 888  888 888    
+			 d8888888888 888  888 888 888  888  888 888  888 Y88b.  888 Y88..88P 888  888 Y88b  d88P Y88b.    888     888 888 d88P Y88b.  
+			d88P     888 888  888 888 888  888  888 "Y888888  "Y888 888  "Y88P"  888  888  "Y8888P"   "Y8888P 888     888 88888P"   "Y888 
+			                                                                                                              888             
+			                                                                                                              888             
+			                                                                                                              888             
+ */
+
+
 /**
  * [animationScript description]
  * createOneDayLayer
@@ -275,32 +321,53 @@ var animationScript = {
 		newDate.setDate(newDate.getDate() + nrOfDays);
 	},
 
+	startAnimation: function(tempDate, sliderval){
+		var i = sliderval;
+		
+		myTimer = setInterval(function(){
+			
+			i++;
+			
+			if(i <= diffDays && diffDays != null){
+				animationScript.animateMap(tempDate);
+				tempDate = googleScript.gettheDate(1, tempDate)
+				console.log(i + ' ' + diffDays);
+				googleScript.setSliderDate(tempDate);
+			}else{
+				console.log(i + ' ' + diffDays);
+				animationScript.stopAnimation();
+			}
+
+		}, 1000);
+	},
+
+	stopAnimation: function(){
+		clearInterval(myTimer);
+		console.log('stop. Hammertime.');
+	},
+
 	animateMap: function(tempDate){
 		/**
 		 * Skapa egen funktion som tar in antal dagar den ska flytta fram som inparameter. Kan kallas på för varje varv i loopen härifrån samt från
 		 * dateSlidern, som då skickas in ett större värde.
 		 */
-		// console.log('HERE');
-		setTimeout(function(){
-			animationScript.createOneDayLayer(tempDate);
-			i++;
-
-			if(i < diffDays){
-				// console.log('in if');
-				tempDat = googleScript.gettheDate(1, tempDate)
-				animationScript.animateMap(tempDat);
-				console.log(i + ' ' + tempDat);
-			}
-			else{
-				i = 0;
-				console.log('exited loop');
-				return false;
-			}
-		}, 1000)
+		
+		animationScript.createOneDayLayer(tempDate);
+		console.log(i + ' ' + tempDate);	
 	},
 };
 
 
+/*
+															8888888888 888b    888 8888888b.  
+															888        8888b   888 888  "Y88b 
+															888        88888b  888 888    888 
+															8888888    888Y88b 888 888    888 
+															888        888 Y88b888 888    888 
+															888        888  Y88888 888    888 
+															888        888   Y8888 888  .d88P 
+															8888888888 888    Y888 8888888P"  
+ */
 
 (function(){
 	googleScript.init();
