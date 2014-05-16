@@ -11,18 +11,24 @@
  * VARIABLES
  * 
  */
-var mapOptions 	= null;
-var myCenter 	= null;
-var map 		= null;
-var bounds 		= null;
+var mapOptions 		= null;
+var myCenter 		= null;
+var map 			= null;
+var bounds 			= null;
+
 var schoolinfoArray	= null;
-var datesArray	= null;
-var heatmaplayer= null;
-var firstDate 	= null;
-var lastDate  	= null;
-var diffDays	= null;
-var dates_fp	= '/dbt/json/dates.json';
-var schoolinfo_fp = '/dbt/json/schoolinfo.json';
+var datesArray		= null;
+var polylineArray 	= null;
+
+var heatmaplayer 	= null;
+var polylineslayer 	= null;
+
+var firstDate 		= null;
+var lastDate  		= null;
+var diffDays		= null;
+var dates_fp		= '/dbt/json/dates.json';
+var schoolinfo_fp 	= '/dbt/json/schoolinfo.json';
+var connections_fp 	= '/dbt/json/schoolconnections.json';
 
 /**
  * 
@@ -116,6 +122,13 @@ var googleScript = {
 		mapOptions = {
 			center: lycksele,
 			zoom: 13,
+			scrollwheel: false,
+			streetViewControl: false,
+			draggable: true,
+			zoomControl:true,
+		    zoomControlOptions: {
+		      style:google.maps.ZoomControlStyle.SMALL
+		    },
 			mapTypeId: google.maps.MapTypeId.ROADMAP
 		};	
 
@@ -140,6 +153,34 @@ var googleScript = {
 
 	},
 
+	createPolylines: function(polyarray, polyWeight){
+
+		// polyarray = [new google.maps.LatLng(64.5996781, 18.7096914),
+		// new google.maps.LatLng(64.5846476, 18.6705204),
+		// new google.maps.LatLng(64.6005173, 18.7061959)];
+
+		if(polyarray === undefined){
+			var firstStep = UIScript.getSliderDate();
+			objectScript.createPolyArray(firstStep, firstStep);
+		}
+		else{
+			console.log(polyarray);
+
+			polylineslayer = new google.maps.Polyline({
+				path: polyarray, 
+				strokeColor: '#2980b9',
+				strokeOpacity: 1.0,
+				strokeWeight: 2,
+				editable: false,
+				geodesic: true,
+			});
+
+			polylineslayer.setMap(map);	
+
+		}
+
+	},
+
 	/*************************************
 	 * createLayerByDate
 	 * ISSUES: fromDate <= tempDate hämtar dagen efter fromDate, inte samma. Dra -1 på fromDate???
@@ -148,23 +189,16 @@ var googleScript = {
 		// items = [];
 		
 		// console.log(datesArray);
-		console.log(fromDate, toDate);
-		fromDate = new Date(fromDate);
-		toDate = new Date(toDate);
-		console.log(fromDate, toDate);
-
-		fromDate = fromDate.getFullYear() + '' + fromDate.getMonth()+'' + fromDate.getDate();
-		
-		toDate = toDate.getFullYear() + ''+toDate.getMonth()+'' + toDate.getDate();
-		console.log(fromDate, toDate);
+		// console.log(fromDate, toDate);
+		fromDate = objectScript.dateFixer(fromDate);
+		toDate = objectScript.dateFixer(toDate);
+		// console.log(fromDate, toDate);
 
 		var mvcarray = [];
 		
 		$.each( datesArray, function ( key, val){
 			
-			var tempDate = new Date(val['date']);
-
-			tempDate = tempDate.getFullYear() + '' + tempDate.getMonth() + '' +  tempDate.getDate();
+			var tempDate = objectScript.dateFixer(val['date']);
 			// console.log(tempDate);
 			// if((tempDate >= fromDate) && (tempDate <= toDate)){
 			if(tempDate >= fromDate && tempDate <= toDate){
@@ -232,7 +266,6 @@ var objectScript = {
 			return returnValue;
 
 		}else{
-			console.log('ififif');
 			return null;
 		}
 		
@@ -246,17 +279,66 @@ var objectScript = {
 	 */
 	gettheDate: function(nrOfDays, theDate){
 		if(typeof theDate == 'undefined'){
-			console.log('in undefined');
+			// console.log('in undefined');
 			tempDate = new Date(firstDate);
 			tempDate.setDate(tempDate.getDate() + nrOfDays);
 			return tempDate;
 		}else{
-			console.log('defined');
+			// console.log('defined');
 			tempDate = new Date(theDate);
 			tempDate.setDate(tempDate.getDate() + nrOfDays);
 			return tempDate;	
 		}
 	},
+
+	createPolyArray: function(fromDate, toDate){
+
+		var theSchool = 2;
+
+		theSchoolLocation = objectScript.getSchoolInformation('location', theSchool, 'schoolid');
+		// console.log(fromDate, toDate);
+		fromDate = new Date(fromDate);
+		toDate = new Date(toDate);
+		console.log(fromDate, toDate);
+		// polylineslayer.setMap(null);
+
+		$.each( polylineArray, function (key, val){
+			// console.log(val);
+			if(val['owner'] == theSchoolLocation){
+				// fromtemp = objectScript.dateFixer(val['fromdate']);
+				// totemp = objectScript.dateFixer(val['todate']);
+				fromtemp = val['fromdate'];
+				totemp = val['todate'];
+				
+				if((fromtemp <= fromDate) && (totemp > toDate)){
+					// console.log('found fitting date');
+					var polyarray = [];
+					var destination = val['destination'];
+					var owner = val['owner'];
+					polyarray.push(destination);
+					polyarray.push(owner);
+
+					// googleScript.createPolylines(polyarray);
+					polylineslayer.setPath(polyarray);
+
+				}
+				// else{
+				// 	polylineslayer = null;
+				// 	console.log('setting to null');
+				// }
+				
+			}
+		});
+
+	},
+
+	dateFixer: function(tempDate){
+		tempDate = new Date(tempDate);
+		// console.log('new date: ', tempDate);
+		tempDate = tempDate.getFullYear() + '' + (tempDate.getMonth()+1) + '' +  tempDate.getDate();
+		return tempDate;
+	},
+
 };
 
 /*
@@ -298,17 +380,6 @@ var UIScript = {
 
 };
 
-var i = 0; // for iterations
-var weekday = new Array(7);
-	weekday[0] = "Sön";
-	weekday[1] = "Mån";
-	weekday[2] = "Tis";
-	weekday[3] = "Ons";
-	weekday[4] = "Tors";
-	weekday[5] = "Fre";
-	weekday[6] = "Lör";
-var myTimer = null;
-
 
 /*
 					                  d8b                        888    d8b                    .d8888b.                   d8b          888    
@@ -324,7 +395,16 @@ var myTimer = null;
 					                                                                                                          888                       
  */
 
-
+var i = 0; // for iterations
+var weekday = new Array(7);
+	weekday[0] = "Sön";
+	weekday[1] = "Mån";
+	weekday[2] = "Tis";
+	weekday[3] = "Ons";
+	weekday[4] = "Tors";
+	weekday[5] = "Fre";
+	weekday[6] = "Lör";
+var myTimer = null;
 /**
  * [animationScript description]
  * createOneDayLayer
@@ -353,11 +433,12 @@ var animationScript = {
 		document.getElementById('sliderValue').innerHTML = 'Datum:	' + choosenDate + '<br>Dag:	' + dayType;
 		// console.log(newDateDate);
 		googleScript.createLayerByDate(choosenDate, choosenDate);	
+		objectScript.createPolyArray(choosenDate, choosenDate);
 		
 	},
 
 	/**
-	 * [createMultipleDaysLayer description]
+	 * [createMultipleDaysLayer description]          				 FUNCTION NOT USED
 	 * @return {[type]} [description]
 	 */
 	createMultipleDaysLayer: function(){
@@ -428,6 +509,7 @@ var jsonScript = {
 		
 		datesArray = [];
 		schoolinfoArray = [];
+		polylineArray = [];
 		googleScript.createmap();
 		
 		// INFO ABOUT SCHOOLS: Has: id, school, kidsum, lat, lng
@@ -486,14 +568,36 @@ var jsonScript = {
 				datesArray.push(tot);
 			});
 
-			console.log('dates');
-			console.log(firstDate, lastDate);
+			// console.log('dates');
+			// console.log(firstDate, lastDate);
 			// console.log(datesArray);
 			// googleScript.createHeatmap();
 			var startDate = UIScript.getSliderDate();
 			googleScript.createLayerByDate(startDate, startDate);
 			UIScript.calculateDays();
 
+		});
+
+		$.getJSON(connections_fp, function(data){
+			// console.log(data);
+			$.each( data, function( key, val ){
+				
+				var tot = {};
+
+				var ownerLocation = objectScript.getSchoolInformation('location', val['OWNER'], 'schoolid');
+				var destinationLocation = objectScript.getSchoolInformation('location', val['DESTINATION'], 'schoolid');
+
+				tot.owner = ownerLocation;
+				tot.destination = destinationLocation;
+				tot.fromdate = new Date(val['FROMDATE']);
+				tot.todate = new Date(val['TODATE']);
+
+				polylineArray.push(tot);
+
+			});
+
+			console.log(polylineArray);
+			// googleScript.createPolylines();
 		});
 		
 		// finaljson = $.parseJSON(finaljson);
@@ -519,7 +623,7 @@ var jsonScript = {
 
 	setTimeout(function(){
 		document.getElementById('information').innerHTML = 'Sidan har laddats';
-	}, 500);
+	}, 1500);
 	
 	
 })();
