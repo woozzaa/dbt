@@ -22,6 +22,7 @@ var polylineArray 	= null;
 
 var heatmaplayer 	= null;
 var polylineslayer 	= null;
+var markers 		= null;
 
 var firstDate 		= null;
 var lastDate  		= null;
@@ -97,6 +98,15 @@ var googleScript = {
 			}
 		});
 
+		$('#toggleMarkers').on('click', function(){
+			// console.log('in toggle', markers.getZIndex());
+			if(markers.getVisible()){
+				markers.setVisible(false);
+			}else{
+				markers.setVisible(true);
+			}
+		});
+
 		$('#submitDates').on('click', function(){
 			var fromDate = $('#fromDate').val();
 			var toDate = $('#toDate').val();
@@ -163,11 +173,11 @@ var googleScript = {
 		heatmaplayer = new google.maps.visualization.HeatmapLayer({
 			data: mvcarray,
 			opacity: heatmapOpacity,
-			radius: heatmapRadius
+			radius: heatmapRadius,
 		});
 		
 		heatmaplayer.setMap(map);
-
+		// googleScript.createMarkers();
 	},
 
 	createPolylines: function(polyarray){
@@ -242,6 +252,29 @@ var googleScript = {
 
 	},
 
+	createMarkers: function(){
+		var image = {
+			url: 'img/bluedot.png',
+			size: new google.maps.Size(7,7),
+			anchor: new google.maps.Point(3.5,3.5),
+		};
+
+		var shape = {
+
+		};
+		// objectScript.printObjects();
+		// console.log('schooLLat', tempus);
+		for(i = 0; i < schoolinfoArray.length; i++){
+			// var schollocation = objectScript.getSchoolInformation('location', i, 'schoolid');
+			markers = new google.maps.Marker({
+				position: objectScript.getSchoolInformation('location', i, 'schoolid'),
+				map: map,
+				zIndex: 10,
+				icon: image,
+			});
+		}
+	},
+
 };
 
 /*
@@ -259,6 +292,12 @@ var googleScript = {
  */
 
 var objectScript = {
+
+	printObjects: function(){
+		console.log('schoolinfoArray', schoolinfoArray);
+		console.log('datesArray', datesArray);
+		console.log('polylineArray', polylineArray);
+	},
 
 	/**
 	 * [getSchoolInformation gets value from schoolinfoArray. Return value depends on input]
@@ -582,6 +621,7 @@ var jsonScript = {
 			// console.log('schoolinfo: ');
 			console.log('getSchoolinfoJson DONE');
 			jsonScript.getDatesJson();
+
 
 		});
 	},
