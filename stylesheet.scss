@@ -44,7 +44,7 @@
 {
 	float: right;
 	font-weight: bold;
-	margin-left: 70px;
+	margin-left: 10px;
 }
 
 .schoolInfoHeaders
@@ -54,9 +54,17 @@
 
 #input
 {
-	// float: left;
-	// width: 120px;
-	// height: 120px;
+	// float: right;
+}
+
+.dateInterval
+{
+	float: left;
+}
+
+.sliderInterval
+{
+	float: right;
 }
 
 .schoolBox

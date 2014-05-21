@@ -26,10 +26,16 @@
 .schoolInfoChangable {
   float: right;
   font-weight: bold;
-  margin-left: 70px; }
+  margin-left: 10px; }
 
 .schoolInfoHeaders {
   float: left; }
+
+.dateInterval {
+  float: left; }
+
+.sliderInterval {
+  float: right; }
 
 .schoolBox {
   width: 30%;
