@@ -1,3 +1,4 @@
+
 .content
 {
 	margin: 0 auto;
@@ -7,25 +8,48 @@
 
 #maps
 {
-	height: 750px;
-	width: 1000px;
+	height: 550px;
+	// width: 1400px;
+	width: 100%;
 	margin: 0 auto;
 	background-color: #E6E6E6;
-	float: right;
+	// float: right;
 }
 
 #options
 {
-	width: 320px;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
 	// background-color: green;
 }
 #buttons
 {
-	float: left;
-	display:inline;
+	// display:inline;
+	margin: 0 auto;
 	// width: 120px;
 	// height: 120px;
 	background-color: blue;
+}
+
+#schoolInformation
+{
+	margin: 0 auto;
+	width: 70%;
+	overflow: hidden;
+	// background-color: blue;
+}
+
+.schoolInfoChangable
+{
+	float: right;
+	font-weight: bold;
+	margin-left: 70px;
+}
+
+.schoolInfoHeaders
+{
+	float: left;
 }
 
 #input
@@ -34,3 +58,12 @@
 	// width: 120px;
 	// height: 120px;
 }
+
+.schoolBox
+{
+	width: 30%;
+	background-color: blue;
+	float: left;
+}
+
+.floatMargin { margin-right: 5%; }

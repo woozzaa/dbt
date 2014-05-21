@@ -26,16 +26,14 @@
 
 			<div id="options">
 				<div id="buttons">
-					<button id="moveLeft"> Move right </button>
-					<button id="moveRight"> Move left </button>
 					<button id="toggleHeatmap"> Toggle Heatmap </button>
 					<button id="togglePolylines"> Toggle Polylines </button>
 					<button id="toggleMarkers"> Toggle Markers </button>
 				</div>
 
 				<div id="input">
-					From Date: 	<input type="text" name="YYYY-MM-DD" placeholder="YYYY-MM-DD" id="fromDate" value="2014-01-18"><br>
-					To Date: 	<input type="text" name="YYYY-MM-DD" placeholder="YYYY-MM-DD" id="toDate" value="2014-01-18"><br>
+					From Date: 	<input type="text" name="YYYY-MM-DD" placeholder="YYYY-MM-DD" id="fromDate" value="2014-01-01"><br>
+					To Date: 	<input type="text" name="YYYY-MM-DD" placeholder="YYYY-MM-DD" id="toDate" value="2014-01-20"><br>
 					<button id="submitDates">Submit</button>
 					<br>
 					<br>
@@ -65,26 +63,78 @@
 						<option value="16">16</option>
 						<option value="17">17</option>
 						<option value="18">18</option>
+						<option value="19">19</option>
+						<option value="20">20</option>
+						<option value="21">21</option>
+						<option value="22">22</option>
+						<option value="23">23</option>
+						<option value="24">24</option>
+						<option value="25">25</option>
+						<option value="26">26</option>
+						<option value="27">27</option>
+						<!-- <option value="28">28</option> -->
 					</select><br>
-	
-					<input type="checkbox" id="percent" value="percent" checked/>View in Percent
-				</div>
 
-			</div><br>
+					<input type="checkbox" id="percent" value="percent" checked/>View in Percent
+
+
+				</div> <!-- #input -->
+
+			</div> <!-- #options -->
+			<br>
+			<div id="schoolInformation">
+				
+				<div id="school1" class="schoolBox floatMargin">
+
+					<div class="schoolInfoHeaders">
+						<span>Name: </span><br>
+						<span>Kids: </span><br>
+						<span>Sick kids: </span><br>
+					</div>
+					<div class="schoolInfoChangable">
+						<span id="schoolname"></span><br>
+						<span id="schoolkids"></span><br>
+						<span id="sickkids"></span><br>
+					</div>	
+
+				</div>
+			
+				<div id="school2" class="schoolBox floatMargin">
+					
+					<div class="schoolInfoHeaders">
+						<span>Name: </span><br>
+						<span>Kids: </span><br>
+						<span>Sick kids: </span><br>
+					</div>
+					<div class="schoolInfoChangable">
+						<span id="schoolname"></span><br>
+						<span id="schoolkids"></span><br>
+						<span id="sickkids"></span><br>
+					</div>
+
+				</div>
+				
+				<div id="school3" class="schoolBox">
+					
+					<div class="schoolInfoHeaders">
+						<span>Name: </span><br>
+						<span>Kids: </span><br>
+						<span>Sick kids: </span><br>
+					</div>
+					<div class="schoolInfoChangable">
+						<span id="schoolname"></span><br>
+						<span id="schoolkids"></span><br>
+						<span id="sickkids"></span><br>
+					</div>
+
+				</div>
+				
+					
+			</div> <!-- #schoolInformation -->
 	
 			<div id="information"></div><br>
-
-			<div id="schoolInformation">
-				<p>Name: </p><p id="schoolname"></p>
-				<p>Kids: </p><p id="schoolkids"></p>
-			</div>
-
-
-
-
-			
-
 		</div> <!-- .content -->
+		
 
 	</body>
 

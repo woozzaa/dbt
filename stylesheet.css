@@ -4,16 +4,37 @@
   overflow: hidden; }
 
 #maps {
-  height: 750px;
-  width: 1000px;
+  height: 550px;
+  width: 100%;
   margin: 0 auto;
-  background-color: #E6E6E6;
-  float: right; }
+  background-color: #E6E6E6; }
 
 #options {
-  width: 320px; }
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto; }
 
 #buttons {
-  float: left;
-  display: inline;
+  margin: 0 auto;
   background-color: blue; }
+
+#schoolInformation {
+  margin: 0 auto;
+  width: 70%;
+  overflow: hidden; }
+
+.schoolInfoChangable {
+  float: right;
+  font-weight: bold;
+  margin-left: 70px; }
+
+.schoolInfoHeaders {
+  float: left; }
+
+.schoolBox {
+  width: 30%;
+  background-color: blue;
+  float: left; }
+
+.floatMargin {
+  margin-right: 5%; }
