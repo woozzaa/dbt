@@ -153,6 +153,14 @@ var googleScript = {
 
 	createmap: function(){
 
+		var mapstyling3 = [
+		{"featureType":"landscape","stylers":[{"hue":"#F1FF00"},{"saturation":-27.4},{"lightness":9.4},{"gamma":1}]},
+		{"featureType":"road.highway","stylers":[{"hue":"#0099FF"},{"saturation":-20},{"lightness":36.4},{"gamma":1}]},
+		{"featureType":"road.arterial","stylers":[{"hue":"#00FF4F"},{"saturation":0},{"lightness":0},{"gamma":1}]},
+		{"featureType":"road.local","stylers":[{"hue":"#FFB300"},{"saturation":-38},{"lightness":11.2},{"gamma":0}]},
+		{"featureType":"water","stylers":[{"hue":"#00B6FF"},{"saturation":4.2},{"gamma":0}]},
+		{"featureType":"poi","stylers":[{"hue":"#9FFF00"},{"saturation":0},{"lightness":0},{"gamma":1}]}];
+
 		lycksele = new google.maps.LatLng(64.592418,18.688387);
 
 		mapOptions = {
@@ -161,6 +169,7 @@ var googleScript = {
 			scrollwheel: false,
 			streetViewControl: false,
 			draggable: true,
+			styles: mapstyling3,
 			zoomControl:true,
 			zoomControlOptions: {
 			  style:google.maps.ZoomControlStyle.SMALL
@@ -185,20 +194,26 @@ var googleScript = {
 		googleScript.createMarkers();
 	},
 
-	createPolylines: function(polyarrayDest, polyarrayHome){
-		console.log('polyarray: ', polyarrayDest, polyarrayHome);	
+	createPolylines: function(polyarrayDest, polyarrayHome, polyarrayWeights){
+		console.log('polyarray: ', polyarrayDest, polyarrayHome, polyarrayWeights);	
 		
+		var colorscheme = ['10FF00', '20FF00', '30FF00', '40FF00', '50FF00', '60FF00', '70FF00', '80FF00', '90FF00', 'A0FF00', 'B0FF00', 'C0FF00', 'D0FF00', 'E0FF00', 'F0FF00', 'FFFF00', 'FFF000', 'FFE000', 'FFD000', 'FFC000', 'FFB000', 'FFA000', 'FF9000', 'FF8000', 'FF7000', 'FF6000', 'FF5000', 'FF4000', 'FF3000', 'FF2000', 'FF1000',]
+
+			var colorscheme_small = ['20FF00', '40FF00', '60FF00', '80FF00', 'A0FF00', 'C0FF00', 'E0FF00', 'FFFF00', 'FFE000', 'FFC000', 'FFA000', 'FF8000', 'FF6000', 'FF4000', 'FF2000', 'FF1000',];
+
 		for(i = 0; i < polylineslayer.length; i++){
 			polylineslayer[i].setMap(null);
 		}
 
 		for(i = 0; i < polyarrayDest.length; i++)
 		{
+			var color = colorscheme_small[polyarrayWeights[i]];
+
 			polylineslayer[i] = new google.maps.Polyline({
 				path: [polyarrayDest[i], polyarrayHome[0]],
-				strokeColor: '#2980b9',
+				strokeColor: color,
 				strokeOpacity: 1.0,
-				strokeWeight: 2,
+				strokeWeight: 3,//polyarrayWeights[i],
 				visible: true,
 			});
 			polylineslayer[i].setMap(map);
@@ -464,13 +479,14 @@ var objectScript = {
 
 	createPolyArray: function(fromDate, toDate, schoolid){
 
-		var polyarrayDest = [];
-		var polyarrayHome
-		var strokeW = 0;
-		theSchoolLocation = objectScript.getSchoolInformation('location', schoolid, 'schoolid');
+		var polyarrayDest	 = [];
+		var polyarrayHome 	 = [];
+		var polyArrayWeights = [];
+		var strokeW 		 = 0;
+		theSchoolLocation 	 = objectScript.getSchoolInformation('location', schoolid, 'schoolid');
 
 		fromDate = new Date(fromDate);
-		toDate = new Date(toDate);
+		toDate 	 = new Date(toDate);
 		console.log('In createPolyArray with dates: ', fromDate, toDate, schoolid);
 
 		$.each( polylineArray, function (key, val)
@@ -484,38 +500,36 @@ var objectScript = {
 				if((fromtemp <= fromDate) && (totemp > toDate))
 				{
 					var destination = val['destination'];
-					// var owner = val['owner'];
-					// var polyData = [];
-					polyarrayHome = [val['owner']];
-					// polyData.push(owner);
-					polyarrayDest.push(destination);
-					// polyarray.push(owner);
-					// polyarray.push(destination);
+					var owner = val['owner'];
+					
+					polyarrayHome = [owner];
+					
+					if(!destination.equals(owner)){
+					
+						var index = polyarrayDest.indexOf(destination);
+						console.log('index: ', index);
+						if(index != -1)
+						{
+							console.log('Addind weight to existing dest');
+							polyArrayWeights[index] += 1;
+						}
+						else
+						{
+							console.log('Adding new dest');
+							var weight = 1;
+							polyArrayWeights.push(weight);
+							polyarrayDest.push(destination);	
+						}
+						
+					}
+
 				}
 								
 			}
 
 		});
 
-
-
-		// polylineslayer.setMap(null);
-		googleScript.createPolylines(polyarrayDest, polyarrayHome);
-		// console.log('StrokeWeight: ', strokeW);
-		// console.log('Splitted StrokeWeight: ', strokeW);
-		// if(polylineslayer == null)
-		// {
-		// 	console.log('polylineslayer is null')
-		// 	googleScript.createPolylines(polyarray);
-		// 	// polylineslayer.setOptions({strokeWeight: strokeW});
-		// }
-		// else
-		// {
-		// 	console.log('setting new path');
-		// 	console.log('new polyarray: ', polyarray);
-		// 	polylineslayer.setPath(polyarray);
-		// 	// polylineslayer.setOptions({strokeWeight: strokeW});
-		// }
+		googleScript.createPolylines(polyarrayDest, polyarrayHome, polyArrayWeights);
 
 	},
 
@@ -874,7 +888,7 @@ var jsonScript = {
 	startUpStuff: function(){
 		// polylineslayer.setVisible(false); 
 		var startDate = UIScript.getSliderDate();
-		var schoolid = 1;
+		var schoolid = 22;
 		UIScript.setSchoolId(schoolid);
 		// console.log('calling objectScript.createPolyArray');
 		// objectScript.createPolyArray(startDate, startDate, schoolid);
