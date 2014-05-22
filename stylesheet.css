@@ -1,3 +1,8 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
 .content {
   margin: 0 auto;
   width: 1400px;
@@ -23,13 +28,18 @@
   width: 70%;
   overflow: hidden; }
 
-.schoolInfoChangable {
+.changable {
+  margin-left: 10px;
   float: right;
-  font-weight: bold;
-  margin-left: 10px; }
+  margin-right: 80px; }
 
-.schoolInfoHeaders {
-  float: left; }
+.categories {
+  margin-left: 70px; }
+
+.schoolheader {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
 
 .dateInterval {
   float: left; }
@@ -39,8 +49,10 @@
 
 .schoolBox {
   width: 30%;
-  background-color: blue;
-  float: left; }
+  margin-top: 20px;
+  background-color: #00ccff;
+  float: left;
+  padding: 10px; }
 
 .floatMargin {
   margin-right: 5%; }

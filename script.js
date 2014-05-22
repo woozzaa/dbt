@@ -195,25 +195,34 @@ var googleScript = {
 	},
 
 	createPolylines: function(polyarrayDest, polyarrayHome, polyarrayWeights){
-		console.log('polyarray: ', polyarrayDest, polyarrayHome, polyarrayWeights);	
-		
-		var colorscheme = ['10FF00', '20FF00', '30FF00', '40FF00', '50FF00', '60FF00', '70FF00', '80FF00', '90FF00', 'A0FF00', 'B0FF00', 'C0FF00', 'D0FF00', 'E0FF00', 'F0FF00', 'FFFF00', 'FFF000', 'FFE000', 'FFD000', 'FFC000', 'FFB000', 'FFA000', 'FF9000', 'FF8000', 'FF7000', 'FF6000', 'FF5000', 'FF4000', 'FF3000', 'FF2000', 'FF1000',]
+		// console.log('polyarray: ', polyarrayDest, polyarrayHome, polyarrayWeights);	
 
-			var colorscheme_small = ['20FF00', '40FF00', '60FF00', '80FF00', 'A0FF00', 'C0FF00', 'E0FF00', 'FFFF00', 'FFE000', 'FFC000', 'FFA000', 'FF8000', 'FF6000', 'FF4000', 'FF2000', 'FF1000',];
+		var red 	= 'FF2000';
+		var orange 	= 'FFA000';
+		var yellow 	= 'FFF000';
+		var semigreen = 'C0FF00';
+		var green 	= '4BF000';
+
 
 		for(i = 0; i < polylineslayer.length; i++){
 			polylineslayer[i].setMap(null);
 		}
 
 		for(i = 0; i < polyarrayDest.length; i++)
-		{
-			var color = colorscheme_small[polyarrayWeights[i]];
+		{	
+			var weight = polyarrayWeights[i];
+			
+			if(weight <= 3) color = green;
+			else if(weight > 3 && weight <= 6) color = semigreen;
+			else if(weight > 6 && weight <= 9) color = yellow;
+			else if(weight > 9 && weight <= 13) color = orange;
+			else color = red;
 
 			polylineslayer[i] = new google.maps.Polyline({
 				path: [polyarrayDest[i], polyarrayHome[0]],
 				strokeColor: color,
 				strokeOpacity: 1.0,
-				strokeWeight: 3,//polyarrayWeights[i],
+				strokeWeight: 4,//polyarrayWeights[i],
 				visible: true,
 			});
 			polylineslayer[i].setMap(map);
@@ -487,7 +496,7 @@ var objectScript = {
 
 		fromDate = new Date(fromDate);
 		toDate 	 = new Date(toDate);
-		console.log('In createPolyArray with dates: ', fromDate, toDate, schoolid);
+		// console.log('In createPolyArray with dates: ', fromDate, toDate, schoolid);
 
 		$.each( polylineArray, function (key, val)
 		{
@@ -507,15 +516,12 @@ var objectScript = {
 					if(!destination.equals(owner)){
 					
 						var index = polyarrayDest.indexOf(destination);
-						console.log('index: ', index);
 						if(index != -1)
 						{
-							console.log('Addind weight to existing dest');
 							polyArrayWeights[index] += 1;
 						}
 						else
 						{
-							console.log('Adding new dest');
 							var weight = 1;
 							polyArrayWeights.push(weight);
 							polyarrayDest.push(destination);	
@@ -564,6 +570,7 @@ var objectScript = {
 var UIScript = {
 
 	setSchoolInformation: function(schoolid){
+
 		var totkids = objectScript.getSchoolInformation('totalkids', schoolid, 'schoolid');
 		var schoolname = objectScript.getSchoolInformation('schoolname', schoolid, 'schoolid');
 		var schoolloc = objectScript.getSchoolInformation('location', schoolid, 'schoolid');
@@ -595,7 +602,26 @@ var UIScript = {
 		animationScript.createOneDayLayer(theDate);
 		// console.log('UIScript setInformation calling for createPolyArray');
 		// objectScript.createPolyArray(theDate, theDate, schoolid);
-		UIScript.setSchoolInformation(schoolid);
+		// UIScript.setSchoolInformation(schoolid);
+
+		for(i = 1; i <= 6; i++){
+
+			var totkids = objectScript.getSchoolInformation('totalkids', i, 'schoolid');
+			var schoolname = objectScript.getSchoolInformation('schoolname', i, 'schoolid');
+			// var schoolloc = objectScript.getSchoolInformation('location', i, 'schoolid');
+			var sickkids = objectScript.getDatesInformation(i);
+
+			$('.schoolBox:nth-child('+i+') .schoolheader').html(''+schoolname);
+			$('.schoolBox:nth-child('+i+') .schoolkids span').html(''+totkids);
+			$('.schoolBox:nth-child('+i+') .sickkids span').html(''+sickkids);
+
+			// console.log('school location: ', schoolloc);
+			// // console.log('sick kids:', sickkids);
+			
+			// div.getElementById('schoolname').innerHTML = schoolname;
+			// div.document.getElementById('schoolkids').innerHTML = totkids;
+			// div.document.getElementById('sickkids').innerHTML 	= sickkids;
+		}
 
 	},
 	
@@ -679,7 +705,7 @@ var animationScript = {
 		document.getElementById('sliderValue').innerHTML = 'Datum:	' + choosenDate + '<br>Dag:	' + dayType;
 
 		googleScript.createLayerByDate(choosenDate, choosenDate);	
-		console.log('createOneDayLayer calling for createPolyArray');
+		// console.log('createOneDayLayer calling for createPolyArray');
 
 		objectScript.createPolyArray(choosenDate, choosenDate, UIScript.getSchoolId());
 		
@@ -709,7 +735,7 @@ var animationScript = {
 		newDate.setDate(newDate.getDate() + nrOfDays);
 	},
 
-	startAnimation: function(tempDate, sliderval){
+	startAnimation: function(tempDate){
 		var i = Number($('#dateSlider').val());
 		var interval = 1;
 
@@ -730,12 +756,12 @@ var animationScript = {
 			if(i <= diffDays && diffDays != null)
 			{
 				animationScript.animateMap(tempDate);
-				tempDate = objectScript.gettheDate(interval, tempDate)
+				tempDate = objectScript.getFutureDate(interval, tempDate)
 				UIScript.setSliderDate(tempDate);
 				
 				var schoolid = UIScript.getSchoolId();
 				objectScript.createPolyArray(tempDate, tempDate, schoolid);
-				UIScript.setSchoolInformation(schoolid);
+				// UIScript.setSchoolInformation(schoolid);
 			}
 			else
 			{
@@ -879,7 +905,7 @@ var jsonScript = {
 				polylineArray.push(tot);
 
 			});
-			console.log('getConnectionJson DONE', polylineArray);
+			console.log('getConnectionJson DONE');
 			// console.log('calling jsonScript.startUpStuff');
 			jsonScript.startUpStuff();			
 		});

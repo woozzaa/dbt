@@ -1,4 +1,9 @@
-
+*
+{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
 .content
 {
 	margin: 0 auto;
@@ -40,16 +45,29 @@
 	// background-color: blue;
 }
 
-.schoolInfoChangable
-{
-	float: right;
-	font-weight: bold;
-	margin-left: 10px;
-}
-
 .schoolInfoHeaders
 {
-	float: left;
+	// float: left;
+
+}
+
+.changable
+{
+	margin-left: 10px;
+	float: right;
+	margin-right: 80px;
+}
+
+.categories
+{
+	margin-left: 70px;
+}
+
+.schoolheader
+{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 }
 
 #input
@@ -70,8 +88,10 @@
 .schoolBox
 {
 	width: 30%;
-	background-color: blue;
+	margin-top: 20px;
+	background-color: #00ccff;
 	float: left;
+	padding: 10px;
 }
 
 .floatMargin { margin-right: 5%; }
