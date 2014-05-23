@@ -253,12 +253,13 @@ var googleScript = {
 				var tot = {};
 				var returnValue = objectScript.getSchoolInformation('location', val['schoolid'], 'schoolid');
 				var sickKids = val['weight'];
+				// console.log('createLayerByDate sickkids: ', sickKids);
 				
 				
-				if(percent == true || typeof percent != 'undefined')
+				if(percent == true)
 				{
-
 					var kidsTotal	= objectScript.getSchoolInformation('totalkids', val['schoolid'], 'schoolid');
+					// console.log('createLayerByDate kidsTotal: ', kidsTotal, val['schoolid']);
 					
 					if(kidsTotal > oldkidsTotal || oldkidsTotal == null){
 						oldkidsTotal = kidsTotal;
@@ -268,7 +269,7 @@ var googleScript = {
 						kidsTotal = oldkidsTotal;
 					}
 
-					var sickKids 		= (sickKids / kidsTotal) * 100;
+					sickKids = (sickKids / kidsTotal) * 100;
 
 				}
 
@@ -366,7 +367,15 @@ var googleScript = {
 var objectScript = {
 
 	getDatesInformation: function(schoolid){
-		fromDate = objectScript.dateFixer(UIScript.getSliderDate());
+		if($(url).last()[0] == "index.html")
+		{
+			fromDate = objectScript.dateFixer(UIScript.getSliderDate());
+		}
+		else
+		{
+			fromDate = objectScript.dateFixer(UIScript.getFromDate());
+		}
+		
 		toDate = fromDate;		
 		var returnValue = 0;
 		// console.log('schoolid', schoolid);
@@ -400,6 +409,7 @@ var objectScript = {
 	 */
 	getSchoolInformation: function(infoType, recognizer, recognizerType){
 
+		console.log('recognizer: ', recognizer);
 		if((recognizerType == 'schoolid' )|| (recognizerType == 'schoolname') (recognizerType == 'totalkids') || (recognizerType == 'location'))
 		{   
 			var returnValue = null;
@@ -408,21 +418,25 @@ var objectScript = {
 			{
 				$.each(schoolinfoArray, function(key, val)
 				{
-
 					if(val[recognizerType] == recognizer)
 					{
 						returnValue = val[infoType];
 						return false;
 					}
-
 				});
-
 				return returnValue;	
 			}
 
 			else if(infoType == 'totalkids') // if infoType (requested datatype) is totalkids
 			{
-				var sliderDate = objectScript.dateFixer(UIScript.getSliderDate());
+				if($(url).last()[0] == "index.html")
+				{
+					var sliderDate = objectScript.dateFixer(UIScript.getSliderDate());
+				}
+				else
+				{
+					var sliderDate = objectScript.dateFixer(UIScript.getFromDate());
+				}
 				//Loops through all schools
 				$.each(schoolinfoArray, function(key, val)
 				{
@@ -434,7 +448,8 @@ var objectScript = {
 
 							fromdate = objectScript.dateFixer(vals['FROMDATE']);
 							todate = objectScript.dateFixer(vals['TODATE']);
-
+							console.log('dates: ', fromdate, sliderDate);
+							console.log('todate: ', todate);
 							// if datematch is found, return kidSum
 							if(fromdate <= sliderDate && sliderDate <= todate)
 							{
@@ -458,6 +473,7 @@ var objectScript = {
 		}
 		else
 		{
+			console.log('Sumsin is weely wong');
 			return null;
 		}
 		
@@ -569,6 +585,10 @@ var objectScript = {
 
 var UIScript = {
 
+	init: function(){
+		UIScript.setSchoolBoxInformation();	
+	},
+
 	setSchoolInformation: function(schoolid){
 
 		var totkids = objectScript.getSchoolInformation('totalkids', schoolid, 'schoolid');
@@ -604,6 +624,18 @@ var UIScript = {
 		// objectScript.createPolyArray(theDate, theDate, schoolid);
 		// UIScript.setSchoolInformation(schoolid);
 
+
+	},
+
+	/**
+	 * [setSchoolBoxInformation description]
+	 * UNUSED FUNCTION FOR NOW
+	 */
+	setSchoolBoxInformation: function(){
+		objectScript.printObjects();
+		var totkids = objectScript.getSchoolInformation('totalkids', 1, 'schoolid');
+		console.log('Schoolbox ', totkids);
+
 		for(i = 1; i <= 6; i++){
 
 			var totkids = objectScript.getSchoolInformation('totalkids', i, 'schoolid');
@@ -615,14 +647,7 @@ var UIScript = {
 			$('.schoolBox:nth-child('+i+') .schoolkids span').html(''+totkids);
 			$('.schoolBox:nth-child('+i+') .sickkids span').html(''+sickkids);
 
-			// console.log('school location: ', schoolloc);
-			// // console.log('sick kids:', sickkids);
-			
-			// div.getElementById('schoolname').innerHTML = schoolname;
-			// div.document.getElementById('schoolkids').innerHTML = totkids;
-			// div.document.getElementById('sickkids').innerHTML 	= sickkids;
 		}
-
 	},
 	
 	getSliderDate: function(){
@@ -640,12 +665,15 @@ var UIScript = {
 	},
 
 	getSchoolId: function(){
-		var dropDownId = Number($('#schoolDropdown').val());
-		return dropDownId;
+		return Number($('#schoolDropdown').val());;
 	},
 
 	setSchoolId: function(schoolid){
 		$('#schoolDropdown').val(schoolid);
+	},
+
+	getFromDate: function(){
+		return $('#fromDate').val();
 	},
 
 	calculateDays: function(){
@@ -702,7 +730,10 @@ var animationScript = {
 		var year 	= choosenDate.getFullYear();
 		
 		choosenDate = year + "-" + month + "-" + day;
-		document.getElementById('sliderValue').innerHTML = 'Datum:	' + choosenDate + '<br>Dag:	' + dayType;
+		if(document.getElementById('sliderValue') != null){
+			document.getElementById('sliderValue').innerHTML = 'Datum:	' + choosenDate + '<br>Dag:	' + dayType;	
+		}
+		
 
 		googleScript.createLayerByDate(choosenDate, choosenDate);	
 		// console.log('createOneDayLayer calling for createPolyArray');
@@ -800,7 +831,11 @@ var jsonScript = {
 	getSchoolinfoJson: function(){
 		
 		schoolinfoArray = [];
-		googleScript.createmap();
+		url = document.URL.split('/');
+		
+		if($(url).last()[0] == "index.html"){
+			googleScript.createmap();
+		}
 
 		
 		// INFO ABOUT SCHOOLS: Has: id, school, lat, lng, Kidsum depending on date
@@ -878,7 +913,9 @@ var jsonScript = {
 			var startDate = UIScript.getSliderDate();
 
 			// console.log('calling googleScript.createLayerByDate');
-			googleScript.createLayerByDate(startDate, startDate);
+			
+			googleScript.createLayerByDate(startDate, startDate);	
+			
 			console.log('getDatesJson DONE')
 			jsonScript.getConnectionJson();
 		});
@@ -919,6 +956,10 @@ var jsonScript = {
 		// console.log('calling objectScript.createPolyArray');
 		// objectScript.createPolyArray(startDate, startDate, schoolid);
 		UIScript.setInformation();
+
+		if($(url).last()[0] == "statistik.html"){
+			UIScript.init();
+		}
 	},
 
 };
@@ -935,6 +976,8 @@ var jsonScript = {
  */
 
 (function(){
+
+
 	googleScript.init();
 
 	google.maps.event.addDomListener(window, 'load', jsonScript.getSchoolinfoJson);
