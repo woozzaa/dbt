@@ -116,10 +116,29 @@ var googleScript = {
 				UIScript.setInformation();
 				googleScript.createLayerByDate(fromDate, toDate);
 			}
+			else if(fromDate != null && toDate == null)
+			{
+				UIScript.setSchoolBoxInformation();
+			}
 			else
 			{
 				alert('Invalid input');
 			}
+		});
+
+		$('#prevDay').on('click', function(){
+			
+			var theDate = objectScript.getFutureDate( -1, UIScript.getFromDate() );
+			// console.log('click', theDate);
+			UIScript.setFromDate(theDate);
+			UIScript.setSchoolBoxInformation();
+		});
+
+		$('#nextDay').on('click', function(){
+			var theDate = objectScript.getFutureDate(1, UIScript.getFromDate() );
+			// console.log('theday', theDate);
+			UIScript.setFromDate(theDate);
+			UIScript.setSchoolBoxInformation();
 		});
 
 		$('#dateSlider').mouseup(function(){
@@ -409,7 +428,6 @@ var objectScript = {
 	 */
 	getSchoolInformation: function(infoType, recognizer, recognizerType){
 
-		console.log('recognizer: ', recognizer);
 		if((recognizerType == 'schoolid' )|| (recognizerType == 'schoolname') (recognizerType == 'totalkids') || (recognizerType == 'location'))
 		{   
 			var returnValue = null;
@@ -448,8 +466,7 @@ var objectScript = {
 
 							fromdate = objectScript.dateFixer(vals['FROMDATE']);
 							todate = objectScript.dateFixer(vals['TODATE']);
-							console.log('dates: ', fromdate, sliderDate);
-							console.log('todate: ', todate);
+
 							// if datematch is found, return kidSum
 							if(fromdate <= sliderDate && sliderDate <= todate)
 							{
@@ -486,6 +503,7 @@ var objectScript = {
 	 * @return {[type]}          [description]
 	 */
 	getFutureDate: function(nrOfDays, theDate){
+
 		if(typeof theDate == 'undefined')
 		{
 			tempDate = new Date(firstDate);
@@ -498,6 +516,8 @@ var objectScript = {
 			// console.log('defined');
 			tempDate = new Date(theDate);
 			tempDate.setDate(tempDate.getDate() + nrOfDays);
+			var daytype = animationScript.getWeekday(tempDate);
+			console.log('daytype: ', daytype);
 			return tempDate;	
 		}
 	},
@@ -555,15 +575,30 @@ var objectScript = {
 
 	},
 
-	dateFixer: function(tempDate){
+	dateFixer: function(tempDate, hyphen){
 		tempDate = new Date(tempDate);
+
 		var year = tempDate.getFullYear();
 		var month = tempDate.getMonth()+1;
 		var day = tempDate.getDate();
+
 		if(day < 10) {day = '0' + day};
 		if(month < 10){month = '0' + month};
-		tempDate = year + '' + month + '' + day;
-		// tempDate = tempDate.getFullYear() + '' + (tempDate.getMonth()+1) + '' +  tempDate.getDate();
+
+		if(typeof hyphen == 'undefined' || hyphen == false)
+		{
+			tempDate = year + '' + month + '' + day;
+		}
+		else if(hyphen == true)
+		{
+			tempDate = year + '-' + month + '-' + day;
+		}
+		else
+		{
+			console.log('dateFixer false value, probably hyphen');
+			return false;
+		}
+		
 		return tempDate;
 	},
 
@@ -610,7 +645,7 @@ var UIScript = {
 		var theDate = UIScript.getSliderDate();
 		var schoolid = UIScript.getSchoolId();
 		var daytype = animationScript.getWeekday(theDate);
-
+		console.log('UIScript.setInformation calling getFutureDate');
 		if(daytype == 'Lör')
 		{
 			theDate = objectScript.getFutureDate(2, theDate);
@@ -632,26 +667,28 @@ var UIScript = {
 	 * UNUSED FUNCTION FOR NOW
 	 */
 	setSchoolBoxInformation: function(){
-		objectScript.printObjects();
-		var totkids = objectScript.getSchoolInformation('totalkids', 1, 'schoolid');
-		console.log('Schoolbox ', totkids);
+		// objectScript.printObjects();
 
-		for(i = 1; i <= 6; i++){
+		for(i = 1; i <= 27; i++){
 
 			var totkids = objectScript.getSchoolInformation('totalkids', i, 'schoolid');
 			var schoolname = objectScript.getSchoolInformation('schoolname', i, 'schoolid');
 			// var schoolloc = objectScript.getSchoolInformation('location', i, 'schoolid');
 			var sickkids = objectScript.getDatesInformation(i);
+			var sickpercent = Math.round((sickkids / totkids) * 10000) / 100;
 
 			$('.schoolBox:nth-child('+i+') .schoolheader').html(''+schoolname);
-			$('.schoolBox:nth-child('+i+') .schoolkids span').html(''+totkids);
-			$('.schoolBox:nth-child('+i+') .sickkids span').html(''+sickkids);
+			$('.schoolBox:nth-child('+i+') .schoolkids span').html(''+totkids + ' st');
+			$('.schoolBox:nth-child('+i+') .sickkids span').html(''+sickkids + ' st');
+			$('.schoolBox:nth-child('+i+') .sickkids2 span').html(''+sickpercent + ' %');
 
 		}
 	},
 	
 	getSliderDate: function(){
+
 		nrOfDays 	= Number($('#dateSlider').val());
+		console.log('UIScript.getSliderDate calling getFutureDate');
 		tempDate = objectScript.getFutureDate(nrOfDays);
 		return tempDate;
 	},
@@ -674,6 +711,11 @@ var UIScript = {
 
 	getFromDate: function(){
 		return $('#fromDate').val();
+	},
+
+	setFromDate: function(theDate){
+		theDate = objectScript.dateFixer(theDate, true);
+		$('#fromDate').val(theDate);
 	},
 
 	calculateDays: function(){
@@ -779,6 +821,7 @@ var animationScript = {
 			Will detect Saturday först, and therefore skip Sunday automatically. If start 
 			is on a Sunday, it will be monday within a second (shieeet...)
 			 */
+			console.log('startAnimation calling getFutureDate');
 			if(daytype == 'Lör')
 			{
 				tempDate = objectScript.getFutureDate(2, tempDate);
@@ -910,7 +953,9 @@ var jsonScript = {
 
 			// console.log('calling UIScript.calculateDays');
 			UIScript.calculateDays();
-			var startDate = UIScript.getSliderDate();
+			if($(url).last()[0] == "index.html"){
+				var startDate = UIScript.getSliderDate();
+			}
 
 			// console.log('calling googleScript.createLayerByDate');
 			
@@ -950,15 +995,20 @@ var jsonScript = {
 
 	startUpStuff: function(){
 		// polylineslayer.setVisible(false); 
-		var startDate = UIScript.getSliderDate();
-		var schoolid = 22;
-		UIScript.setSchoolId(schoolid);
-		// console.log('calling objectScript.createPolyArray');
-		// objectScript.createPolyArray(startDate, startDate, schoolid);
-		UIScript.setInformation();
+		if($(url).last()[0] == "index.html")
+		{
+			var startDate = UIScript.getSliderDate();
+			var schoolid = 22;
+			UIScript.setSchoolId(schoolid);
+			UIScript.setInformation();
+		}
 
-		if($(url).last()[0] == "statistik.html"){
+		else if($(url).last()[0] == "statistik.html"){
 			UIScript.init();
+		}
+		else
+		{
+			console.log('Unknown page');
 		}
 	},
 

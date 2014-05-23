@@ -92,6 +92,23 @@
 	background-color: #00ccff;
 	float: left;
 	padding: 10px;
+
+	li
+	{
+		list-style: none;
+	}
+
+	span
+	{
+		float: right;
+		margin-right: 30px;
+	}
+
 }
 
 .floatMargin { margin-right: 5%; }
+
+.listtype
+{
+	float: right;
+}

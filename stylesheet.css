@@ -53,6 +53,14 @@
   background-color: #00ccff;
   float: left;
   padding: 10px; }
+  .schoolBox li {
+    list-style: none; }
+  .schoolBox span {
+    float: right;
+    margin-right: 30px; }
 
 .floatMargin {
   margin-right: 5%; }
+
+.listtype {
+  float: right; }
