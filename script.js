@@ -881,7 +881,7 @@ var UIScript = {
 	setSchoolBoxInformation: function(){
 		// objectScript.printObjects();
 
-		for(var i = 1; i <= 3; i++){ //27 ist för 3 annars
+		for(var i = 1; i <= 27; i++){ //27 ist för 3 annars
 			console.log(' in loop: ', i);
 
 			var totkids = objectScript.getSchoolInformation('totalkids', i, 'schoolid');
@@ -942,7 +942,7 @@ var UIScript = {
 		list.push(dict);
 		list.push(dict2);
 
-		console.log('dict: ', dict);
+		// console.log('dict: ', dict);
 
 		var maxval = Math.max.apply(Math, datalist) + 1;
 		var stepWidth = Math.round((maxval/4));
@@ -970,7 +970,7 @@ var UIScript = {
 
 		if(chartarray[schoolid] == null)
 		{
-			console.log('Creating new Chart');
+			// console.log('Creating new Chart');
 			var ctx = document.getElementById('weekChart' + schoolid).getContext("2d");
 			ctx.canvas.width = 270;
 			ctx.canvas.height = 160;
@@ -980,7 +980,7 @@ var UIScript = {
 		}
 		else
 		{
-			console.log('Using old Chart', chartarray[schoolid]);
+			// console.log('Using old Chart', chartarray[schoolid]);
 			chartarray[schoolid].Bar(data, options);	
 		}
 
