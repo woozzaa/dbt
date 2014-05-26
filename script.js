@@ -104,6 +104,42 @@ var googleScript = {
 			}
 		});
 
+		$('#infoForm input').on('change', function(){
+			var radioVal = $('input[name=infotype]:checked', '#infoForm').val();
+			if(radioVal == 'summarized')
+			{
+				console.log('in summ');
+				$.ajax({
+					url: 'summarized.html', 
+					success: function(result){
+						document.getElementById('schoolInformation').innerHTML = result;
+						document.getElementById("toDate").style.visibility= "visible";
+						document.getElementById("toDatep").style.visibility= "visible";
+						chartarray = [];
+						UIScript.setLineChart();
+					}
+				});
+			}
+			else if(radioVal == 'perSchool')
+			{
+				console.log('in perschool');
+				$.ajax({
+					url: 'perschool.html', 
+					success: function(result){
+						// console.log(result);
+						document.getElementById('schoolInformation').innerHTML = result;
+						document.getElementById("toDate").style.visibility= "hidden";
+						document.getElementById("toDatep").style.visibility= "hidden";
+						UIScript.setSchoolBoxInformation();
+					}
+				});
+			}
+			else
+			{
+				alert('Sum sin wong in ladiobuttons');
+			}
+		});
+
 		/*
 			Change to check link instead of value from input field
 		 */
@@ -111,27 +147,46 @@ var googleScript = {
 			var fromDate = $('#fromDate').val();
 			var toDate = $('#toDate').val();
 			
-			if(fromDate != null && toDate != null)
+			if($(url).last()[0] != "statistik.html")
 			{	
 				console.log('Setting sliderDate from submitDates');
 				UIScript.setSliderDate(fromDate);
-				UIScript.setInformation();
+				// UIScript.setInformation();
+				UIScript.setDateInformation(fromDate);
 				googleScript.createLayerByDate(fromDate, toDate);
-			}
-			else if(fromDate != null && toDate == null)
-			{
-				UIScript.setSchoolBoxInformation();
 			}
 			else
 			{
-				alert('Invalid input');
+				var radioVal = $('input[name=infotype]:checked', '#infoForm').val();
+				if(radioVal == 'summarized')
+				{
+					UIScript.setLineChart();
+				}
+				else if(radioVal = 'perSchool')
+				{
+					UIScript.setSchoolBoxInformation();
+				}
 			}
+			
 		});
 
 		$('#prevDay').on('click', function(){
 			
-			var theDate = objectScript.getFutureDate( -1, UIScript.getFromDate() );
-			// console.log('click', theDate);
+			var tempDate = new Date(UIScript.getFromDate());
+			var diff = tempDate.getDay() - 1;
+			var startday = objectScript.getFutureDate(-diff, tempDate);
+
+			var theDate = objectScript.getFutureDate(-7, UIScript.getFromDate());
+			var daytype = animationScript.getWeekday(theDate);
+			if(daytype == 'Lör')
+			{
+				theDate = objectScript.getFutureDate(-1, theDate);
+			}
+			else if(daytype == 'Sön')
+			{
+				theDate = objectScript.getFutureDate(-2, theDate);
+			}
+			// console.log('theday', theDate);
 			UIScript.setFromDate(theDate);
 			UIScript.setSchoolBoxInformation();
 		});
@@ -141,7 +196,16 @@ var googleScript = {
 			var diff = tempDate.getDay() - 1;
 			var startday = objectScript.getFutureDate(-diff, tempDate);
 
-			+var theDate = objectScript.getFutureDate(1, UIScript.getFromDate() );
+			var theDate = objectScript.getFutureDate(7, UIScript.getFromDate());
+			var daytype = animationScript.getWeekday(theDate);
+			if(daytype == 'Lör')
+			{
+				theDate = objectScript.getFutureDate(2, theDate);
+			}
+			else if(daytype == 'Sön')
+			{
+				theDate = objectScript.getFutureDate(1, theDate);
+			}
 			// console.log('theday', theDate);
 			UIScript.setFromDate(theDate);
 			UIScript.setSchoolBoxInformation();
@@ -391,6 +455,12 @@ var googleScript = {
 
 var objectScript = {
 
+	/**
+	 * [getDatesInformation gets nr of sick kids at a choosen Date]
+	 * @param  {[type]} schoolid [id of school requested]
+	 * @param  {[type]} someDate [requested date]
+	 * @return {[type]}          [int, nr of sick children]
+	 */
 	getDatesInformation: function(schoolid, someDate){
 		
 		if(someDate === undefined)
@@ -528,11 +598,9 @@ var objectScript = {
 		}
 		else
 		{
-			// console.log('defined');
 			tempDate = new Date(theDate);
 			tempDate.setDate(tempDate.getDate() + nrOfDays);
 			var daytype = animationScript.getWeekday(tempDate);
-			console.log('daytype: ', daytype);
 			return tempDate;	
 		}
 	},
@@ -590,6 +658,64 @@ var objectScript = {
 
 	},
 
+	calcSickKids: function(fromDate, toDate){
+		console.log('theDates: ', fromDate, toDate);
+		// theDate = objectScript.dateFixer(theDate);
+		// console.log('theDate: ', theDate);
+		var sickSum = 0;
+		var datalist = [];
+		var futureTemp = fromDate;
+
+		fromDate = objectScript.dateFixer(fromDate);
+		toDate = objectScript.dateFixer(toDate);
+		var tempDate = fromDate;
+		
+
+		console.log('from + to', fromDate, toDate);
+
+		while(tempDate <= toDate)
+		{
+			$.each( datesArray, function (key, val)
+			{
+				
+				var listDate = objectScript.dateFixer(val['date']);
+				var dayDate = objectScript.dateFixer(val['date'], true);
+				
+				if(animationScript.getWeekday(dayDate) != 'Lör' && animationScript.getWeekday(dayDate) != 'Sön')
+				{
+
+					if(listDate >= tempDate && listDate <= tempDate)
+					{
+						console.log('daytype: ', animationScript.getWeekday(dayDate));
+						sickSum = sickSum + val['weight'];
+					}	
+				}
+
+				
+				
+			});
+			// console.log('sicksuM: ', sickSum);
+			datalist.push(sickSum);
+			sickSum = 0;
+			// console.log('futuretemp: ', futureTemp);
+			futureTemp = objectScript.getFutureDate(1, futureTemp);	
+
+			if(animationScript.getWeekday(futureTemp) == 'Lör')
+			{
+				futureTemp = objectScript.getFutureDate(2, futureTemp);	
+			}
+
+			
+			tempDate = objectScript.dateFixer(futureTemp);
+			
+			// console.log('tempDate new ', tempDate, futureTemp);
+		}
+
+		console.log('in b4 return');
+		return datalist;
+
+	},
+
 	dateFixer: function(tempDate, hyphen){
 		tempDate = new Date(tempDate);
 
@@ -637,8 +763,36 @@ var UIScript = {
 
 	init: function(){
 
-		UIScript.setSchoolBoxInformation();	
-		
+		var radioVal = $('input[name=infotype]:checked', '#infoForm').val();
+		if(radioVal == 'summarized')
+		{
+			// console.log('in summ');
+			$.ajax({
+				url: 'summarized.html', 
+				success: function(result){
+					document.getElementById('schoolInformation').innerHTML = result;
+					document.getElementById("toDate").style.visibility= "visible";
+					document.getElementById("toDatep").style.visibility= "visible";
+				}
+			});
+		}
+		else if(radioVal == 'perSchool')
+		{
+			// console.log('in perschool');
+			$.ajax({
+				url: 'perschool.html', 
+				success: function(result){
+					document.getElementById('schoolInformation').innerHTML = result;
+					document.getElementById("toDate").style.visibility= "hidden";
+					document.getElementById("toDatep").style.visibility= "hidden";
+					UIScript.setSchoolBoxInformation();
+				}
+			});
+		}
+		else
+		{
+			alert('Sum sin wong in ladiobuttons');
+		}
 		
 	},
 
@@ -663,7 +817,7 @@ var UIScript = {
 		var theDate = UIScript.getSliderDate();
 		var schoolid = UIScript.getSchoolId();
 		var daytype = animationScript.getWeekday(theDate);
-		console.log('UIScript.setInformation calling getFutureDate');
+		// console.log('UIScript.setInformation calling getFutureDate');
 		if(daytype == 'Lör')
 		{
 			theDate = objectScript.getFutureDate(2, theDate);
@@ -705,7 +859,7 @@ var UIScript = {
 			var dayType = animationScript.getWeekday(UIScript.getFromDate());
 			document.getElementById('sliderValue').innerHTML = 'Dag:	' + dayType;	
 
-			console.log('back in the loop');
+			// console.log('back in the loop');
 
 		}
 				
@@ -722,21 +876,30 @@ var UIScript = {
 
 		var list = [];
 		var datalist = [];
+		var datalistlastweek = [];
 		var tempDate = new Date(UIScript.getFromDate());
 		var diff = tempDate.getDay() - 1;
 		var startday = objectScript.getFutureDate(-diff, tempDate);
+		var lastweek = objectScript.getFutureDate(-7, startday);
+		// console.log('last week', startday, lastweek);
 
 		for(var i = 0; i < 5; i++)
 		{
 			var sickPeeps = objectScript.getDatesInformation(schoolid, startday);
 			datalist.push(sickPeeps);
 
-			console.log('sick peeps: ', sickPeeps, startday, i);
+			var sickPeepsLastweek = objectScript.getDatesInformation(schoolid, lastweek);
+			datalistlastweek.push(sickPeepsLastweek);
+
+			// console.log('sick peeps: ', sickPeeps, startday, i);
 			startday = objectScript.getFutureDate(1, startday);
+			lastweek = objectScript.getFutureDate(1, lastweek);
 		}
 
 		dict = {fillColor: "rgba(26, 188, 156,1.0)", data : datalist};
+		dict2 = {fillColor: "rgba(149, 165, 166,1.0)", data : datalistlastweek};
 		list.push(dict);
+		list.push(dict2);
 
 		var maxval = Math.max.apply(Math, datalist) + 1;
 		var stepWidth = Math.round((maxval/4));
@@ -764,6 +927,7 @@ var UIScript = {
 
 		if(chartarray[schoolid] == null)
 		{
+			console.log('Creating new Chart');
 			var ctx = document.getElementById('weekChart' + schoolid).getContext("2d");
 			var myChart = new Chart(ctx);
 			chartarray[schoolid] = myChart;
@@ -771,17 +935,48 @@ var UIScript = {
 		}
 		else
 		{
+			console.log('Using old Chart', chartarray[schoolid]);
 			chartarray[schoolid].Bar(data, options);	
 		}
 
 		return true;
 		
 	},
+
+	setLineChart: function(){
+
+		var fromDate = objectScript.dateFixer(UIScript.getFromDate(), true);
+		var toDate = objectScript.dateFixer(UIScript.getToDate(), true);
+		var labelarray = [];
+		var datalist = objectScript.calcSickKids(fromDate, toDate);
+		
+		console.log('datalist return: ', datalist);
+		
+		for(var i = 1; i <= datalist.length; i++){
+			labelarray.push(i);
+		}
+
+		var ctx = document.getElementById('sickLines').getContext("2d");
+
+		var data = {
+			labels : labelarray,
+			datasets : [
+				{
+					fillColor : "rgba(52, 152, 219,1.0)",
+					strokeColor : "rgba(41, 128, 185,1.0)",
+					lineColor : "rgba(41, 128, 185,1.0)",
+					pointStrokeColor : "#fff",
+					data : datalist,
+				}
+			],
+		}
+		var lineChart = new Chart(ctx).Line(data);
+	},
 	
 	getSliderDate: function(){
 
 		nrOfDays 	= Number($('#dateSlider').val());
-		console.log('UIScript.getSliderDate calling getFutureDate');
+		// console.log('UIScript.getSliderDate calling getFutureDate');
 		tempDate = objectScript.getFutureDate(nrOfDays);
 		return tempDate;
 	},
@@ -806,9 +1001,27 @@ var UIScript = {
 		return $('#fromDate').val();
 	},
 
+	getToDate: function(){
+		return $('#toDate').val();
+	},
+
 	setFromDate: function(theDate){
 		theDate = objectScript.dateFixer(theDate, true);
 		$('#fromDate').val(theDate);
+	},
+
+	setToDate: function(theDate){
+		theDate = objectScript.dateFixer(theDate, true);
+		$('#toDate').val(theDate);
+	},
+
+	setDateInformation: function(choosenDate){
+		var dayType = animationScript.getWeekday(choosenDate);
+		choosenDate = objectScript.dateFixer(new Date(choosenDate), true);
+		if(document.getElementById('sliderValue') != null)
+		{
+			document.getElementById('sliderValue').innerHTML = 'Datum:	' + choosenDate + '<br>Dag:	' + dayType;	
+		}
 	},
 
 	calculateDays: function(){
@@ -849,12 +1062,8 @@ var animationScript = {
 	createOneDayLayer: function(choosenDate){
 		
 		choosenDate = objectScript.dateFixer(new Date(choosenDate), true);
-		var dayType = animationScript.getWeekday(choosenDate);
-
-		if(document.getElementById('sliderValue') != null){
-			document.getElementById('sliderValue').innerHTML = 'Datum:	' + choosenDate + '<br>Dag:	' + dayType;	
-		}
-		
+			
+		UIScript.setDateInformation(choosenDate);
 
 		googleScript.createLayerByDate(choosenDate, choosenDate);	
 		// console.log('createOneDayLayer calling for createPolyArray');
@@ -1075,7 +1284,7 @@ var jsonScript = {
 	startUpStuff: function(){
 		// polylineslayer.setVisible(false); 
 		console.log($(url).last());
-		if($(url).last()[0] == "")
+		if($(url).last()[0] == "" || $(url).last()[0] == "index.html")
 		{
 			console.log('startting google app');
 			var startDate = UIScript.getSliderDate();
@@ -1115,7 +1324,7 @@ var jsonScript = {
 	google.maps.event.addDomListener(window, 'load', jsonScript.getSchoolinfoJson);
 
 	setTimeout(function(){
-		document.getElementById('information').innerHTML = 'Sidan har laddats';
+		// document.getElementById('information').innerHTML = 'Sidan har laddats';
 	}, 1500);
 	
 	

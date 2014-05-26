@@ -89,7 +89,9 @@
 {
 	width: 30%;
 	margin-top: 20px;
-	background-color: #00ccff;
+	// background-color: #00ccff;
+	border: 1px solid rgba(149, 165, 166,1.0);
+	border-radius: 5px;
 	float: left;
 	padding: 10px;
 
@@ -117,4 +119,9 @@
 {
 	height: 160px !important;
 	width: 100% !important;
+}
+
+#toDate
+{
+	// visibility: hidden;
 }

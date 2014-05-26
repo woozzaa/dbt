@@ -50,7 +50,8 @@
 .schoolBox {
   width: 30%;
   margin-top: 20px;
-  background-color: #00ccff;
+  border: 1px solid #95a5a6;
+  border-radius: 5px;
   float: left;
   padding: 10px; }
   .schoolBox li {

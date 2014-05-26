@@ -23,44 +23,22 @@
 		<div class="content">
 
 			<div class="dateInterval">
-				<p>From Date: 	<input type="text" name="YYYY-MM-DD" placeholder="YYYY-MM-DD" id="fromDate" value="2014-01-13"></p>
+				<p>From Date: 	<input type="text" name="YYYY-MM-DD" placeholder="YYYY-MM-DD" id="fromDate" value="2014-01-10"></p>
+				<p id="toDatep">To Date: 	<input type="text" name="YYYY-MM-DD" placeholder="YYYY-MM-DD" id="toDate" value="2014-01-30"></p>
 				<p id="sliderValue"></p>
 				<button id="submitDates">Submit</button>
-				<button id="prevDay">Previous Day</button><button id="nextDay">Next Day</button>
+				<button id="prevDay">Previous Week</button><button id="nextDay">Next Week</button>
+
+				<form action="" id="infoForm">
+					<input type="radio" name="infotype" value="perSchool">Info Per Skola<br>
+					<input type="radio" name="infotype" value="summarized"checked>Summerad info
+				</form>
 
 			</div>
 		
 			<div id="schoolInformation">
 				
-				<div id="school1" class="schoolBox floatMargin">
-					<p class="schoolheader"></p>
-					<canvas id="weekChart1" class="weekChart"></canvas>
-					<ul>
-						<li class="schoolkids">Totalt antal barn: <span></span></li>
-						<li class="sickkids">Antal sjuka barn: <span></span></li>
-						<li class="sickkids2">Sjuka barn i procent: <span></span></li>
-					</ul>
-				</div>
-
-				<div id="school2" class="schoolBox floatMargin">
-					<p class="schoolheader"></p>
-					<canvas id="weekChart2" class="weekChart"></canvas>
-					<ul>
-						<li class="schoolkids">Totalt antal barn: <span></span></li>
-						<li class="sickkids">Antal sjuka barn: <span></span></li>
-						<li class="sickkids2">Sjuka barn i procent: <span></span></li>
-					</ul>
-				</div>
-
-				<div id="school3" class="schoolBox">
-					<p class="schoolheader"></p>
-					<canvas id="weekChart3" class="weekChart"></canvas>
-					<ul>
-						<li class="schoolkids">Totalt antal barn: <span></span></li>
-						<li class="sickkids">Antal sjuka barn: <span></span></li>
-						<li class="sickkids2">Sjuka barn i procent: <span></span></li>
-					</ul>
-				</div>
+				
 			
 			</div> <!-- #schoolInformation -->
 
