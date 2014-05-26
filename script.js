@@ -19,6 +19,7 @@ var datesArray		= null;
 var polylineArray 	= null;
 
 var chartarray 		= [];
+var lineChart 		= null;
 
 var heatmaplayer 	= null;
 var polylineslayer 	= [];
@@ -31,7 +32,6 @@ var diffDays		= null;
 
 var dates_fp		= '/dbt/json/dates.json';
 var schoolinfo_fp 	= '/dbt/json/schoolinfoNew.json';
-var schoolinfo_fp_old = '/dbt/json/schoolinfo.json';
 var connections_fp 	= '/dbt/json/schoolconnections.json';
 
 /**
@@ -135,8 +135,6 @@ var googleScript = {
 					url: 'summarized.html', 
 					success: function(result){
 						document.getElementById('schoolInformation').innerHTML = result;
-						document.getElementById("toDate").style.visibility= "visible";
-						document.getElementById("toDatep").style.visibility= "visible";
 						chartarray = [];
 						UIScript.setLineChart();
 					}
@@ -150,8 +148,7 @@ var googleScript = {
 					success: function(result){
 						// console.log(result);
 						document.getElementById('schoolInformation').innerHTML = result;
-						document.getElementById("toDate").style.visibility= "hidden";
-						document.getElementById("toDatep").style.visibility= "hidden";
+						lineChart = null;
 						UIScript.setSchoolBoxInformation();
 					}
 				});
@@ -260,7 +257,7 @@ var googleScript = {
 			}
 			animationScript.createOneDayLayer(UIScript.getSliderDate());
 			// $('#textbox1').val($(this).is(':checked'));        
-	});
+		});
 	},
 
 
@@ -310,11 +307,11 @@ var googleScript = {
 	createPolylines: function(polyarrayDest, polyarrayHome, polyarrayWeights){
 		// console.log('polyarray: ', polyarrayDest, polyarrayHome, polyarrayWeights);	
 
-		var red 	= 'FF2000';
-		var orange 	= 'FFA000';
-		var yellow 	= 'FFF000';
-		var semigreen = 'C0FF00';
-		var green 	= '4BF000';
+		var red 	= '#FF2000';
+		var orange 	= '#FFA000';
+		var yellow 	= '#FFF000';
+		var semigreen = '#C0FF00';
+		var green 	= '#4BF000';
 
 
 		for(var i = 0; i < polylineslayer.length; i++){
@@ -710,7 +707,7 @@ var objectScript = {
 
 					if(listDate >= tempDate && listDate <= tempDate)
 					{
-						console.log('daytype: ', animationScript.getWeekday(dayDate));
+						// console.log('daytype: ', animationScript.getWeekday(dayDate));
 						sickSum = sickSum + val['weight'];
 					}	
 				}
@@ -795,8 +792,10 @@ var UIScript = {
 				url: 'summarized.html', 
 				success: function(result){
 					document.getElementById('schoolInformation').innerHTML = result;
-					document.getElementById("toDate").style.visibility= "visible";
-					document.getElementById("toDatep").style.visibility= "visible";
+					// document.getElementById("toDate").style.visibility= "visible";
+					// document.getElementById("toDatep").style.visibility= "visible";
+					// chartarray = [];
+					UIScript.setLineChart();
 				}
 			});
 		}
@@ -807,8 +806,8 @@ var UIScript = {
 				url: 'perschool.html', 
 				success: function(result){
 					document.getElementById('schoolInformation').innerHTML = result;
-					document.getElementById("toDate").style.visibility= "hidden";
-					document.getElementById("toDatep").style.visibility= "hidden";
+					// document.getElementById("toDate").style.visibility= "hidden";
+					// document.getElementById("toDatep").style.visibility= "hidden";
 					UIScript.setSchoolBoxInformation();
 				}
 			});
@@ -920,10 +919,12 @@ var UIScript = {
 			lastweek = objectScript.getFutureDate(1, lastweek);
 		}
 
-		dict = {fillColor: "rgba(26, 188, 156,1.0)", data : datalist};
-		dict2 = {fillColor: "rgba(149, 165, 166,1.0)", data : datalistlastweek};
+		dict = {fillColor: "#3498db", data : datalist};
+		dict2 = {fillColor: "#2ecc71", data : datalistlastweek};
 		list.push(dict);
 		list.push(dict2);
+
+		console.log('dict: ', dict);
 
 		var maxval = Math.max.apply(Math, datalist) + 1;
 		var stepWidth = Math.round((maxval/4));
@@ -953,6 +954,8 @@ var UIScript = {
 		{
 			console.log('Creating new Chart');
 			var ctx = document.getElementById('weekChart' + schoolid).getContext("2d");
+			ctx.canvas.width = 270;
+			ctx.canvas.height = 160;
 			var myChart = new Chart(ctx);
 			chartarray[schoolid] = myChart;
 			chartarray[schoolid].Bar(data, options);	
@@ -970,7 +973,8 @@ var UIScript = {
 	setLineChart: function(){
 
 		var fromDate = objectScript.dateFixer(UIScript.getFromDate(), true);
-		var toDate = objectScript.dateFixer(UIScript.getToDate(), true);
+		var toDate = objectScript.dateFixer(objectScript.getFutureDate(30, fromDate), true);
+		// var toDate = objectScript.dateFixer(UIScript.getToDate(), true);
 		var labelarray = [];
 		var datalist = objectScript.calcSickKids(fromDate, toDate);
 		
@@ -979,8 +983,6 @@ var UIScript = {
 		for(var i = 1; i <= datalist.length; i++){
 			labelarray.push(i);
 		}
-
-		var ctx = document.getElementById('sickLines').getContext("2d");
 
 		var data = {
 			labels : labelarray,
@@ -994,7 +996,31 @@ var UIScript = {
 				}
 			],
 		}
-		var lineChart = new Chart(ctx).Line(data);
+
+		var options = {
+			scaleFontSize : 8,
+			scaleFontStyle : 'medium',
+			scaleShowGridLines : true,
+			pointDotRadius : 2,
+			scaleLineWidth: 1,
+		}
+		console.log('linechart = ', lineChart);
+		if(lineChart == null)
+		{
+			var ctx = document.getElementById('sickLines').getContext("2d");	
+			ctx.canvas.width = 800;
+			ctx.canvas.height = 400;
+			lineChart = new Chart(ctx);
+			lineChart.Line(data, options);
+			console.log('creating new linechart');
+		}
+		else
+		{
+
+			lineChart.Line(data, options);
+			console.log('using old linechart', lineChart);
+		}
+		
 	},
 	
 	getSliderDate: function(){
@@ -1253,13 +1279,10 @@ var jsonScript = {
 					lastDate = new Date(date);
 				}
 
-				var day 		= date.getDate();
-				var month 		= date.getMonth() + 1;
-				var year 		= date.getFullYear();
-
+				date = objectScript.dateFixer(date, true);
 				tot.weight 		= Number(val['NUMBER']);
 				tot.schoolid	= Number(val['SCHOOLID']);
-				tot.date		= year + "-" + month + "-" + day;
+				tot.date		= date;
 				datesArray.push(tot);
 			});
 
@@ -1323,6 +1346,7 @@ var jsonScript = {
 		else
 		{
 			console.log('Unknown page');
+			alert('Unknow page @startUpStuff');
 		}
 	},
 
