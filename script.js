@@ -137,7 +137,11 @@ var googleScript = {
 		});
 
 		$('#nextDay').on('click', function(){
-			var theDate = objectScript.getFutureDate(1, UIScript.getFromDate() );
+			var tempDate = new Date(UIScript.getFromDate());
+			var diff = tempDate.getDay() - 1;
+			var startday = objectScript.getFutureDate(-diff, tempDate);
+
+			+var theDate = objectScript.getFutureDate(1, UIScript.getFromDate() );
 			// console.log('theday', theDate);
 			UIScript.setFromDate(theDate);
 			UIScript.setSchoolBoxInformation();
@@ -696,14 +700,15 @@ var UIScript = {
 			$('.schoolBox:nth-child('+i+') .sickkids span').html(''+sickkids + ' st');
 			$('.schoolBox:nth-child('+i+') .sickkids2 span').html(''+sickpercent + ' %');
 			
+			UIScript.setSchoolBoxChart(i);
+
+			var dayType = animationScript.getWeekday(UIScript.getFromDate());
+			document.getElementById('sliderValue').innerHTML = 'Dag:	' + dayType;	
+
 			console.log('back in the loop');
 
 		}
-		var returnVal = null;
-		for(var i = 1; i <= 3; i++) //27 ist för 3 annars
-		{
-			UIScript.setSchoolBoxChart(i);	
-		}
+				
 		// UIScript.setSchoolBoxChart(1);
 		// UIScript.setSchoolBoxChart(2);
 		// UIScript.setSchoolBoxChart(3);
@@ -843,23 +848,9 @@ var animationScript = {
 
 	createOneDayLayer: function(choosenDate){
 		
-		choosenDate = new Date(choosenDate);
+		choosenDate = objectScript.dateFixer(new Date(choosenDate), true);
 		var dayType = animationScript.getWeekday(choosenDate);
-		var day 	= choosenDate.getDate();
-		var month 	= choosenDate.getMonth() + 1;
 
-		if(day < 10)
-		{
-			day = '0' + day;
-		}
-		if(month < 10)
-		{
-			month = '0' + month;
-		}
-		
-		var year 	= choosenDate.getFullYear();
-		
-		choosenDate = year + "-" + month + "-" + day;
 		if(document.getElementById('sliderValue') != null){
 			document.getElementById('sliderValue').innerHTML = 'Datum:	' + choosenDate + '<br>Dag:	' + dayType;	
 		}
