@@ -808,6 +808,7 @@ var UIScript = {
 			// console.log('in summ');
 			$.ajax({
 				url: 'summarized.html', 
+				dataType: 'text',
 				success: function(result){
 					document.getElementById('schoolInformation').innerHTML = result;
 					// document.getElementById("toDate").style.visibility= "visible";
@@ -822,6 +823,7 @@ var UIScript = {
 			// console.log('in perschool');
 			$.ajax({
 				url: 'perschool.html', 
+				dataType: 'text',
 				success: function(result){
 					document.getElementById('schoolInformation').innerHTML = result;
 					// document.getElementById("toDate").style.visibility= "hidden";
