@@ -207,7 +207,16 @@ var googleScript = {
 			}
 			// console.log('theday', theDate);
 			UIScript.setFromDate(theDate);
-			UIScript.setSchoolBoxInformation();
+			var radioVal = $('input[name=infotype]:checked', '#infoForm').val();
+			if(radioVal == 'summarized')
+			{
+				UIScript.setLineChart();
+			}
+			else if(radioVal = 'perSchool')
+			{
+				UIScript.setSchoolBoxInformation();
+			}
+
 		});
 
 		$('#nextDay').on('click', function(){
@@ -227,7 +236,16 @@ var googleScript = {
 			}
 			// console.log('theday', theDate);
 			UIScript.setFromDate(theDate);
-			UIScript.setSchoolBoxInformation();
+			var radioVal = $('input[name=infotype]:checked', '#infoForm').val();
+			if(radioVal == 'summarized')
+			{
+				UIScript.setLineChart();
+			}
+			else if(radioVal = 'perSchool')
+			{
+				UIScript.setSchoolBoxInformation();
+			}
+
 		});
 
 		$('#dateSlider').mouseup(function(){
