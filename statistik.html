@@ -7,9 +7,9 @@
 		<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400' rel='stylesheet' type='text/css'>
 		
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-
+		<script src="../libraries/Chart.js-master/Chart.js"></script>
 		<script type="text/javascript"
-      			src="https://maps.googleapis.com/maps/api/js?libraries=visualization,fusiontables&sensor=false&">
+      			src="https://maps.googleapis.com/maps/api/js?libraries=visualization&sensor=false&">
     	</script>
 <!-- src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaXbH4R1IS9ij8odac_2gSZo-7hJa4MFw&sensor=false"> -->
 	</head>
@@ -23,7 +23,7 @@
 		<div class="content">
 
 			<div class="dateInterval">
-				<p>From Date: 	<input type="text" name="YYYY-MM-DD" placeholder="YYYY-MM-DD" id="fromDate" value="2014-01-01"></p>
+				<p>From Date: 	<input type="text" name="YYYY-MM-DD" placeholder="YYYY-MM-DD" id="fromDate" value="2014-01-13"></p>
 				<button id="submitDates">Submit</button>
 				<button id="prevDay">Previous Day</button><button id="nextDay">Next Day</button>
 			</div>
@@ -32,6 +32,7 @@
 				
 				<div id="school1" class="schoolBox floatMargin">
 					<p class="schoolheader"></p>
+					<canvas id="weekChart1" class="weekChart"></canvas>
 					<ul>
 						<li class="schoolkids">Totalt antal barn: <span></span></li>
 						<li class="sickkids">Antal sjuka barn: <span></span></li>
@@ -41,6 +42,7 @@
 
 				<div id="school2" class="schoolBox floatMargin">
 					<p class="schoolheader"></p>
+					<canvas id="weekChart2" class="weekChart"></canvas>
 					<ul>
 						<li class="schoolkids">Totalt antal barn: <span></span></li>
 						<li class="sickkids">Antal sjuka barn: <span></span></li>
@@ -50,6 +52,7 @@
 
 				<div id="school3" class="schoolBox">
 					<p class="schoolheader"></p>
+					<canvas id="weekChart3" class="weekChart"></canvas>
 					<ul>
 						<li class="schoolkids">Totalt antal barn: <span></span></li>
 						<li class="sickkids">Antal sjuka barn: <span></span></li>

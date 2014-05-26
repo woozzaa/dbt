@@ -7,9 +7,7 @@
 
 
 /**
- * 
  * VARIABLES
- * 
  */
 var mapOptions 		= null;
 var myCenter 		= null;
@@ -20,6 +18,8 @@ var schoolinfoArray	= null;
 var datesArray		= null;
 var polylineArray 	= null;
 
+var chartarray 		= [];
+
 var heatmaplayer 	= null;
 var polylineslayer 	= [];
 var markers 		= [];
@@ -28,20 +28,19 @@ var lines			= [];
 var firstDate 		= null;
 var lastDate  		= null;
 var diffDays		= null;
+
 var dates_fp		= '/dbt/json/dates.json';
 var schoolinfo_fp 	= '/dbt/json/schoolinfoNew.json';
 var schoolinfo_fp_old = '/dbt/json/schoolinfo.json';
 var connections_fp 	= '/dbt/json/schoolconnections.json';
 
 /**
- * 
  * SETTINGS
- * 
  */
 var heatmapOpacity 	= 1;
 var heatmapRadius 	= 20;
 var percent 		= true;
-var weekday = new Array(7);
+var weekday 		= new Array(7);
 	weekday[0] = "Sön";
 	weekday[1] = "Mån";
 	weekday[2] = "Tis";
@@ -91,20 +90,23 @@ var googleScript = {
 
 		$('#toggleMarkers').on('click', function(){
 			if(markers[1].getVisible()){
-				for(i = 0; i < markers.length; i++){
+				for(var i = 0; i < markers.length; i++){
 					markers[i].setVisible(false);	
 				}
 				console.log('setting false');
 				
 			}else{
 				
-				for(i = 0; i < markers.length; i++){
+				for(var i = 0; i < markers.length; i++){
 					markers[i].setVisible(true);		
 				}
 				console.log('setting true');
 			}
 		});
 
+		/*
+			Change to check link instead of value from input field
+		 */
 		$('#submitDates').on('click', function(){
 			var fromDate = $('#fromDate').val();
 			var toDate = $('#toDate').val();
@@ -223,11 +225,11 @@ var googleScript = {
 		var green 	= '4BF000';
 
 
-		for(i = 0; i < polylineslayer.length; i++){
+		for(var i = 0; i < polylineslayer.length; i++){
 			polylineslayer[i].setMap(null);
 		}
 
-		for(i = 0; i < polyarrayDest.length; i++)
+		for(var i = 0; i < polyarrayDest.length; i++)
 		{	
 			var weight = polyarrayWeights[i];
 			
@@ -329,7 +331,7 @@ var googleScript = {
 		var shape = {};
 		var markerdata = [];
 		
-		for(i = 0; i < schoolinfoArray.length; i++)
+		for(var i = 0; i < schoolinfoArray.length; i++)
 		{
 			var marker = [];
 			var schoollocation 	= schoolinfoArray[i]['location'];
@@ -344,7 +346,7 @@ var googleScript = {
 		}
 		// objectScript.printObjects();
 		// console.log('schooLLat', tempus);
-		for(i = 0; i < markerdata.length; i++)
+		for(var i = 0; i < markerdata.length; i++)
 		{
 			marker = markerdata[i];
 
@@ -385,15 +387,24 @@ var googleScript = {
 
 var objectScript = {
 
-	getDatesInformation: function(schoolid){
-		if($(url).last()[0] == "index.html")
+	getDatesInformation: function(schoolid, someDate){
+		
+		if(someDate === undefined)
 		{
-			fromDate = objectScript.dateFixer(UIScript.getSliderDate());
+			if($(url).last()[0] != "statistik.html")
+			{
+				fromDate = objectScript.dateFixer(UIScript.getSliderDate());
+			}
+			else
+			{
+				fromDate = objectScript.dateFixer(UIScript.getFromDate());
+			}
 		}
 		else
 		{
-			fromDate = objectScript.dateFixer(UIScript.getFromDate());
+			fromDate = objectScript.dateFixer(someDate);
 		}
+		
 		
 		toDate = fromDate;		
 		var returnValue = 0;
@@ -621,15 +632,18 @@ var objectScript = {
 var UIScript = {
 
 	init: function(){
+
 		UIScript.setSchoolBoxInformation();	
+		
+		
 	},
 
 	setSchoolInformation: function(schoolid){
 
-		var totkids = objectScript.getSchoolInformation('totalkids', schoolid, 'schoolid');
-		var schoolname = objectScript.getSchoolInformation('schoolname', schoolid, 'schoolid');
-		var schoolloc = objectScript.getSchoolInformation('location', schoolid, 'schoolid');
-		var sickkids = objectScript.getDatesInformation(schoolid);
+		var totkids 	= objectScript.getSchoolInformation('totalkids', schoolid, 'schoolid');
+		var schoolname 	= objectScript.getSchoolInformation('schoolname', schoolid, 'schoolid');
+		var schoolloc 	= objectScript.getSchoolInformation('location', schoolid, 'schoolid');
+		var sickkids 	= objectScript.getDatesInformation(schoolid);
 
 		console.log('school location: ', schoolloc);
 		// console.log('sick kids:', sickkids);
@@ -664,12 +678,12 @@ var UIScript = {
 
 	/**
 	 * [setSchoolBoxInformation description]
-	 * UNUSED FUNCTION FOR NOW
 	 */
 	setSchoolBoxInformation: function(){
 		// objectScript.printObjects();
 
-		for(i = 1; i <= 27; i++){
+		for(var i = 1; i <= 3; i++){ //27 ist för 3 annars
+			console.log(' in loop: ', i);
 
 			var totkids = objectScript.getSchoolInformation('totalkids', i, 'schoolid');
 			var schoolname = objectScript.getSchoolInformation('schoolname', i, 'schoolid');
@@ -681,8 +695,82 @@ var UIScript = {
 			$('.schoolBox:nth-child('+i+') .schoolkids span').html(''+totkids + ' st');
 			$('.schoolBox:nth-child('+i+') .sickkids span').html(''+sickkids + ' st');
 			$('.schoolBox:nth-child('+i+') .sickkids2 span').html(''+sickpercent + ' %');
+			
+			console.log('back in the loop');
 
 		}
+		var returnVal = null;
+		for(var i = 1; i <= 3; i++) //27 ist för 3 annars
+		{
+			UIScript.setSchoolBoxChart(i);	
+		}
+		// UIScript.setSchoolBoxChart(1);
+		// UIScript.setSchoolBoxChart(2);
+		// UIScript.setSchoolBoxChart(3);
+		
+	},
+
+	// create array as variable name and index it with schoolid
+	setSchoolBoxChart: function(schoolid){
+		
+		console.log('in setSchoolBoxChart with: ', schoolid);
+
+		var list = [];
+		var datalist = [];
+		var tempDate = new Date(UIScript.getFromDate());
+		var diff = tempDate.getDay() - 1;
+		var startday = objectScript.getFutureDate(-diff, tempDate);
+
+		for(var i = 0; i < 5; i++)
+		{
+			var sickPeeps = objectScript.getDatesInformation(schoolid, startday);
+			datalist.push(sickPeeps);
+
+			console.log('sick peeps: ', sickPeeps, startday, i);
+			startday = objectScript.getFutureDate(1, startday);
+		}
+
+		dict = {fillColor: "rgba(26, 188, 156,1.0)", data : datalist};
+		list.push(dict);
+
+		var maxval = Math.max.apply(Math, datalist) + 1;
+		var stepWidth = Math.round((maxval/4));
+		var data = {
+			labels : ['Mån', 'Tis', 'Ons', 'Tors', 'Fre'],
+			datasets : list, 
+		}
+
+		var options = {
+			//Boolean - If we want to override with a hard coded scale
+			scaleOverride: true,
+			//** Required if scaleOverride is true **
+			//Number - The number of steps in a hard coded scale
+			scaleSteps: 5,
+			//Number - The value jump in the hard coded scale
+			scaleStepWidth: stepWidth,
+			//Number - The scale starting value
+			scaleStartValue: 0,
+			
+			scaleShowGridLines: false,
+
+		}
+
+		// console.log('options: ', maxval, options);
+
+		if(chartarray[schoolid] == null)
+		{
+			var ctx = document.getElementById('weekChart' + schoolid).getContext("2d");
+			var myChart = new Chart(ctx);
+			chartarray[schoolid] = myChart;
+			chartarray[schoolid].Bar(data, options);	
+		}
+		else
+		{
+			chartarray[schoolid].Bar(data, options);	
+		}
+
+		return true;
+		
 	},
 	
 	getSliderDate: function(){
@@ -876,7 +964,7 @@ var jsonScript = {
 		schoolinfoArray = [];
 		url = document.URL.split('/');
 		
-		if($(url).last()[0] == "index.html"){
+		if($(url).last()[0] != "statistik.html"){
 			googleScript.createmap();
 		}
 
@@ -953,7 +1041,7 @@ var jsonScript = {
 
 			// console.log('calling UIScript.calculateDays');
 			UIScript.calculateDays();
-			if($(url).last()[0] == "index.html"){
+			if($(url).last()[0] != "statistik.html"){
 				var startDate = UIScript.getSliderDate();
 			}
 
@@ -995,8 +1083,10 @@ var jsonScript = {
 
 	startUpStuff: function(){
 		// polylineslayer.setVisible(false); 
-		if($(url).last()[0] == "index.html")
+		console.log($(url).last());
+		if($(url).last()[0] == "")
 		{
+			console.log('startting google app');
 			var startDate = UIScript.getSliderDate();
 			var schoolid = 22;
 			UIScript.setSchoolId(schoolid);
@@ -1027,9 +1117,10 @@ var jsonScript = {
 
 (function(){
 
-
+	//fires up the buttons n stuff
 	googleScript.init();
 
+	//Starts first reading of json-files
 	google.maps.event.addDomListener(window, 'load', jsonScript.getSchoolinfoJson);
 
 	setTimeout(function(){
