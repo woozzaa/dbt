@@ -69,3 +69,12 @@
 .weekChart {
   height: 160px !important;
   width: 100% !important; }
+
+#toggleHeatmap {
+  background-color: #2ecc71; }
+
+#togglePolylines {
+  background-color: #2ecc71; }
+
+#toggleMarkers {
+  background-color: #2ecc71; }

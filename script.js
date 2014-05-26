@@ -76,14 +76,34 @@ var googleScript = {
 
 	bindUIActions: function(){
 		$('#toggleHeatmap').on('click', function(){
-			heatmaplayer.setMap(heatmaplayer.getMap() ? null : map);	
+			// heatmaplayer.setMap(heatmaplayer.getMap() ? null : map);	
+			if(heatmaplayer.getMap() == null)
+			{
+				heatmaplayer.setMap(map);
+				document.getElementById('toggleHeatmap').style.backgroundColor = "#2ecc71";
+			}
+			else
+			{
+				heatmaplayer.setMap(null);
+				document.getElementById('toggleHeatmap').style.backgroundColor = "#e74c3c";
+			}
 		});
 
 		$('#togglePolylines').on('click', function(){
-			if(polylineslayer.getVisible()){
-				polylineslayer.setVisible(false);
+			if(polylineslayer[1].getVisible())
+			{
+				for(var i = 0; i < polylineslayer.length; i++)
+				{
+					polylineslayer[i].setVisible(false);
+				}
+				document.getElementById('togglePolylines').style.backgroundColor = "#e74c3c";
+
 			}else{
-				polylineslayer.setVisible(true);
+				for(var i = 0; i < polylineslayer.length; i++)
+				{
+					polylineslayer[i].setVisible(true);
+				}
+				document.getElementById('togglePolylines').style.backgroundColor = "#2ecc71";
 			}
 			console.log('Toggled polyline. NOT');
 		});
@@ -93,14 +113,16 @@ var googleScript = {
 				for(var i = 0; i < markers.length; i++){
 					markers[i].setVisible(false);	
 				}
-				console.log('setting false');
+				console.log('Markers Off');
+				document.getElementById('toggleMarkers').style.backgroundColor = "#e74c3c";
 				
 			}else{
 				
 				for(var i = 0; i < markers.length; i++){
 					markers[i].setVisible(true);		
 				}
-				console.log('setting true');
+				console.log('Markers On');
+				document.getElementById('toggleMarkers').style.backgroundColor = "#2ecc71";
 			}
 		});
 
