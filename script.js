@@ -250,11 +250,13 @@ var googleScript = {
 			UIScript.setInformation();
 		});
 
-		$('#percent').change(function() {
-			if($(this).is(":checked")) {
+		$('#percent').on('click', function() {
+			if(!percent) {
 				percent = true;
+				document.getElementById('percent').style.backgroundColor = "#2ecc71";
 			}else{
 				percent = false;
+				document.getElementById('percent').style.backgroundColor = "#e74c3c";
 			}
 			animationScript.createOneDayLayer(UIScript.getSliderDate());
 			// $('#textbox1').val($(this).is(':checked'));        
