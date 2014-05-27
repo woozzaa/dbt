@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<title>Het Karta</title>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400' rel='stylesheet' type='text/css'>
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="Chart.js-master/Chart.js"></script>
+		<script type="text/javascript"
+      			src="https://maps.googleapis.com/maps/api/js?libraries=visualization&sensor=false&">
+    	</script>
+<!-- src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaXbH4R1IS9ij8odac_2gSZo-7hJa4MFw&sensor=false"> -->
+	</head>
+	
+	<body>
+		<div id="header">
+			<div class="logo">
+				<img id="daLogo" src="Logo.png" alt="Logotype">
+			</div>
+			<div class="menu">
+				<a href="index.html">START</a>
+				<a href="map.html">KARTA</a>
+				<a class="menu-active" href="graph.html">STATISTIK</a>
+			</div>
+		</div>
+		
+		<div class="content">
+
+			<div class="statsInterval">
+				
+
+				
+				<div class="statsButtons">
+					<div class="fromDateDiv">From Date: 	<input type="text" name="YYYY-MM-DD" placeholder="YYYY-MM-DD" id="fromDate" value="2014-01-10"></div>
+				
+					<button id="submitStatDates" class="toggleOptions">Submit</button>
+					<button id="prevDay" class="toggleOptions">Previous Week</button><button id="nextDay" class="toggleOptions">Next Week</button>
+
+					<form action="" id="infoForm">
+					<input type="radio" name="infotype" value="perSchool"checked>Info Per Skola
+					<input type="radio" name="infotype" value="summarized">Summerad info
+
+				</form>
+
+				</div>
+
+			</div>
+		
+			<div id="schoolInformation">
+				
+				
+			
+			</div> <!-- #schoolInformation -->
+
+	
+
+
+
+				<!--
+				<div id="information"></div><br>
+			888888  dP"Yb   dP"Yb  888888 888888 88""Yb 
+			88__   dP   Yb dP   Yb   88   88__   88__dP 
+			88""   Yb   dP Yb   dP   88   88""   88"Yb  
+			88      YbodP   YbodP    88   888888 88  Yb 
+		-->
+	
+	<div class="footer">
+		<div class="footcontent">	
+			
+			<div class="footPart">
+				<p class="contact">
+					<span id="contact-header">Kontakt</span><br>
+					<span>info@projectmorbus.com</span><br>
+					<span>+4670	333 27 02</span>
+				</p>
+			</div>
+			
+			<div class="footPart leftborder">
+				<p class="footerMenu">
+					<a href="index.html">START</a>
+					<a class="leftMargin menu-active" href="index2.html">KARTA</a>
+					<a class="leftMargin" href="statistik.html">STATISTIK</a>				
+				</p>
+			</div>
+
+			<div class="footPart leftborder">
+				<img id="footerLogo" src="Logo.png" alt="Logotype">
+			</div>
+		</div>
+		<div class="daLine">	
+		</div>
+
+
+	</div>
+
+	</body>
+
+	<script type="text/JavaScript" src="script.js" charset="UTF-8"></script>
+	
+</html>

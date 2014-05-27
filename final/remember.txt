@@ -1,0 +1,22 @@
+Max fem fusion table-lager. Alla med varsina styling-lager
+
+Encrypted ID: 1234
+
+/**
+ *
+ *
+ *	FUSIONTABLES
+ * 
+ */
+//  var layer = new google.maps.FusionTablesLayer({
+// 	query: {
+// 		select: 'ABSENCES',
+// 		from: '1OqKOavsRoQSHBxt0v40jf9iBJ0WTpESP5pQj3Ukb',
+// 		// where: 'ABSENCES > 2'
+// 	}
+// 	// heatmap: {
+// 	// 	enabled: heatmap,
+// 	// }
+// });
+
+// layer.setMap(map);
