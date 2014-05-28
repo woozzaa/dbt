@@ -40,6 +40,7 @@ var connections_fp 	= '/dbt/final/json/schoolconnections.json';
 var heatmapOpacity 	= 1;
 var heatmapRadius 	= 20;
 var percent 		= true;
+var polyVisible 	= true;
 var weekday 		= new Array(7);
 	weekday[0] = "Sön";
 	weekday[1] = "Mån";
@@ -85,7 +86,7 @@ var googleScript = {
 			else
 			{
 				heatmaplayer.setMap(null);
-				document.getElementById('toggleHeatmap').style.backgroundColor = "#e74c3c";
+				document.getElementById('toggleHeatmap').style.backgroundColor = "#bdc3c7";
 			}
 		});
 
@@ -95,13 +96,15 @@ var googleScript = {
 				for(var i = 0; i < polylineslayer.length; i++)
 				{
 					polylineslayer[i].setVisible(false);
+					polyVisible = false;
 				}
-				document.getElementById('togglePolylines').style.backgroundColor = "#e74c3c";
+				document.getElementById('togglePolylines').style.backgroundColor = "#bdc3c7";
 
 			}else{
 				for(var i = 0; i < polylineslayer.length; i++)
 				{
 					polylineslayer[i].setVisible(true);
+					polyVisible = true;
 				}
 				document.getElementById('togglePolylines').style.backgroundColor = "#2ecc71";
 			}
@@ -114,7 +117,7 @@ var googleScript = {
 					markers[i].setVisible(false);	
 				}
 				console.log('Markers Off');
-				document.getElementById('toggleMarkers').style.backgroundColor = "#e74c3c";
+				document.getElementById('toggleMarkers').style.backgroundColor = "#bdc3c7";
 				
 			}else{
 				
@@ -273,10 +276,9 @@ var googleScript = {
 				document.getElementById('percent').style.backgroundColor = "#2ecc71";
 			}else{
 				percent = false;
-				document.getElementById('percent').style.backgroundColor = "#e74c3c";
+				document.getElementById('percent').style.backgroundColor = "#bdc3c7";
 			}
-			animationScript.createOneDayLayer(UIScript.getSliderDate());
-			// $('#textbox1').val($(this).is(':checked'));        
+			animationScript.createOneDayLayer(UIScript.getSliderDate());      
 		});
 	},
 
@@ -353,6 +355,7 @@ var googleScript = {
 				strokeColor: color,
 				strokeOpacity: 1.0,
 				strokeWeight: 4,//polyarrayWeights[i],
+				visible: polyVisible,
 			});
 			polylineslayer[i].setMap(map);
 		}
@@ -885,7 +888,7 @@ var UIScript = {
 		// objectScript.printObjects();
 
 		for(var i = 1; i <= 27; i++){ //27 ist för 3 annars
-			console.log(' in loop: ', i);
+			// console.log(' in loop: ', i);
 
 			var totkids = objectScript.getSchoolInformation('totalkids', i, 'schoolid');
 			var schoolname = objectScript.getSchoolInformation('schoolname', i, 'schoolid');
@@ -909,7 +912,7 @@ var UIScript = {
 	// create array as variable name and index it with schoolid
 	setSchoolBoxChart: function(schoolid){
 		
-		console.log('in setSchoolBoxChart with: ', schoolid);
+		// console.log('in setSchoolBoxChart with: ', schoolid);
 
 		var list = [];
 		var datalist = [];
@@ -935,10 +938,11 @@ var UIScript = {
 
 		dict = {fillColor: "#3498db", data : datalist};
 		dict2 = {fillColor: "#2ecc71", data : datalistlastweek};
-		list.push(dict);
 		list.push(dict2);
+		list.push(dict);
+		
 
-		// console.log('dict: ', dict);
+		console.log('dict: ', dict);
 
 		var maxval = Math.max.apply(Math, datalist) + 1;
 		var stepWidth = Math.round((maxval/4));
@@ -1348,8 +1352,10 @@ var jsonScript = {
 		if($(url).last()[0] == "" || $(url).last()[0] == "map.html")
 		{
 			console.log('startting google app');
-			var startDate = UIScript.getSliderDate();
-			var schoolid = 22;
+			// var startDate = UIScript.getSliderDate();
+			var startDate = '2013-06-20';
+			UIScript.setSliderDate(startDate);
+			var schoolid = 1;
 			UIScript.setSchoolId(schoolid);
 			UIScript.setInformation();
 		}

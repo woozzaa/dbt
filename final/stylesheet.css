@@ -513,7 +513,17 @@ Y88b  d88P Y88b. .d88P 888   Y8888     888   d8888888888 Y88b  d88P    888      
 	padding-top: 3px;
 	padding-bottom: 3px;
 	margin-right: 9px;
+	color: white;
+}
 
+.toggleOptions:hover
+{
+	cursor: pointer;
+}
+
+*:focus
+{
+	outline: none;
 }
 
 #sickSum p
@@ -581,6 +591,8 @@ Y88b  d88P Y88b. .d88P 888   Y8888     888   d8888888888 Y88b  d88P    888      
 	height: 12px;
 	width: 12px;
 	border-radius: 4px;
+	display: inline-block;
+	margin-right: 5px;
 }
 
 .colorrep
